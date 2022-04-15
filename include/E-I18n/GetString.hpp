@@ -11,10 +11,13 @@
 #define GETSTRING_HPP
 
 #include <cstdint>
+#include <string>
 
-template <typename T = uint16_t>
-auto GetString(auto msg_array, T lang_enum = 0) {
-  return msg_array[static_cast<uint16_t>(lang_enum)];
-}
+namespace ei18n {
+  template<typename T = uint16_t>
+  auto GetString(auto msg_array, T lang_enum = 0) {
+    return msg_array[static_cast<uint16_t>(lang_enum)];
+  }
+} //namespace ei18n
 
 #endif // GETSTRING_HPP
