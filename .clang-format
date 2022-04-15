@@ -5,6 +5,7 @@ AllowShortLoopsOnASingleLine: true
 AllowAllConstructorInitializersOnNextLine: true
 AllowShortBlocksOnASingleLine: Always
 AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 BreakBeforeBinaryOperators: All
 ColumnLimit: 0
 CompactNamespaces: true
