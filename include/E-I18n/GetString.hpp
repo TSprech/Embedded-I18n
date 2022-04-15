@@ -13,11 +13,13 @@
 #include <cstdint>
 #include <string>
 
-namespace ei18n {
-  template<typename T = uint16_t>
-  auto GetString(auto msg_array, T lang_enum = 0) {
-    return msg_array[static_cast<uint16_t>(lang_enum)];
-  }
-} //namespace ei18n
+#include "utfcppAdapted.hpp"
 
-#endif // GETSTRING_HPP
+namespace ei18n {
+  template <typename T = uint16_t>
+  auto GetString(auto msg_array, T lang_enum = 0) {
+    return utf8to32(reinterpret_cast<const char* const>(msg_array[static_cast<uint16_t>(lang_enum)]));
+  }
+}  //namespace ei18n
+
+#endif  // GETSTRING_HPP

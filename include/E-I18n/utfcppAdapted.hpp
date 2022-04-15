@@ -36,6 +36,7 @@
 
 #include <cstdint>
 #include <string>
+#include <exception> // TODO: Temp for terminate
 
 const uint16_t LEAD_SURROGATE_MIN  = 0xd800u;
 const uint16_t TRAIL_SURROGATE_MAX = 0xdfffu;
