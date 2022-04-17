@@ -12,24 +12,54 @@
 #include "ExampleData.hpp"
 #include "gtest/gtest.h"
 
+#define CHECK_SUCCESS(lang)                                         \
+  std::u32string utf32_str;                                   \
+  auto err = ei18n::GetString(utf32_str, translated_strings, lang); \
+  EXPECT_EQ(err, ei18n::utfcpp::success_)
+
 namespace {
   TEST(GetStringTest, Default) {
-    EXPECT_EQ(ei18n::GetString(translated_strings), U"\x48\x65\x6c\x6c\x6f") << "Unable to retrieve string with no language given";
+    std::u32string utf32_str;
+    auto err = ei18n::GetString(utf32_str, translated_strings);
+    EXPECT_EQ(err, ei18n::utfcpp::success_);
+    EXPECT_EQ(utf32_str, U"\x48\x65\x6c\x6c\x6f") << "Unable to retrieve string with no language given";
   }
 
   TEST(GetStringTest, English) {
-    EXPECT_EQ(ei18n::GetString(translated_strings, Languages::English), U"\x48\x65\x6c\x6c\x6f") << "Unable to retrieve string from English language";
+    CHECK_SUCCESS(Languages::English);
+    EXPECT_EQ(utf32_str, U"\x48\x65\x6c\x6c\x6f") << "Unable to retrieve string from English language";
   }
 
   TEST(GetStringTest, Spanish) {
-    EXPECT_EQ(ei18n::GetString(translated_strings, Languages::Spanish), U"\xbf\x51\x75\xe9\x20\x74\x61\x6c\x3f") << "Unable to retrieve string from Spanish language";
+    CHECK_SUCCESS(Languages::Spanish);
+    EXPECT_EQ(utf32_str, U"\xbf\x51\x75\xe9\x20\x74\x61\x6c\x3f") << "Unable to retrieve string from Spanish language";
   }
 
   TEST(GetStringTest, Danish) {
-    EXPECT_EQ(ei18n::GetString(translated_strings, Languages::Danish), U"\x48\x61\x6c\x6c\xf8\x6a") << "Unable to retrieve string from Danish language";
+    CHECK_SUCCESS(Languages::Danish);
+    EXPECT_EQ(utf32_str, U"\x48\x61\x6c\x6c\xf8\x6a") << "Unable to retrieve string from Danish language";
   }
 
   TEST(GetStringTest, Japanese) {
-    EXPECT_EQ(ei18n::GetString(translated_strings, Languages::Japanese), U"\x3053\x3093\x306b\x3061\x306f") << "Unable to retrieve string from Japanese language";
+    CHECK_SUCCESS(Languages::Japanese);
+    EXPECT_EQ(utf32_str, U"\x3053\x3093\x306b\x3061\x306f") << "Unable to retrieve string from Japanese language";
   }
+
+//  TEST(GetStringTest, Invalid_Lead) {
+//    std::u32string utf32_str;
+//    auto err = ei18n::GetString(utf32_str, translated_strings, Languages::Invalid_Lead);
+//    EXPECT_EQ(err, ei18n::utfcpp::invalid_lead_);
+//  }
+//
+//  TEST(GetStringTest, Incomplete_Sequence) {
+//    std::u32string utf32_str;
+//    auto err = ei18n::GetString(utf32_str, translated_strings, Languages::Incomplete_Sequence);
+//    EXPECT_EQ(err, ei18n::utfcpp::incomplete_sequence_);
+//  }
+//
+//  TEST(GetStringTest, Invalid_Character) {
+//    std::u32string utf32_str;
+//    auto err = ei18n::GetString(utf32_str, translated_strings, Languages::Invalid_Character);
+//    EXPECT_EQ(err, ei18n::utfcpp::invalid_code_point_);
+//  }
 }  // namespace

@@ -41,7 +41,7 @@
 // This macro inverts the logic that checks if an error occurred. Some error handing may define no errors to evaluate to true and errors to evaluate to false.
 // For instance, by default success is utf_error 0, so the logic must be inverted to indicate that success logically evaluates to false.
 // Regardless, whatever error reporting mechanism is being used, it must evaluate to a boolean value to use this library's logic without modification.
-#define INV_ERR ! // Invert logic (0 == NO error, anything else == error)
+#define INV_ERR !  // Invert logic (0 == NO error, anything else == error)
 //#define INV_ERR  // Do not invert logic (0 == error, anything else == NO error)
 
 namespace ei18n::utfcpp {
@@ -57,8 +57,8 @@ namespace ei18n::utfcpp {
   /**
    * @note: Change these to whatever error reporting system you use. Variable or object based error reporting *should* work.
    */
-  using error_t = utf_error;                                        /**< The type of the error codes */
-  const auto success_ = utf_error::UTF8_OK; /**< No error */        // Variable
+  using error_t = utf_error;                                  /**< The type of the error codes */
+  const auto success_ = utf_error::UTF8_OK; /**< No error */  // Variable
   //  using success_ = <error object type>; /**< No error */ // Object
   const auto insufficient_room_ = utf_error::NOT_ENOUGH_ROOM;       /**< Disagreement between the end of the utf8 string and the current iterator for the string */
   const auto invalid_lead_ = utf_error::INVALID_LEAD;               /**< The lead does not have a valid unicode bit sequence */
@@ -255,34 +255,30 @@ namespace ei18n::utfcpp {
    * @note The error logic in the following function will have to be modified to fit your error handling method.
    */
   template <typename octet_iterator>
-  uint32_t next(octet_iterator& it, octet_iterator end) {
+  error_t next(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     uint32_t cp = 0;
     error_t err_code = validate_next(it, end, cp);
     //    return (INV_ERR err_code) ? cp : err_code;
-    switch (err_code) {
-      case success_:
-        break;
-      case insufficient_room_:
-      case invalid_lead_:
-      case incomplete_sequence_:
-      case overlong_sequence_:
-      case invalid_code_point_:
-        std::terminate();
+    if (INV_ERR err_code) {
+      code_point = cp;
+      return success_;
     }
-    return cp;
+    else return err_code;
   }
 
   template <typename octet_iterator, typename u32bit_iterator>
-  u32bit_iterator utf8to32(octet_iterator start, octet_iterator end, u32bit_iterator result) {
-    while (start < end) (*result++) = next(start, end);
-
-    return result;
+  error_t utf8to32(octet_iterator start, octet_iterator end, u32bit_iterator result) {
+    uint32_t code_point = 0;
+    while (start < end) {
+      error_t err = next(start, end, code_point);
+      if (INV_ERR err) (*result++) = code_point;
+      else return err;
+    }
+    return success_;
   }
 
-  inline std::u32string utf8to32(std::string_view s) {
-    std::u32string result;
-    utf8to32(s.begin(), s.end(), std::back_inserter(result));
-    return result;
+  inline error_t utf8to32(std::string_view s, std::u32string& result) {
+    return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
 }  // namespace ei18n::utfcpp
 

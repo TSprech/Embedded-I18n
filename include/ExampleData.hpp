@@ -16,9 +16,12 @@ enum class Languages : uint16_t {
   English = 0,
   Spanish,
   Danish,
-  Japanese
+  Japanese,
+  Invalid_Lead,
+  Incomplete_Sequence,
+  Invalid_Character,
 };
 
-const char8_t* const translated_strings[] = {u8"Hello", u8"¿Qué tal?", u8"Halløj", u8"こんにちは"};
+const char8_t* const translated_strings[] = {u8"Hello", u8"¿Qué tal?", u8"Halløj", u8"こんにちは", u8"ABC\xff", u8"\xe3\xF1\x93", u8"\xe3\x81\x00"};
 
 #endif // EXAMPLEDATA_HPP
