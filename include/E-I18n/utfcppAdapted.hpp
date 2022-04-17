@@ -35,7 +35,6 @@
 #define UTFCPPADAPTED_HPP
 
 #include <cstdint>
-#include <exception>  // TODO: Temp for terminate
 #include <string>
 
 // This macro inverts the logic that checks if an error occurred. Some error handing may define no errors to evaluate to true and errors to evaluate to false.
