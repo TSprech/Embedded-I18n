@@ -10,7 +10,9 @@ add_compile_options(--coverage) # Required to generate gcov data
 include_directories(include)
 
 set(SOURCES)
-set(TEST_SOURCES test/Test_GetString.cpp)
+set(TEST_SOURCES
+        test/Test_GetString.cpp
+        test/Test_GetStringInvalid.cpp)
 add_executable(Embedded-I18n main.cpp ${SOURCES} ${TEST_SOURCES})
 
 add_subdirectory(test/googletest)
