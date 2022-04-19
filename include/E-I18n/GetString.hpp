@@ -14,6 +14,7 @@
 #include <string>
 
 #include "utfcppAdapted.hpp"
+#include <memory_resource>
 
 namespace ei18n {
   /**
@@ -25,7 +26,7 @@ namespace ei18n {
    * @returns Any errors when converting.
    */
   template <typename T = uint16_t>
-  auto GetString(std::u32string& str, auto msg_array, T lang_enum = 0) {
+  auto GetString(std::pmr::u32string& str, auto msg_array, T lang_enum = 0) {
     return utfcpp::utf8to32(reinterpret_cast<const char* const>(msg_array[static_cast<uint16_t>(lang_enum)]), str);
   }
 }  //namespace ei18n
