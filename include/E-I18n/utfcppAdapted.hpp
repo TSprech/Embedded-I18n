@@ -277,7 +277,7 @@ namespace ei18n::utfcpp {
     return success_;
   }
 
-  inline error_t utf8to32(std::string_view s, std::pmr::u32string& result) {
+  inline error_t utf8to32(std::u8string_view s, std::pmr::u32string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
 }  // namespace ei18n::utfcpp

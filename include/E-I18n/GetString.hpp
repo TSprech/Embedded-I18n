@@ -27,7 +27,7 @@ namespace ei18n {
    */
   template <typename T = uint16_t>
   auto GetString(std::pmr::u32string& str, auto msg_array, T lang_enum = 0) {
-    return utfcpp::utf8to32(reinterpret_cast<const char* const>(msg_array[static_cast<uint16_t>(lang_enum)]), str);
+    return utfcpp::utf8to32(msg_array.at(static_cast<uint16_t>(lang_enum)), str);
   }
 }  //namespace ei18n
 
