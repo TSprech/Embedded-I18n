@@ -35,7 +35,10 @@
 #define UTFCPPADAPTED_HPP
 
 #include <cstdint>
+#include <memory_resource>
 #include <string>
+
+#include "ArchConfig.hpp"
 
 // This macro inverts the logic that checks if an error occurred. Some error handing may define no errors to evaluate to true and errors to evaluate to false.
 // For instance, by default success is utf_error 0, so the logic must be inverted to indicate that success logically evaluates to false.
@@ -261,8 +264,7 @@ namespace ei18n::utfcpp {
     if (INV_ERR err_code) {
       code_point = cp;
       return success_;
-    }
-    else return err_code;
+    } else return err_code;
   }
 
   template <typename octet_iterator, typename u32bit_iterator>
@@ -276,7 +278,7 @@ namespace ei18n::utfcpp {
     return success_;
   }
 
-  inline error_t utf8to32(std::string_view s, std::u32string& result) {
+  inline error_t utf8to32(std::u8string_view s, ei18n_u32_string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
 }  // namespace ei18n::utfcpp

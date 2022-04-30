@@ -12,18 +12,21 @@
 
 #include "E-I18n/GetString.hpp"
 #include "E-I18n/utfcppAdapted.hpp"
+#include "E-I18n/ei18n.hpp"
 #include "UTF8StressTest.hpp"
 #include "gtest/gtest.h"
+#include <string_view>
 
 // TODO: Get other cases working - currently all error codes are able to be invoked, the main goal of these tests
 
 const uint8_t valid_byte_length_of_longest_code_point = 4;
 
-#define LOOP_TEST_ERROR_STRINGS(string_array, expected_error)                                                             \
-  for (int index = 0; index < valid_byte_length_of_longest_code_point; ++index) {                           \
-    std::u32string utf32_str;                                                                               \
-    auto err = ei18n::GetString(utf32_str, string_array, index); \
-    EXPECT_EQ(err, expected_error); }
+#define LOOP_TEST_ERROR_STRINGS(string_array, expected_error)                     \
+  for (int index = 0; index < valid_byte_length_of_longest_code_point; ++index) { \
+    PMR_NULL_STRING(utf32_str, 200);                                              \
+    auto err = ei18n::GetString(utf32_str, string_array, index);                  \
+    EXPECT_EQ(err, expected_error);                                               \
+  }
 
 TEST(GetStringInvalid, FirstSequences) {
   LOOP_TEST_ERROR_STRINGS(utf8stress::first_possible_sequence_of_a_certain_length, ei18n::utfcpp::success_)
@@ -42,19 +45,19 @@ TEST(GetStringInvalid, UnexpectedContinue) {
 }
 
 TEST(GetStringInvalid, First2ByteSequence) {
-  std::u32string utf32_str;
+  PMR_NULL_STRING(utf32_str, 200);
   auto err = ei18n::GetString(utf32_str, utf8stress::all_first_2_byte_sequences, 0);
   EXPECT_EQ(err, ei18n::utfcpp::incomplete_sequence_);
 }
 
 TEST(GetStringInvalid, First3ByteSequence) {
-  std::u32string utf32_str;
+  PMR_NULL_STRING(utf32_str, 200);
   auto err = ei18n::GetString(utf32_str, utf8stress::all_first_3_byte_sequences, 0);
   EXPECT_EQ(err, ei18n::utfcpp::incomplete_sequence_);
 }
 
 TEST(GetStringInvalid, First4ByteSequence) {
-  std::u32string utf32_str;
+  PMR_NULL_STRING(utf32_str, 200);
   auto err = ei18n::GetString(utf32_str, utf8stress::all_first_4_byte_sequences, 0);
   EXPECT_EQ(err, ei18n::utfcpp::incomplete_sequence_);
 }
@@ -62,13 +65,13 @@ TEST(GetStringInvalid, First4ByteSequence) {
 TEST(GetStringInvalid, LastContinueByteMissing) {
   // This set of strings starts at 2 bytes so the regular loop would go to 5 bytes
   for (int index = 0; index < valid_byte_length_of_longest_code_point - 1; ++index) {
-    std::u32string utf32_str;
+    PMR_NULL_STRING(utf32_str, 200);
     auto err = ei18n::GetString(utf32_str, utf8stress::last_continuation_byte_missing, index);
     EXPECT_EQ(err, ei18n::utfcpp::insufficient_room_);
   }
 
   for (int index = 5; index < valid_byte_length_of_longest_code_point - 1 + 5; ++index) {
-    std::u32string utf32_str;
+    PMR_NULL_STRING(utf32_str, 200);
     auto err = ei18n::GetString(utf32_str, utf8stress::last_continuation_byte_missing, index);
     EXPECT_EQ(err, ei18n::utfcpp::insufficient_room_);
   }
@@ -85,7 +88,7 @@ TEST(GetStringInvalid, OverlongASCII) {
 //TEST(GetStringInvalid, OverlongMax) {
 //  // This set of strings starts at 2 bytes so the regular loop would go to 5 bytes
 //  for (int index = 0; index < valid_byte_length_of_longest_code_point - 2; ++index) {
-//    std::u32string utf32_str;
+//    PMR_NULL_STRING(utf32_str, 200);
 //    auto err = ei18n::GetString(utf32_str, utf8stress::maximum_overlong_sequences, index);
 //    EXPECT_EQ(err, ei18n::utfcpp::overlong_sequence_);
 //  }
@@ -94,7 +97,7 @@ TEST(GetStringInvalid, OverlongASCII) {
 TEST(GetStringInvalid, OverlongNul) {
   // This set of strings starts at 2 bytes so the regular loop would go to 5 bytes
   for (int index = 0; index < valid_byte_length_of_longest_code_point - 1; ++index) {
-    std::u32string utf32_str;
+    PMR_NULL_STRING(utf32_str, 200);
     auto err = ei18n::GetString(utf32_str, utf8stress::overlong_nul_character, index);
     EXPECT_EQ(err, ei18n::utfcpp::overlong_sequence_);
   }

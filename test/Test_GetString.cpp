@@ -8,18 +8,23 @@
  */
 
 #include "E-I18n/GetString.hpp"
-#include "E-I18n/utfcppAdapted.hpp"
+#include "E-I18n/ei18n.hpp"
 #include "ExampleData.hpp"
 #include "gtest/gtest.h"
 
 #define CHECK_SUCCESS(lang)                                         \
-  std::u32string utf32_str;                                         \
+  PMR_NULL_STRING(utf32_str, 100);                                  \
   auto err = ei18n::GetString(utf32_str, translated_strings, lang); \
   EXPECT_EQ(err, ei18n::utfcpp::success_)
 
+//#define CHECK_SUCCESS(lang)                                         \
+//  std::u32string utf32_str;                                         \
+//  auto err = ei18n::GetString(utf32_str, translated_strings, lang); \
+//  EXPECT_EQ(err, ei18n::utfcpp::success_)
+
 namespace {
   TEST(GetStringTest, Default) {
-    std::u32string utf32_str;
+    PMR_NULL_STRING(utf32_str, 100);
     auto err = ei18n::GetString(utf32_str, translated_strings);
     EXPECT_EQ(err, ei18n::utfcpp::success_);
     EXPECT_EQ(utf32_str, U"\x48\x65\x6c\x6c\x6f") << "Unable to retrieve string with no language given";
