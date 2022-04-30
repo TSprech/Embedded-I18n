@@ -13,6 +13,8 @@
 #include <cstdint>
 #include <string>
 
+#include "ArchConfig.hpp"
+
 #include "utfcppAdapted.hpp"
 #include <memory_resource>
 
@@ -26,7 +28,7 @@ namespace ei18n {
    * @returns Any errors when converting.
    */
   template <typename T = uint16_t>
-  auto GetString(std::pmr::u32string& str, auto msg_array, T lang_enum = 0) {
+  auto GetString(ei18n_u32_string& str, auto msg_array, T lang_enum = 0) {
     return utfcpp::utf8to32(msg_array.at(static_cast<uint16_t>(lang_enum)), str);
   }
 }  //namespace ei18n
