@@ -11,12 +11,11 @@
 #define GETSTRING_HPP
 
 #include <cstdint>
+#include <memory_resource>
 #include <string>
 
 #include "ArchConfig.hpp"
-
 #include "utfcppAdapted.hpp"
-#include <memory_resource>
 
 namespace ei18n {
   /**

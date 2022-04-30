@@ -21,11 +21,12 @@
 
 const uint8_t valid_byte_length_of_longest_code_point = 4;
 
-#define LOOP_TEST_ERROR_STRINGS(string_array, expected_error)                                                             \
-  for (int index = 0; index < valid_byte_length_of_longest_code_point; ++index) {                           \
-    PMR_NULL_STRING(utf32_str, 200);                                                                               \
-    auto err = ei18n::GetString(utf32_str, string_array, index); \
-    EXPECT_EQ(err, expected_error); }
+#define LOOP_TEST_ERROR_STRINGS(string_array, expected_error)                     \
+  for (int index = 0; index < valid_byte_length_of_longest_code_point; ++index) { \
+    PMR_NULL_STRING(utf32_str, 200);                                              \
+    auto err = ei18n::GetString(utf32_str, string_array, index);                  \
+    EXPECT_EQ(err, expected_error);                                               \
+  }
 
 TEST(GetStringInvalid, FirstSequences) {
   LOOP_TEST_ERROR_STRINGS(utf8stress::first_possible_sequence_of_a_certain_length, ei18n::utfcpp::success_)

@@ -35,8 +35,9 @@
 #define UTFCPPADAPTED_HPP
 
 #include <cstdint>
-#include <string>
 #include <memory_resource>
+#include <string>
+
 #include "ArchConfig.hpp"
 
 // This macro inverts the logic that checks if an error occurred. Some error handing may define no errors to evaluate to true and errors to evaluate to false.
@@ -263,8 +264,7 @@ namespace ei18n::utfcpp {
     if (INV_ERR err_code) {
       code_point = cp;
       return success_;
-    }
-    else return err_code;
+    } else return err_code;
   }
 
   template <typename octet_iterator, typename u32bit_iterator>

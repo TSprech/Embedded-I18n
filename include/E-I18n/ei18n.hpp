@@ -10,8 +10,9 @@
 #ifndef EI18N_HPP
 #define EI18N_HPP
 
-#include <string>
 #include <memory_resource>
+#include <string>
+
 #include "ArchConfig.hpp"
 
 #define PMR_NULL_STRING(pmr_string_name_, buffer_size_)                                                                                                                                   \
