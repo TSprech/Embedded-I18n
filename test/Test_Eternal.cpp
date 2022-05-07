@@ -32,7 +32,7 @@ constexpr auto multi_colors = eternal::map<eternal::string, Color>({
     {"yellow", {255, 220, 0, 1}},   // a darker yellow
 });
 
-constexpr auto hash_colors = eternal::unordered_map<eternal::string, Color>({
+constexpr auto hash_colors = eternal::hash_map<eternal::string, Color>({
     {"red", {255, 0, 0, 1}},
     {"yellow", {255, 255, 0, 1}},
     {"yellow", {255, 220, 0, 1}},  // a darker yellow

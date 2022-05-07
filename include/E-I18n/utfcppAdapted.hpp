@@ -38,8 +38,6 @@
 #include <memory_resource>
 #include <string>
 
-#include "ArchConfig.hpp"
-
 // This macro inverts the logic that checks if an error occurred. Some error handing may define no errors to evaluate to true and errors to evaluate to false.
 // For instance, by default success is utf_error 0, so the logic must be inverted to indicate that success logically evaluates to false.
 // Regardless, whatever error reporting mechanism is being used, it must evaluate to a boolean value to use this library's logic without modification.
@@ -278,7 +276,11 @@ namespace ei18n::utfcpp {
     return success_;
   }
 
-  inline error_t utf8to32(std::u8string_view s, ei18n_u32_string& result) {
+  inline error_t utf8to32(std::u8string_view s, std::pmr::u32string& result) {
+    return utf8to32(s.begin(), s.end(), std::back_inserter(result));
+  }
+
+  inline error_t utf8to32(std::u8string_view s, std::u32string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
 }  // namespace ei18n::utfcpp

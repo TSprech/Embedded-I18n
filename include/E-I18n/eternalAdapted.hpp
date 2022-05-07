@@ -364,6 +364,14 @@ namespace eternal {
     constexpr bool str_equal(const char* lhs, const char* rhs) noexcept {
       return *lhs == *rhs && (*lhs == '\0' || str_equal(lhs + 1, rhs + 1));
     }
+
+    constexpr bool u8str_less(const char8_t* lhs, const char8_t* rhs) noexcept {
+      return *lhs && *rhs && *lhs == *rhs ? u8str_less(lhs + 1, rhs + 1) : *lhs < *rhs;
+    }
+
+    constexpr bool u8str_equal(const char8_t* lhs, const char8_t* rhs) noexcept {
+      return *lhs == *rhs && (*lhs == '\0' || u8str_equal(lhs + 1, rhs + 1));
+    }
   }  // namespace impl
 
   class string {
@@ -392,6 +400,39 @@ namespace eternal {
     }
 
     constexpr const char* c_str() const noexcept {
+      return data_;
+    }
+  };
+
+  class u8string {
+   private:
+    const char8_t* data_;
+
+   public:
+    constexpr u8string(char8_t const* data) noexcept
+        : data_(data) {}
+
+    constexpr u8string(std::basic_string_view<char8_t> data) noexcept
+        : data_(data.data()) {}
+
+    constexpr u8string(const u8string&) noexcept = default;
+    constexpr u8string(u8string&&) noexcept = default;
+    constexpr u8string& operator=(const u8string&) noexcept = default;
+    constexpr u8string& operator=(u8string&&) noexcept = default;
+
+    constexpr bool operator<(const u8string& rhs) const noexcept {
+      return impl::u8str_less(data_, rhs.data_);
+    }
+
+    constexpr bool operator==(const u8string& rhs) const noexcept {
+      return impl::u8str_equal(data_, rhs.data_);
+    }
+
+    constexpr const char8_t* data() const noexcept {
+      return data_;
+    }
+
+    constexpr const char8_t* c_str() const noexcept {
       return data_;
     }
   };
