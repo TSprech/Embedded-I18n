@@ -12,15 +12,16 @@
 
 #include <cstdint>
 #include <memory_resource>
-#include <string>
 #include <span>
-
-#include "utfcppAdapted.hpp"
+#include <string>
 
 #include "eternalAdapted.hpp"
+#include "utfcppAdapted.hpp"
 
 namespace ei18n {
-  constexpr auto GetMap(const eternal::u8string key, const auto map) { return map.at(key); }
+  constexpr auto GetMap(const std::basic_string_view<char8_t> key, const auto map) {
+    return map.at(key);
+  }
 
   /**
    * @brief Retrieves a pmr::u32string for translation into the specified language.

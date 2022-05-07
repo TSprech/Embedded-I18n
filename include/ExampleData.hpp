@@ -37,20 +37,12 @@ constexpr std::array hello_translated = {
 };
 
 constexpr std::array goodbye_translated = {
-    u8"Goodbye"_sv8,      // English
-    u8"Adiós"_sv8,  // Spanish
+    u8"Goodbye"_sv8,    // English
+    u8"Adiós"_sv8,      // Spanish
     u8"Farvel"_sv8,     // Danish
     u8"さようなら"_sv8  // Japanese
 };
 
-constexpr auto ExampleData_map = eternal::map<eternal::u8string, std::array<std::basic_string_view<char8_t>, 4>> ({
-    {hello_translated.at(0), hello_translated},
-    {goodbye_translated.at(0), goodbye_translated}
-});
-
-//constexpr auto ExampleData_map = eternal::map<std::basic_string_view<char8_t>, 4, 2> ({
-//    hello_translated, goodbye_translated
-//});
-
+constexpr auto ExampleData_map = eternal::translation_map({hello_translated, goodbye_translated});
 
 #endif  // EXAMPLEDATA_HPP

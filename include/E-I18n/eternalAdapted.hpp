@@ -325,6 +325,113 @@ namespace eternal {
         return find(key) != end();
       }
     };
+
+    /// TODO: Combine the map and translation map to remove repeated code
+    template <typename Element, std::size_t N>
+    class translation_map {
+     private:
+      static_assert(N > 0, "map is empty");
+
+      Element data_[N];
+
+      template <typename T, std::size_t... I>
+      constexpr translation_map(const T (&data)[N], std::index_sequence<I...>) noexcept
+          : data_{{data[I].at(0), data[I]}...} {
+        static_assert(sizeof...(I) == N, "index_sequence has identical length");
+        // Yes, this is a bubblesort. It's usually evaluated at compile-time, it's fast for data
+        // that is already sorted (like static maps), it has a small code size, and it's stable.
+        for (auto left = data_, right = data_ + N - 1; data_ < right; right = left, left = data_) {
+          for (auto it = data_; it < right; ++it) {
+            if (it[1] < it[0]) {
+              it[0].swap(it[1]);
+              left = it;
+            }
+          }
+        }
+      }
+
+      using compare_key_type = typename Element::compare_key_type;
+
+     public:
+      template <typename T>
+      constexpr translation_map(const T (&data)[N]) noexcept
+          : translation_map(data, std::make_index_sequence<N>()) {}
+
+      using key_type = typename Element::key_type;
+      using mapped_type = typename Element::mapped_type;
+      using value_type = typename Element::value_type;
+      using size_type = std::size_t;
+      using difference_type = std::ptrdiff_t;
+      using const_reference = const value_type&;
+      using const_pointer = const value_type*;
+      using const_iterator = iterator<Element>;
+
+      constexpr bool unique() const noexcept {
+        for (auto right = data_ + N - 1, it = data_; it < right; ++it) {
+          if (!(it[0] < it[1])) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      constexpr const mapped_type& at(const key_type& key) const noexcept {
+        return find(key)->second;
+      }
+
+      constexpr std::size_t size() const noexcept {
+        return N;
+      }
+
+      constexpr const_iterator begin() const noexcept {
+        return data_;
+      }
+
+      constexpr const_iterator cbegin() const noexcept {
+        return begin();
+      }
+
+      constexpr const_iterator end() const noexcept {
+        return data_ + N;
+      }
+
+      constexpr const_iterator cend() const noexcept {
+        return end();
+      }
+
+      constexpr const_iterator lower_bound(const key_type& key) const noexcept {
+        return bound<less>(data_, data_ + N, compare_key_type{key});
+      }
+
+      constexpr const_iterator upper_bound(const key_type& key) const noexcept {
+        return bound<greater_equal>(data_, data_ + N, compare_key_type{key});
+      }
+
+      constexpr std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const noexcept {
+        const compare_key_type compare_key{key};
+        auto first = bound<less>(data_, data_ + N, compare_key);
+        return {first, bound<greater_equal>(first, data_ + N, compare_key)};
+      }
+
+      constexpr std::size_t count(const key_type& key) const noexcept {
+        const auto range = equal_range(key);
+        return range.second - range.first;
+      }
+
+      constexpr const_iterator find(const key_type& key) const noexcept {
+        const compare_key_type compare_key{key};
+        auto it = bound<less>(data_, data_ + N, compare_key);
+        if (it != data_ + N && greater_equal()(*it, compare_key)) {
+          return it;
+        } else {
+          return end();
+        }
+      }
+
+      constexpr bool contains(const key_type& key) const noexcept {
+        return find(key) != end();
+      }
+    };
   }  // namespace impl
 
   template <typename Key, typename Value, std::size_t N>
@@ -332,10 +439,10 @@ namespace eternal {
     return impl::map<impl::element<Key, Value>, N>(items);
   }
 
-//  template <typename Value, std::size_t ArrSize, std::size_t N>
-//  static constexpr auto map(const Value (&items)[N]) noexcept {
-//    return impl::map<impl::element<Value, std::array<Value, ArrSize>>, N>(items[0], items);
-//  }
+  template <typename Value, std::size_t ArrSize, std::size_t N>
+  static constexpr auto translation_map(const std::array<Value, ArrSize> (&items)[N]) noexcept {
+    return impl::translation_map<impl::element<Value, std::array<Value, ArrSize>>, N>(items);
+  }
 
   template <typename Key, typename Value, std::size_t N>
   static constexpr auto hash_map(const std::pair<const Key, const Value> (&items)[N]) noexcept {
