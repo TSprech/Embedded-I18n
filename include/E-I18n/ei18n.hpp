@@ -15,6 +15,20 @@
 
 #include "ArchConfig.hpp"
 
+namespace ei18n {
+inline namespace literals {
+inline namespace string_view_literals {
+  inline constexpr std::basic_string_view<char8_t>
+  operator""_sv8(const char8_t* str, size_t len) noexcept {
+    return std::basic_string_view<char8_t>{str, len};
+  }
+
+  inline constexpr std::basic_string_view<char32_t>
+  operator""_sv32(const char32_t* str, size_t len) noexcept {
+    return std::basic_string_view<char32_t>{str, len};
+  }
+}}}  // namespace ei18n::literals::string_view_literals
+
 #define PMR_NULL_STRING(pmr_string_name_, buffer_size_)                                                                                                                                   \
   std::array<uint8_t, buffer_size_> pmr_string_name_##_buffer_{0};                                                                                                                        \
   std::pmr::monotonic_buffer_resource pmr_string_name_##_buffer_memory_resource_(pmr_string_name_##_buffer_.data(), pmr_string_name_##_buffer_.size(), std::pmr::null_memory_resource()); \

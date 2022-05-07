@@ -13,8 +13,10 @@
 
 #include <array>
 #include <cstdint>
+#include <span>
 #include <string_view>
 
+#include "E-I18n/ei18n.hpp"
 #include "E-I18n/eternalAdapted.hpp"
 
 enum class Languages : uint16_t {
@@ -24,12 +26,8 @@ enum class Languages : uint16_t {
   Japanese
 };
 
-inline constexpr std::basic_string_view<char8_t>
-operator""_sv8(const char8_t* str, size_t len) noexcept {
-  return std::basic_string_view<char8_t>{str, len};
-}
-
 using namespace std::literals::string_view_literals;
+using namespace ei18n::literals::string_view_literals;
 
 constexpr std::array hello_translated = {
     u8"Hello"_sv8,      // English
@@ -49,6 +47,10 @@ constexpr auto ExampleData_map = eternal::map<eternal::u8string, std::array<std:
     {hello_translated.at(0), hello_translated},
     {goodbye_translated.at(0), goodbye_translated}
 });
+
+//constexpr auto ExampleData_map = eternal::map<std::basic_string_view<char8_t>, 4, 2> ({
+//    hello_translated, goodbye_translated
+//});
 
 
 #endif  // EXAMPLEDATA_HPP

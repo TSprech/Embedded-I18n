@@ -13,13 +13,14 @@
 #include <cstdint>
 #include <memory_resource>
 #include <string>
+#include <span>
 
 #include "utfcppAdapted.hpp"
 
 #include "eternalAdapted.hpp"
 
 namespace ei18n {
-  constexpr auto GetMap(eternal::u8string key, auto map) { return map.at(key); }
+  constexpr auto GetMap(const eternal::u8string key, const auto map) { return map.at(key); }
 
   /**
    * @brief Retrieves a pmr::u32string for translation into the specified language.
@@ -30,8 +31,8 @@ namespace ei18n {
    * @returns Any errors when converting.
    */
   template <typename T = uint16_t>
-  auto GetString(std::pmr::u32string& str, auto msg_array, T lang_enum = 0) -> utfcpp::utf_error {
-    return utfcpp::utf8to32(msg_array.at(static_cast<uint16_t>(lang_enum)), str);
+  auto GetString(std::pmr::u32string& str, std::span<const std::basic_string_view<char8_t>> msg_array, T lang_enum = 0) -> utfcpp::utf_error {
+    return utfcpp::utf8to32(msg_array[static_cast<uint16_t>(lang_enum)], str);
   }
 
   /**
@@ -43,8 +44,8 @@ namespace ei18n {
    * @returns Any errors when converting.
    */
   template <typename T = uint16_t>
-  auto GetString(std::u32string& str, auto msg_array, T lang_enum = 0) -> utfcpp::utf_error {
-    return utfcpp::utf8to32(msg_array.at(static_cast<uint16_t>(lang_enum)), str);
+  auto GetString(std::u32string& str, std::span<const std::basic_string_view<char8_t>> msg_array, T lang_enum = 0) -> utfcpp::utf_error {
+    return utfcpp::utf8to32(msg_array[static_cast<uint16_t>(lang_enum)], str);
   }
 }  //namespace ei18n
 

@@ -26,6 +26,7 @@
 #include <cstdint>
 #include <functional>
 #include <utility>
+#include <string_view>
 
 namespace eternal {
   namespace impl {
@@ -330,6 +331,11 @@ namespace eternal {
   static constexpr auto map(const std::pair<const Key, const Value> (&items)[N]) noexcept {
     return impl::map<impl::element<Key, Value>, N>(items);
   }
+
+//  template <typename Value, std::size_t ArrSize, std::size_t N>
+//  static constexpr auto map(const Value (&items)[N]) noexcept {
+//    return impl::map<impl::element<Value, std::array<Value, ArrSize>>, N>(items[0], items);
+//  }
 
   template <typename Key, typename Value, std::size_t N>
   static constexpr auto hash_map(const std::pair<const Key, const Value> (&items)[N]) noexcept {
