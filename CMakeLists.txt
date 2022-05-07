@@ -12,7 +12,8 @@ include_directories(include)
 set(SOURCES)
 set(TEST_SOURCES
         test/Test_GetString.cpp
-        test/Test_GetStringInvalid.cpp)
+        test/Test_GetStringInvalid.cpp
+        test/Test_Eternal.cpp)
 add_executable(Embedded-I18n main.cpp ${SOURCES} ${TEST_SOURCES})
 
 add_subdirectory(test/googletest)

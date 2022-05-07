@@ -1,24 +1,25 @@
 /**
-* @file main.cpp
-* @brief This is an abridged version of mapbox's great eternal library to handle constexpr map lookup.
-* @author eternal Library: Mapbox
-* @author Adapted Changes: TSprech
-* @date 2022/05/06
-* @copyright mapbox Library:
-* ISC License
-* Copyright (c) 2018, Mapbox
-* Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby
-* granted, provided that the above copyright notice and this permission notice appear in all copies.
-*
-* THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING
-* ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL,
-* DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
-* WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE
-* USE OR PERFORMANCE OF THIS SOFTWARE.
-* @copyright Adapted Code: ©, 2022, TSprech - Apache License 2.0
-* @warning This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* @bug None (yet)
-*/
+ * @file eternalAdapted.hpp
+ * @brief This is an abridged version of mapbox's great eternal library to handle constexpr map lookup.
+ * @author eternal Library: Mapbox
+ * @author Adapted Changes: TSprech
+ * @date 2022/05/06
+ * @copyright mapbox Library:
+ * ISC License
+ * Copyright (c) 2018, Mapbox
+ * Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby
+ * granted, provided that the above copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING
+ * ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL,
+ * DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ * WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE
+ * USE OR PERFORMANCE OF THIS SOFTWARE.
+ * @copyright Adapted Code: ©, 2022, TSprech - Apache License 2.0
+ * @warning This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * @bug None (yet)
+ */
+
 #ifndef ETERNALADAPTED_HPP
 #define ETERNALADAPTED_HPP
 
@@ -26,20 +27,6 @@
 #include <functional>
 #include <utility>
 
-// GCC 4.9 compatibility
-#if !defined(__clang__) && defined(__GNUC__) && __GNUC__ < 5
-
-#define MAPBOX_ETERNAL_IS_CONSTEXPR 0
-#define MAPBOX_ETERNAL_CONSTEXPR
-
-#else
-
-#define MAPBOX_ETERNAL_IS_CONSTEXPR 1
-#define MAPBOX_ETERNAL_CONSTEXPR constexpr
-
-#endif
-
-namespace mapbox {
 namespace eternal {
   namespace impl {
 
@@ -56,8 +43,7 @@ namespace eternal {
       const Key key;
 
       constexpr compare_key(const Key& key_) noexcept
-          : key(key_) {
-      }
+          : key(key_) {}
 
       template <typename Element>
       constexpr bool operator<(const Element& rhs) const noexcept {
@@ -74,8 +60,7 @@ namespace eternal {
       using compare_key_type = compare_key<key_type>;
 
       constexpr element(const key_type& key, const mapped_type& value) noexcept
-          : pair(key, value) {
-      }
+          : pair(key, value) {}
 
       constexpr bool operator<(const element& rhs) const noexcept {
         return pair.first < rhs.pair.first;
@@ -93,7 +78,7 @@ namespace eternal {
         return &pair;
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR void swap(element& rhs) noexcept {
+      constexpr void swap(element& rhs) noexcept {
         impl::swap(pair.first, rhs.pair.first);
         impl::swap(pair.second, rhs.pair.second);
       }
@@ -131,15 +116,14 @@ namespace eternal {
       friend compare_key_type;
 
       constexpr element_hash(const key_type& key, const mapped_type& value) noexcept
-          : base_type(key, value), hash(Hasher()(key)) {
-      }
+          : base_type(key, value), hash(Hasher()(key)) {}
 
       template <typename T>
       constexpr bool operator<(const T& rhs) const noexcept {
         return hash < rhs.hash || (!(rhs.hash < hash) && base_type::operator<(rhs));
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR void swap(element_hash& rhs) noexcept {
+      constexpr void swap(element_hash& rhs) noexcept {
         impl::swap(hash, rhs.hash);
         base_type::swap(rhs);
       }
@@ -147,15 +131,13 @@ namespace eternal {
      private:
       std::size_t hash;
     };
-
   }  // namespace impl
 
   template <typename Element>
   class iterator {
    public:
     constexpr iterator(const Element* pos_) noexcept
-        : pos(pos_) {
-    }
+        : pos(pos_) {}
 
     constexpr bool operator==(const iterator& rhs) const noexcept {
       return pos == rhs.pos;
@@ -165,12 +147,12 @@ namespace eternal {
       return pos != rhs.pos;
     }
 
-    MAPBOX_ETERNAL_CONSTEXPR iterator& operator++() noexcept {
+    constexpr iterator& operator++() noexcept {
       ++pos;
       return *this;
     }
 
-    MAPBOX_ETERNAL_CONSTEXPR iterator& operator+=(std::size_t i) noexcept {
+    constexpr iterator& operator+=(std::size_t i) noexcept {
       pos += i;
       return *this;
     }
@@ -179,12 +161,12 @@ namespace eternal {
       return pos + i;
     }
 
-    MAPBOX_ETERNAL_CONSTEXPR iterator& operator--() noexcept {
+    constexpr iterator& operator--() noexcept {
       --pos;
       return *this;
     }
 
-    MAPBOX_ETERNAL_CONSTEXPR iterator& operator-=(std::size_t i) noexcept {
+    constexpr iterator& operator-=(std::size_t i) noexcept {
       pos -= i;
       return *this;
     }
@@ -208,7 +190,7 @@ namespace eternal {
   namespace impl {
 
     template <typename Compare, typename Iterator, typename Key>
-    MAPBOX_ETERNAL_CONSTEXPR auto bound(Iterator left, Iterator right, const Key& key) noexcept {
+    constexpr auto bound(Iterator left, Iterator right, const Key& key) noexcept {
       std::size_t count = right - left;
       while (count > 0) {
         const std::size_t step = count / 2;
@@ -245,7 +227,7 @@ namespace eternal {
       Element data_[N];
 
       template <typename T, std::size_t... I>
-      MAPBOX_ETERNAL_CONSTEXPR map(const T (&data)[N], std::index_sequence<I...>) noexcept
+      constexpr map(const T (&data)[N], std::index_sequence<I...>) noexcept
           : data_{{data[I].first, data[I].second}...} {
         static_assert(sizeof...(I) == N, "index_sequence has identical length");
         // Yes, this is a bubblesort. It's usually evaluated at compile-time, it's fast for data
@@ -264,9 +246,8 @@ namespace eternal {
 
      public:
       template <typename T>
-      MAPBOX_ETERNAL_CONSTEXPR map(const T (&data)[N]) noexcept
-          : map(data, std::make_index_sequence<N>()) {
-      }
+      constexpr map(const T (&data)[N]) noexcept
+          : map(data, std::make_index_sequence<N>()) {}
 
       using key_type = typename Element::key_type;
       using mapped_type = typename Element::mapped_type;
@@ -277,7 +258,7 @@ namespace eternal {
       using const_pointer = const value_type*;
       using const_iterator = iterator<Element>;
 
-      MAPBOX_ETERNAL_CONSTEXPR bool unique() const noexcept {
+      constexpr bool unique() const noexcept {
         for (auto right = data_ + N - 1, it = data_; it < right; ++it) {
           if (!(it[0] < it[1])) {
             return false;
@@ -286,7 +267,7 @@ namespace eternal {
         return true;
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR const mapped_type& at(const key_type& key) const noexcept {
+      constexpr const mapped_type& at(const key_type& key) const noexcept {
         return find(key)->second;
       }
 
@@ -310,26 +291,26 @@ namespace eternal {
         return end();
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR const_iterator lower_bound(const key_type& key) const noexcept {
+      constexpr const_iterator lower_bound(const key_type& key) const noexcept {
         return bound<less>(data_, data_ + N, compare_key_type{key});
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR const_iterator upper_bound(const key_type& key) const noexcept {
+      constexpr const_iterator upper_bound(const key_type& key) const noexcept {
         return bound<greater_equal>(data_, data_ + N, compare_key_type{key});
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const noexcept {
+      constexpr std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const noexcept {
         const compare_key_type compare_key{key};
         auto first = bound<less>(data_, data_ + N, compare_key);
         return {first, bound<greater_equal>(first, data_ + N, compare_key)};
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR std::size_t count(const key_type& key) const noexcept {
+      constexpr std::size_t count(const key_type& key) const noexcept {
         const auto range = equal_range(key);
         return range.second - range.first;
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR const_iterator find(const key_type& key) const noexcept {
+      constexpr const_iterator find(const key_type& key) const noexcept {
         const compare_key_type compare_key{key};
         auto it = bound<less>(data_, data_ + N, compare_key);
         if (it != data_ + N && greater_equal()(*it, compare_key)) {
@@ -339,11 +320,10 @@ namespace eternal {
         }
       }
 
-      MAPBOX_ETERNAL_CONSTEXPR bool contains(const key_type& key) const noexcept {
+      constexpr bool contains(const key_type& key) const noexcept {
         return find(key) != end();
       }
     };
-
   }  // namespace impl
 
   template <typename Key, typename Value, std::size_t N>
@@ -355,13 +335,10 @@ namespace eternal {
   static constexpr auto hash_map(const std::pair<const Key, const Value> (&items)[N]) noexcept {
     return impl::map<impl::element_hash<Key, Value>, N>(items);
   }
+}  // namespace eternal
 
-}
-}  // namespace mapbox::eternal
+// eternal::string
 
-// mapbox::eternal::string
-
-namespace mapbox {
 namespace eternal {
   namespace impl {
 
@@ -369,6 +346,7 @@ namespace eternal {
     constexpr std::size_t hash_offset = std::conditional_t<sizeof(std::size_t) < 8,
                                                            std::integral_constant<uint32_t, 0x811C9DC5>,
                                                            std::integral_constant<uint64_t, 0xCBF29CE484222325>>::value;
+
     constexpr std::size_t hash_prime = std::conditional_t<sizeof(std::size_t) < 8,
                                                           std::integral_constant<uint32_t, 0x1000193>,
                                                           std::integral_constant<uint64_t, 0x100000001B3>>::value;
@@ -386,7 +364,6 @@ namespace eternal {
     constexpr bool str_equal(const char* lhs, const char* rhs) noexcept {
       return *lhs == *rhs && (*lhs == '\0' || str_equal(lhs + 1, rhs + 1));
     }
-
   }  // namespace impl
 
   class string {
@@ -395,13 +372,12 @@ namespace eternal {
 
    public:
     constexpr string(char const* data) noexcept
-        : data_(data) {
-    }
+        : data_(data) {}
 
     constexpr string(const string&) noexcept = default;
     constexpr string(string&&) noexcept = default;
-    MAPBOX_ETERNAL_CONSTEXPR string& operator=(const string&) noexcept = default;
-    MAPBOX_ETERNAL_CONSTEXPR string& operator=(string&&) noexcept = default;
+    constexpr string& operator=(const string&) noexcept = default;
+    constexpr string& operator=(string&&) noexcept = default;
 
     constexpr bool operator<(const string& rhs) const noexcept {
       return impl::str_less(data_, rhs.data_);
@@ -419,19 +395,15 @@ namespace eternal {
       return data_;
     }
   };
-
-}
-}  // namespace mapbox::eternal
+}  // namespace eternal
 
 namespace std {
-
   template <>
-  struct hash<::mapbox::eternal::string> {
-    constexpr std::size_t operator()(const ::mapbox::eternal::string& str) const {
-      return ::mapbox::eternal::impl::str_hash(str.data());
+  struct hash<::eternal::string> {
+    constexpr std::size_t operator()(const ::eternal::string& str) const {
+      return ::eternal::impl::str_hash(str.data());
     }
   };
-
 }  // namespace std
 
 #endif  //ETERNALADAPTED_HPP
