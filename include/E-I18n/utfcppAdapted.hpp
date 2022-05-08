@@ -276,6 +276,30 @@ namespace ei18n::utfcpp {
     return success_;
   }
 
+//  char32_t check_replace(char32_t original, std::pair<
+
+  template <typename octet_iterator, typename u32bit_iterator>
+  error_t utf8to32_replace(octet_iterator start, octet_iterator end, u32bit_iterator result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
+    uint32_t code_point = 0;
+    while (start < end) {
+      error_t err = next(start, end, code_point);
+      if (!INV_ERR err) return err;
+      else {
+        for(auto& current_pair : pairs) {
+          if (code_point == current_pair.first) {
+           code_point = current_pair.second;
+          }
+        }
+        (*result++) = code_point;
+      }
+    }
+    return success_;
+  }
+
+  inline error_t utf8to32_replace(std::u8string_view s, std::pmr::u32string& result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
+    return utf8to32_replace(s.begin(), s.end(), std::back_inserter(result), pairs);
+  }
+
   inline error_t utf8to32(std::u8string_view s, std::pmr::u32string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
