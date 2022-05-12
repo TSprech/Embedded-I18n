@@ -4,10 +4,37 @@ import argparse
 import code_generator.code_generator as codegen
 import code_generator.cpp_generator as cppgen
 import os
+from io import StringIO
 # import xmltodict
 # import requests
 
-import Locales
+
+def gen_translated_array(translated_strs: list) -> str:
+    str_file = StringIO()
+    hpp = codegen.CodeFile('', str_file)
+    comma_separated_strs = ', '.join([wrap_u8_sv8(x) for x in translated_strs])
+    main_map = cppgen.CppVariable(name=f'main_map', type='std::array', is_constexpr=True, initialization_value=f'{{{comma_separated_strs}}}')
+    main_map.render_to_string(hpp)
+    str_file.seek(0)
+    return str_file.read()
+
+
+def extract_translated(path: str, file_name: str, encoding: str) -> [list, dict]:
+    translated_dict = {}
+    key_strings = set()
+    try:
+        for sub_dir in (sub_dir for sub_dir in os.scandir(path) if sub_dir.is_dir()):  # Go through each of the directory items that is a sub directory
+            file_path_and_name = f"{path}{sub_dir.name}/{file_name}"
+            try:
+                po_file = polib.pofile(file_path_and_name, encoding=encoding)  # Open the po file in the directory
+                key_strings |= {x.msgid for x in po_file.translated_entries()}
+                # Generate the dict of all the translations for the input file name
+                translated_dict[sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
+            except IOError:
+                print(f"Could not open the po file with the path: {file_path_and_name}")
+    except FileNotFoundError:
+        print(f"Could not find the folder passed to -p (--path): {args['path']}")  # If the top level directory does not exist
+    return list(key_strings), translated_dict
 
 
 def extract_string_name(parser_indicator, comment_string):
@@ -41,22 +68,20 @@ if __name__ == '__main__':
                         default='utf8', required=False)
     args = vars(parser.parse_args())
 
-    directory = os.scandir(args['path'])
-    translated_dict = {}
-    for sub_dir in directory:  # Go through each of the directory items
-        if sub_dir.is_dir():  # Look for directories which would be the name of the locale (eg. en_US)
-            for file in os.scandir(sub_dir):  # Go through the subdirectory of the locale
-                print(sub_dir.name, ' | ', file.name)
-                translated_dict[sub_dir.name] = {}
-                print(f"locale/{sub_dir.name}/{file.name}")
-                po_file = polib.pofile(f"locale/{sub_dir.name}/{file.name}", encoding=args['encoding'])
-                translated_dict[sub_dir.name][po_file.translated_entries()[0].msgid] = po_file.translated_entries()[0].msgstr
-                translated_dict[sub_dir.name][po_file.translated_entries()[1].msgid] = po_file.translated_entries()[1].msgstr
-        else:
-            # if file.is_file() and file.path.endswith('.po'):
-            print(sub_dir.name)
-    directory.close()
-    print(translated_dict)
+    key_strings, translated_data = extract_translated(args['path'], args['input'], args['encoding'])
+    # print(key_strings[0])
+    # for data in translated_data:
+    #     print(translated_data[data][key_strings[0]])
+
+    for i in range(0, len(key_strings)):
+        translated_list = [key_strings[i]] + [translated_data[locale][key_strings[i]] for locale in translated_data]
+        print(gen_translated_array(translated_list))
+
+    # [wrap_u8_sv8(x.msgstr) for x in pofile.translated_entries()]
+
+    # print(gen_translated_array())
+
+    # print(extract_translated(args['path'], args['input'], args['encoding']))
 
     # pofile = polib.pofile('po/es_ES/main_es_ES.po', encoding=args['encoding'])
     # print(pofile.metadata['Language'])
