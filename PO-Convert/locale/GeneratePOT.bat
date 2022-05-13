@@ -1,0 +1,1 @@
+xgettext --language=c++ --add-comments="#. " --from-code=UTF-8 -o main.pot ../../main.cpp

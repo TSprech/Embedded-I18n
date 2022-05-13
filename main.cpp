@@ -10,8 +10,8 @@
 #include "gtest/gtest.h"
 
 int main(int ac, char* av[]) {
-  ///TRANSLATOR: This is the first comment
-  ///PARSER: This is the parser comment for "Hello"
+  //#. TRANSLATOR: This is the first comment
+  //#. PARSER: hello_map
   std::string first_string = gettext("Hello");
   //#. This is the comment for "Goodbye"
   std::string second_string = gettext("Goodbye");
