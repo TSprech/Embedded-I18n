@@ -5,8 +5,70 @@ import code_generator.code_generator as codegen
 import code_generator.cpp_generator as cppgen
 import os
 from io import StringIO
+import json
 # import xmltodict
 # import requests
+
+
+def wrap_u8_sv8(entry: str) -> str:
+    return f'u8\"{entry}\"_sv8'
+
+
+# def merge_data(file_name: str):
+
+
+def extract_string_name(parser_indicator, comment_string):
+    _comment = re.search(parser_indicator + '(.+?)(?:$|\n)', comment_string)  # Get the string between the indicator and a newline or end of string
+    return _comment.group(1) if _comment is not None else None  # Check that some parser comment was actually extracted
+
+
+def new_extract(path: str, pot_name: str, encoding: str, parser_indicator: str):
+    _po_map = {pot_name: {}}
+    _key_list = []
+    _map_names = {}
+    try:
+        pot_file = polib.pofile(f'{path}{pot_name}.pot', encoding=encoding)  # Open the po file in the directory
+        _key_list = [x.msgid for x in pot_file.untranslated_entries()]
+        _po_map[pot_name] = {"keys": _key_list}
+        # _map_names = {extract_string_name(parser_indicator, po_file.untranslated_entries()[_index].comment)}
+        for _index in range(0, len(pot_file.untranslated_entries())):
+            array_name = extract_string_name(parser_indicator, pot_file.untranslated_entries()[_index].comment)
+            if array_name is None:
+                array_name = f'array_{abs(hash(pot_name))}'
+            _map_names[pot_file.untranslated_entries()[_index].msgid] = array_name
+        _po_map[pot_name] |= {"map_names": _map_names}
+    except IOError:
+        print(f"Could not open the po file with the path: {pot_name}.pot")
+
+    try:
+        for sub_dir in (sub_dir for sub_dir in os.scandir(path) if sub_dir.is_dir()):  # Go through each of the directory items that is a sub directory
+            file_path_and_name = f"{path}{sub_dir.name}/{pot_name}.po"
+            try:
+                po_file = polib.pofile(file_path_and_name, encoding=encoding)  # Open the po file in the directory
+                # Generate the dict of all the translations for the input file name
+                _po_map[pot_name][sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
+            except IOError:
+                print(f"Could not open the po file with the path: {file_path_and_name}")
+    except FileNotFoundError:
+        print(f"Could not find the folder passed to -p (--path): {args['path']}")  # If the top level directory does not exist
+
+    return _po_map
+
+    #     _key_strings = [x.msgid for x in po_file.untranslated_entries()]
+    #     for _index in range(0, len(po_file.untranslated_entries())):
+    #         _map_names[po_file.untranslated_entries()[_index].msgid] = extract_string_name(parser_indicator, po_file.untranslated_entries()[_index].comment)
+    #
+    # return _key_strings, _map_names
+
+
+def gen_translated_map(translated_array_names: list, map_name: str):
+    str_file = StringIO()
+    hpp = codegen.CodeFile('', str_file)
+    comma_separated_strs = ', '.join(translated_array_names)
+    main_map = cppgen.CppVariable(name=f'{map_name}', type='std::array', is_constexpr=True, initialization_value=f'{{{comma_separated_strs}}}')
+    main_map.render_to_string(hpp)
+    str_file.seek(0)
+    return str_file.read()
 
 
 def gen_translated_array(translated_strs: list, array_name: str) -> str:
@@ -19,44 +81,33 @@ def gen_translated_array(translated_strs: list, array_name: str) -> str:
     return str_file.read()
 
 
-def extract_string_name(parser_indicator, comment_string):
-    comment = re.search(parser_indicator + '(.+?)(?:$|\n)', comment_string)  # Get the string between the indicator and a newline or end of string
-    return comment.group(1) if comment is not None else None  # Check that some parser comment was actually extracted
-
-
 def process_pot(pot_name: str, encoding: str, parser_indicator: str) -> [list, dict]:
-    key_strings = []
-    map_names = {}
+    _key_strings = []
+    _map_names = {}
     try:
         po_file = polib.pofile(pot_name, encoding=encoding)  # Open the po file in the directory
-        key_strings = [x.msgid for x in po_file.untranslated_entries()]
-        for i in range(0, len(po_file.untranslated_entries())):
-            # print(po_file.untranslated_entries()[i].comment)
-            map_names[po_file.untranslated_entries()[i].msgid] = extract_string_name(parser_indicator, po_file.untranslated_entries()[i].comment)
+        _key_strings = [x.msgid for x in po_file.untranslated_entries()]
+        for _index in range(0, len(po_file.untranslated_entries())):
+            _map_names[po_file.untranslated_entries()[_index].msgid] = extract_string_name(parser_indicator, po_file.untranslated_entries()[_index].comment)
     except IOError:
         print(f"Could not open the po file with the path: {pot_name}")
-    return key_strings, map_names
+    return _key_strings, _map_names
 
 
 def extract_translated(path: str, file_name: str, encoding: str) -> dict:
-    translated_dict = {}
-    map_names = {}
+    _translated_dict = {}
     try:
         for sub_dir in (sub_dir for sub_dir in os.scandir(path) if sub_dir.is_dir()):  # Go through each of the directory items that is a sub directory
             file_path_and_name = f"{path}{sub_dir.name}/{file_name}"
             try:
                 po_file = polib.pofile(file_path_and_name, encoding=encoding)  # Open the po file in the directory
                 # Generate the dict of all the translations for the input file name
-                translated_dict[sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
+                _translated_dict[sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
             except IOError:
                 print(f"Could not open the po file with the path: {file_path_and_name}")
     except FileNotFoundError:
         print(f"Could not find the folder passed to -p (--path): {args['path']}")  # If the top level directory does not exist
-    return translated_dict
-
-
-def wrap_u8_sv8(entry: str) -> str:
-    return f'u8\"{entry}\"_sv8'
+    return _translated_dict
 
 
 if __name__ == '__main__':
@@ -84,35 +135,30 @@ if __name__ == '__main__':
                         default='utf8', required=False)
     args = vars(parser.parse_args())
 
-    translated_data = extract_translated(args['path'], args['po'], args['encoding'])
+    # translated_data = extract_translated(args['path'], args['po'], args['encoding'])
     # print(translated_data)
-    # for data in translated_data:
-    #     print(translated_data[data][key_strings[0]])
 
-    key_strings, map_names = process_pot(args['pot'], args['encoding'], args['comment'])
+    # key_strings, array_names = process_pot(args['pot'], args['encoding'], args['comment'])
+    # print(key_strings)
+    # print(array_names)
 
-    for i in range(0, len(key_strings)):
-        translated_list = [key_strings[i]] + [translated_data[locale][key_strings[i]] for locale in translated_data]
-        map_name = map_names[key_strings[i]]
-        if map_name is None:
-            map_name = f'map_{abs(hash(key_strings[i]))}'
-        print(gen_translated_array(translated_list, map_name))
+    new_format = new_extract(path='locale/', pot_name='main', encoding='UTF-8', parser_indicator='PARSER: ')
 
-    # [wrap_u8_sv8(x.msgstr) for x in pofile.translated_entries()]
+    print(json.dumps(new_format, indent=4))
 
-    # print(gen_translated_array())
-
-    # print(extract_translated(args['path'], args['input'], args['encoding']))
+    # array_map = []
+    # for key in key_strings:
+    #     translated_list = [key] + [translated_data[locale][key] for locale in translated_data]
+    #     array_name = array_names[key]
+    #     array_map.append(array_name)
+    #     print(gen_translated_array(translated_list, array_name))
+    #     print(gen_translated_map(array_map))
 
     # pofile = polib.pofile('po/es_ES/main_es_ES.po', encoding=args['encoding'])
     # print(pofile.metadata['Language'])
     # print(Locales.locales[pofile.metadata['Language']])
     # print(pofile.translated_entries()[1].msgstr)
 
-    # print(wrap_u8_sv8(pofile.translated_entries()[0].msgstr))
-    #
-    # strings = ', '.join([wrap_u8_sv8(x.msgstr) for x in pofile.translated_entries()])
-    #
     # outfile = open('Example.hpp', 'w', encoding=args['encoding'])
     # hpp = codegen.CodeFile('Example.hpp', outfile)
     # main_map = cppgen.CppVariable(name='main_map', type='std::array', is_constexpr=True,
