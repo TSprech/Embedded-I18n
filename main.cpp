@@ -15,6 +15,8 @@
 #define MAP_NAME(name) name##_map
 
 int main(int ac, char* av[]) {
+//  std::cout << ei18n::utfcpp::distance(hello_translated.at(3).data(), hello_translated.at(3).data() + hello_translated.at(3).size());
+  std::cout << ei18n::utfcpp::length(hello_translated.at(3));
   constexpr auto val = ei18n::GetMap(u8"Hello", MAP_NAME(ExampleData));
   static_assert(val.at(0) == u8"Hello");
   std::u32string str32;

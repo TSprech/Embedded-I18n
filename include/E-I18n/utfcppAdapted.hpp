@@ -266,7 +266,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_iterator, typename u32bit_iterator>
-  error_t utf8to32(octet_iterator start, octet_iterator end, u32bit_iterator result) {
+  constexpr error_t utf8to32(octet_iterator start, octet_iterator end, u32bit_iterator result) {
     uint32_t code_point = 0;
     while (start < end) {
       error_t err = next(start, end, code_point);
@@ -276,18 +276,18 @@ namespace ei18n::utfcpp {
     return success_;
   }
 
-//  char32_t check_replace(char32_t original, std::pair<
+  //  char32_t check_replace(char32_t original, std::pair<
 
   template <typename octet_iterator, typename u32bit_iterator>
-  error_t utf8to32_replace(octet_iterator start, octet_iterator end, u32bit_iterator result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
+  constexpr error_t utf8to32_replace(octet_iterator start, octet_iterator end, u32bit_iterator result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
     uint32_t code_point = 0;
     while (start < end) {
       error_t err = next(start, end, code_point);
       if (!INV_ERR err) return err;
       else {
-        for(auto& current_pair : pairs) {
+        for (auto& current_pair : pairs) {
           if (code_point == current_pair.first) {
-           code_point = current_pair.second;
+            code_point = current_pair.second;
           }
         }
         (*result++) = code_point;
@@ -306,6 +306,56 @@ namespace ei18n::utfcpp {
 
   inline error_t utf8to32(std::u8string_view s, std::u32string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
+  }
+
+  template <typename octet_iterator>
+  inline uint32_t prior(octet_iterator& it, octet_iterator start) {
+    // can't do much if it == start
+    if (it == start)
+      return 0;
+
+    octet_iterator end = it;
+    // Go back until we hit either a lead octet or start
+    while (is_trail(*(--it))) {
+//      if (it == start) // TODO: Error codes
+//        throw invalid_utf8(*it);  // error - no lead byte in the sequence
+    }
+
+    return peek_next(it, end);
+  }
+
+//  template <typename octet_iterator, typename distance_type>
+//  void advance(octet_iterator& it, distance_type n, octet_iterator end) {
+//    const distance_type zero(0);
+//    if (n < zero) {
+//      // backward
+//      for (distance_type i = n; i < zero; ++i)
+//        prior(it, end);
+//    } else {
+//      // forward
+//      for (distance_type i = zero; i < n; ++i)
+//        next(it, end);
+//    }
+//  }
+
+  template <typename octet_iterator>
+  typename std::iterator_traits<octet_iterator>::difference_type
+  inline distance(octet_iterator first, octet_iterator last) {
+    typename std::iterator_traits<octet_iterator>::difference_type dist;
+    uint32_t x;
+    for (dist = 0; first < last; ++dist)
+      next(first, last, x);
+    return dist;
+  }
+
+  inline size_t length(const std::basic_string_view<char8_t> sv) {
+    typename std::iterator_traits<char8_t*>::difference_type dist;
+    uint32_t x;
+    auto first = sv.data();
+    auto last = sv.data() + sv.size();
+    for (dist = 0; first < last; ++dist)
+      next(first, last, x);
+    return dist;
   }
 }  // namespace ei18n::utfcpp
 
