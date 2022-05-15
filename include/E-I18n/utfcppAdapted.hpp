@@ -67,34 +67,34 @@ namespace ei18n::utfcpp {
   const auto invalid_code_point_ = utf_error::INVALID_CODE_POINT;   /**< The code point has a discrepancy between its value and valid unicode values */
   // End of error code system
 
-  const uint16_t LEAD_SURROGATE_MIN = 0xd800u;
-  const uint16_t TRAIL_SURROGATE_MAX = 0xdfffu;
+  constexpr uint16_t LEAD_SURROGATE_MIN = 0xd800u;
+  constexpr uint16_t TRAIL_SURROGATE_MAX = 0xdfffu;
 
   // Maximum valid value for a Unicode code point
-  const uint32_t CODE_POINT_MAX = 0x0010ffffu;
+  constexpr uint32_t CODE_POINT_MAX = 0x0010ffffu;
 
   template <typename octet_type>
-  inline uint8_t mask8(octet_type oc) {
+  constexpr inline uint8_t mask8(octet_type oc) {
     return static_cast<uint8_t>(0xff & oc);
   }
 
   template <typename octet_type>
-  inline bool is_trail(octet_type oc) {
+  constexpr inline bool is_trail(octet_type oc) {
     return ((mask8(oc) >> 6) == 0x2);
   }
 
   template <typename u16>
-  inline bool is_surrogate(u16 cp) {
+  constexpr inline bool is_surrogate(u16 cp) {
     return (cp >= LEAD_SURROGATE_MIN && cp <= TRAIL_SURROGATE_MAX);
   }
 
   template <typename u32>
-  inline bool is_code_point_valid(u32 cp) {
+  constexpr inline bool is_code_point_valid(u32 cp) {
     return (cp <= CODE_POINT_MAX && !is_surrogate(cp));
   }
 
   template <typename octet_iterator>
-  inline typename std::iterator_traits<octet_iterator>::difference_type
+  constexpr inline typename std::iterator_traits<octet_iterator>::difference_type
   sequence_length(octet_iterator lead_it) {
     uint8_t lead = mask8(*lead_it);
     if (lead < 0x80) return 1;
@@ -105,7 +105,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_difference_type>
-  inline bool is_overlong_sequence(uint32_t cp, octet_difference_type length) {
+  constexpr inline bool is_overlong_sequence(uint32_t cp, octet_difference_type length) {
     if (cp < 0x80) {
       if (length != 1) return true;
     } else if (cp < 0x800) {
@@ -119,7 +119,7 @@ namespace ei18n::utfcpp {
 
   /// Helper for get_sequence_x
   template <typename octet_iterator>
-  error_t increase_safely(octet_iterator& it, octet_iterator end) {
+  constexpr error_t increase_safely(octet_iterator& it, octet_iterator end) {
     if (++it == end) return insufficient_room_;
 
     if (!is_trail(*it)) return incomplete_sequence_;
@@ -135,7 +135,7 @@ namespace ei18n::utfcpp {
 
   /// get_sequence_x functions decode utf-8 sequences of the length x
   template <typename octet_iterator>
-  error_t get_sequence_1(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
+  constexpr inline error_t get_sequence_1(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     if (it == end) return insufficient_room_;
 
     code_point = mask8(*it);
@@ -144,7 +144,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_iterator>
-  error_t get_sequence_2(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
+  constexpr inline error_t get_sequence_2(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     if (it == end) return insufficient_room_;
 
     code_point = mask8(*it);
@@ -157,7 +157,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_iterator>
-  error_t get_sequence_3(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
+  constexpr inline error_t get_sequence_3(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     if (it == end) return insufficient_room_;
 
     code_point = mask8(*it);
@@ -174,7 +174,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_iterator>
-  error_t get_sequence_4(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
+  constexpr inline error_t get_sequence_4(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     if (it == end) return insufficient_room_;
 
     code_point = mask8(*it);
@@ -197,7 +197,7 @@ namespace ei18n::utfcpp {
 #undef UTF8_CPP_INCREASE_AND_RETURN_ON_ERROR
 
   template <typename octet_iterator>
-  error_t validate_next(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
+  constexpr inline error_t validate_next(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     if (it == end) return insufficient_room_;
 
     // Save the original value of it so we can go back in case of failure
@@ -246,7 +246,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_iterator>
-  inline error_t validate_next(octet_iterator& it, octet_iterator end) {
+  constexpr inline error_t validate_next(octet_iterator& it, octet_iterator end) {
     uint32_t ignored;
     return validate_next(it, end, ignored);
   }
@@ -255,7 +255,7 @@ namespace ei18n::utfcpp {
    * @note The error logic in the following function will have to be modified to fit your error handling method.
    */
   template <typename octet_iterator>
-  error_t next(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
+  constexpr inline error_t next(octet_iterator& it, octet_iterator end, uint32_t& code_point) {
     uint32_t cp = 0;
     error_t err_code = validate_next(it, end, cp);
     //    return (INV_ERR err_code) ? cp : err_code;
@@ -266,7 +266,7 @@ namespace ei18n::utfcpp {
   }
 
   template <typename octet_iterator, typename u32bit_iterator>
-  constexpr error_t utf8to32(octet_iterator start, octet_iterator end, u32bit_iterator result) {
+  constexpr inline error_t utf8to32(octet_iterator start, octet_iterator end, u32bit_iterator result) {
     uint32_t code_point = 0;
     while (start < end) {
       error_t err = next(start, end, code_point);
@@ -279,7 +279,7 @@ namespace ei18n::utfcpp {
   //  char32_t check_replace(char32_t original, std::pair<
 
   template <typename octet_iterator, typename u32bit_iterator>
-  constexpr error_t utf8to32_replace(octet_iterator start, octet_iterator end, u32bit_iterator result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
+  constexpr inline error_t utf8to32_replace(octet_iterator start, octet_iterator end, u32bit_iterator result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
     uint32_t code_point = 0;
     while (start < end) {
       error_t err = next(start, end, code_point);
@@ -296,66 +296,29 @@ namespace ei18n::utfcpp {
     return success_;
   }
 
-  inline error_t utf8to32_replace(std::u8string_view s, std::pmr::u32string& result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
+  constexpr inline error_t utf8to32_replace(std::u8string_view s, std::pmr::u32string& result, std::initializer_list<std::pair<char32_t, char32_t>> pairs) {
     return utf8to32_replace(s.begin(), s.end(), std::back_inserter(result), pairs);
   }
 
-  inline error_t utf8to32(std::u8string_view s, std::pmr::u32string& result) {
+  constexpr inline error_t utf8to32(std::u8string_view s, std::pmr::u32string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
 
-  inline error_t utf8to32(std::u8string_view s, std::u32string& result) {
+  constexpr inline error_t utf8to32(std::u8string_view s, std::u32string& result) {
     return utf8to32(s.begin(), s.end(), std::back_inserter(result));
   }
 
   template <typename octet_iterator>
-  inline uint32_t prior(octet_iterator& it, octet_iterator start) {
-    // can't do much if it == start
-    if (it == start)
-      return 0;
-
-    octet_iterator end = it;
-    // Go back until we hit either a lead octet or start
-    while (is_trail(*(--it))) {
-//      if (it == start) // TODO: Error codes
-//        throw invalid_utf8(*it);  // error - no lead byte in the sequence
-    }
-
-    return peek_next(it, end);
-  }
-
-//  template <typename octet_iterator, typename distance_type>
-//  void advance(octet_iterator& it, distance_type n, octet_iterator end) {
-//    const distance_type zero(0);
-//    if (n < zero) {
-//      // backward
-//      for (distance_type i = n; i < zero; ++i)
-//        prior(it, end);
-//    } else {
-//      // forward
-//      for (distance_type i = zero; i < n; ++i)
-//        next(it, end);
-//    }
-//  }
-
-  template <typename octet_iterator>
-  typename std::iterator_traits<octet_iterator>::difference_type
-  inline distance(octet_iterator first, octet_iterator last) {
+  constexpr inline auto distance(octet_iterator first, octet_iterator last) -> typename std::iterator_traits<octet_iterator>::difference_type {
     typename std::iterator_traits<octet_iterator>::difference_type dist;
     uint32_t x;
     for (dist = 0; first < last; ++dist)
-      next(first, last, x);
+      next(first, last, x); // TODO: Error handling
     return dist;
   }
 
-  inline size_t length(const std::basic_string_view<char8_t> sv) {
-    typename std::iterator_traits<char8_t*>::difference_type dist;
-    uint32_t x;
-    auto first = sv.data();
-    auto last = sv.data() + sv.size();
-    for (dist = 0; first < last; ++dist)
-      next(first, last, x);
-    return dist;
+  constexpr inline size_t length(const std::basic_string_view<char8_t> sv) {
+    return distance(sv.data(), sv.data() + sv.size());
   }
 }  // namespace ei18n::utfcpp
 
