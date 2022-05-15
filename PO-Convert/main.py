@@ -14,29 +14,32 @@ def wrap_u8_sv8(entry: str) -> str:
     return f'u8\"{entry}\"_sv8'
 
 
-# def merge_data(file_name: str):
-
-
 def extract_string_name(parser_indicator, comment_string):
     _comment = re.search(parser_indicator + '(.+?)(?:$|\n)', comment_string)  # Get the string between the indicator and a newline or end of string
     return _comment.group(1) if _comment is not None else None  # Check that some parser comment was actually extracted
 
 
-def new_extract(path: str, pot_name: str, encoding: str, parser_indicator: str):
+def new_extract(path: str, pot_name: str, encoding: str, map_indicator: str, array_indicator: str):
     _po_map = {pot_name: {}}
     _key_list = []
-    _map_names = {}
+    _array_names = {}
+    _map_name = ""
     try:
         pot_file = polib.pofile(f'{path}{pot_name}.pot', encoding=encoding)  # Open the po file in the directory
         _key_list = [x.msgid for x in pot_file.untranslated_entries()]
         _po_map[pot_name] = {"keys": _key_list}
-        # _map_names = {extract_string_name(parser_indicator, po_file.untranslated_entries()[_index].comment)}
         for _index in range(0, len(pot_file.untranslated_entries())):
-            array_name = extract_string_name(parser_indicator, pot_file.untranslated_entries()[_index].comment)
+
+            result = extract_string_name(map_indicator, pot_file.untranslated_entries()[_index].comment)
+            if result is not None:
+                _map_name = result
+
+            array_name = extract_string_name(array_indicator, pot_file.untranslated_entries()[_index].comment)
             if array_name is None:
                 array_name = f'array_{abs(hash(pot_name))}'
-            _map_names[pot_file.untranslated_entries()[_index].msgid] = array_name
-        _po_map[pot_name] |= {"map_names": _map_names}
+            _array_names[pot_file.untranslated_entries()[_index].msgid] = array_name
+        _po_map[pot_name] |= {"map_name": _map_name}
+        _po_map[pot_name] |= {"array_names": _array_names}
     except IOError:
         print(f"Could not open the po file with the path: {pot_name}.pot")
 
@@ -51,14 +54,7 @@ def new_extract(path: str, pot_name: str, encoding: str, parser_indicator: str):
                 print(f"Could not open the po file with the path: {file_path_and_name}")
     except FileNotFoundError:
         print(f"Could not find the folder passed to -p (--path): {args['path']}")  # If the top level directory does not exist
-
     return _po_map
-
-    #     _key_strings = [x.msgid for x in po_file.untranslated_entries()]
-    #     for _index in range(0, len(po_file.untranslated_entries())):
-    #         _map_names[po_file.untranslated_entries()[_index].msgid] = extract_string_name(parser_indicator, po_file.untranslated_entries()[_index].comment)
-    #
-    # return _key_strings, _map_names
 
 
 def gen_translated_map(translated_array_names: list, map_name: str):
@@ -142,7 +138,7 @@ if __name__ == '__main__':
     # print(key_strings)
     # print(array_names)
 
-    new_format = new_extract(path='locale/', pot_name='main', encoding='UTF-8', parser_indicator='PARSER: ')
+    new_format = new_extract(path='locale/', pot_name='main', encoding='UTF-8', map_indicator='E18_MAP: ', array_indicator='E18_ARR: ')
 
     print(json.dumps(new_format, indent=4))
 

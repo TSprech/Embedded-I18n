@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-12 20:22-0400\n"
+"POT-Creation-Date: 2022-05-14 18:43-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. #. E18_MAP: main_map_name
 #. #. TRANSLATOR: This is the first comment
-#. #. PARSER: hello_map
-#: ../../main.cpp:15
+#. #. E18_ARR: hello_array
+#: ../../main.cpp:16
 msgid "Hello"
 msgstr ""
 
 #. #. This is the comment for "Goodbye"
-#: ../../main.cpp:17
+#: ../../main.cpp:18
 msgid "Goodbye"
 msgstr ""
