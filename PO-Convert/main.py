@@ -6,6 +6,7 @@ import code_generator.cpp_generator as cppgen
 import os
 from io import StringIO
 import json
+import emoji
 # import xmltodict
 # import requests
 
@@ -19,33 +20,39 @@ def extract_string_name(parser_indicator, comment_string):
     return _comment.group(1) if _comment is not None else None  # Check that some parser comment was actually extracted
 
 
-def new_extract(path: str, pot_name: str, encoding: str, map_indicator: str, array_indicator: str):
+# def extract_pot(path: str, pot_name: str, encoding: str, map_indicator: str, array_indicator: str) -> [list, dict, dict, dict]:
+def extract_pot(path: str, pot_name: str, encoding: str, map_indicator: str, array_indicator: str) -> dict:
     _po_map = {pot_name: {}}
     _key_list = []
     _array_names = {}
     _map_name = ""
     try:
-        pot_file = polib.pofile(f'{path}{pot_name}.pot', encoding=encoding)  # Open the po file in the directory
-        _key_list = [x.msgid for x in pot_file.untranslated_entries()]
-        _po_map[pot_name] = {"keys": _key_list}
+        pot_file = polib.pofile(f'{path}/{pot_name}.pot', encoding=encoding)  # Open the po file in the directory
+        _key_list = [x.msgid for x in pot_file.untranslated_entries()]  # Generate the list of keys
+        _po_map[pot_name] = {"keys": _key_list}  # Assign it to a dict entry
         for _index in range(0, len(pot_file.untranslated_entries())):
-
+            # First, get the array name from the comments
             result = extract_string_name(map_indicator, pot_file.untranslated_entries()[_index].comment)
-            if result is not None:
+            if result is not None:  # As each comment is checked to see if the current one contains the map name
                 _map_name = result
 
+            # Next, extract the array names from each comment, or generate a unique hash name
             array_name = extract_string_name(array_indicator, pot_file.untranslated_entries()[_index].comment)
             if array_name is None:
-                array_name = f'array_{abs(hash(pot_name))}'
+                array_name = f'array_{abs(hash(pot_file.untranslated_entries()[_index].msgid))}'
             _array_names[pot_file.untranslated_entries()[_index].msgid] = array_name
         _po_map[pot_name] |= {"map_name": _map_name}
         _po_map[pot_name] |= {"array_names": _array_names}
     except IOError:
         print(f"Could not open the po file with the path: {pot_name}.pot")
+    return _po_map
 
+
+def extract_po(path: str, pot_name: str, encoding: str) -> dict:
+    _po_map = {pot_name: {}}
     try:
         for sub_dir in (sub_dir for sub_dir in os.scandir(path) if sub_dir.is_dir()):  # Go through each of the directory items that is a sub directory
-            file_path_and_name = f"{path}{sub_dir.name}/{pot_name}.po"
+            file_path_and_name = f"{path}/{sub_dir.name}/{pot_name}.po"
             try:
                 po_file = polib.pofile(file_path_and_name, encoding=encoding)  # Open the po file in the directory
                 # Generate the dict of all the translations for the input file name
@@ -54,6 +61,12 @@ def new_extract(path: str, pot_name: str, encoding: str, map_indicator: str, arr
                 print(f"Could not open the po file with the path: {file_path_and_name}")
     except FileNotFoundError:
         print(f"Could not find the folder passed to -p (--path): {args['path']}")  # If the top level directory does not exist
+    return _po_map
+
+
+def new_extract(path: str, pot_name: str, encoding: str, map_indicator: str, array_indicator: str):
+    _po_map = extract_pot(path, pot_name, encoding, map_indicator, array_indicator)
+    _po_map[pot_name] |= extract_po(path, pot_name, encoding)
     return _po_map
 
 
@@ -77,78 +90,66 @@ def gen_translated_array(translated_strs: list, array_name: str) -> str:
     return str_file.read()
 
 
-def process_pot(pot_name: str, encoding: str, parser_indicator: str) -> [list, dict]:
-    _key_strings = []
-    _map_names = {}
-    try:
-        po_file = polib.pofile(pot_name, encoding=encoding)  # Open the po file in the directory
-        _key_strings = [x.msgid for x in po_file.untranslated_entries()]
-        for _index in range(0, len(po_file.untranslated_entries())):
-            _map_names[po_file.untranslated_entries()[_index].msgid] = extract_string_name(parser_indicator, po_file.untranslated_entries()[_index].comment)
-    except IOError:
-        print(f"Could not open the po file with the path: {pot_name}")
-    return _key_strings, _map_names
-
-
-def extract_translated(path: str, file_name: str, encoding: str) -> dict:
-    _translated_dict = {}
-    try:
-        for sub_dir in (sub_dir for sub_dir in os.scandir(path) if sub_dir.is_dir()):  # Go through each of the directory items that is a sub directory
-            file_path_and_name = f"{path}{sub_dir.name}/{file_name}"
-            try:
-                po_file = polib.pofile(file_path_and_name, encoding=encoding)  # Open the po file in the directory
-                # Generate the dict of all the translations for the input file name
-                _translated_dict[sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
-            except IOError:
-                print(f"Could not open the po file with the path: {file_path_and_name}")
-    except FileNotFoundError:
-        print(f"Could not find the folder passed to -p (--path): {args['path']}")  # If the top level directory does not exist
-    return _translated_dict
-
-
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Convert PO files to header files')
-    parser.add_argument('--po',
-                        help='The input file name | note: This is usually the same name as the .pot file used to generate the .po files',
-                        required=False)  # TODO: Make required
+    parser = argparse.ArgumentParser(description=f"""
+Convert PO files to header files\n
+Example folder structure (script invoked from locale's parent folder):\n
+    Command line arguments: -p locale --pot Example\n
+        {emoji.emojize(':open_file_folder:')} locale\n
+        ├── {emoji.emojize(':page_facing_up:')} Example.pot\n
+        ├── {emoji.emojize(':open_file_folder:')} es_ES\n
+        │   └── {emoji.emojize(':page_facing_up:')} Example.po\n
+        └── {emoji.emojize(':open_file_folder:')} ja_JA\n
+            └── {emoji.emojize(':page_facing_up:')} Example.po\n
+Example folder structure (script invoked from locale's parent folder):\n
+    Command line arguments: -p locale --pot Example\n
+        {emoji.emojize(':open_file_folder:')} locale\n
+        ├── {emoji.emojize(':page_facing_up:')} Example.pot\n
+        ├── {emoji.emojize(':open_file_folder:')} es_ES\n
+        │   └── {emoji.emojize(':page_facing_up:')} Example.po\n
+        └── {emoji.emojize(':open_file_folder:')} ja_JA\n
+            └── {emoji.emojize(':page_facing_up:')} Example.po""")
+
+    # parser.add_argument('--po',
+    #                     help='The input file name | note: This is usually the same name as the .pot file used to generate the .po files',
+    #                     required=True)
+    # parser.add_argument('--pot',
+    #                     help='The input template file name | note: This is usually the same name as the .pot file used to generate the .po files',
+    #                     required=True)
     parser.add_argument('--pot',
-                        help='The input template file name | note: This is usually the same name as the .pot file used to generate the .po files',
-                        required=False)  # TODO: Make required
+                        help='The input template file name without the extension | note: This is usually the same name as the .pot file used to generate the .po files',
+                        required=True)
     parser.add_argument('-o', '--output',
                         help='The output file name',
-                        required=False)  # TODO: Make required
+                        required=True)
     parser.add_argument('-p', '--path',
                         help='The input folder path',
-                        required=False)  # TODO: Make required
-    parser.add_argument('-l', '--locale',
-                        help='The input folder path',
-                        required=False)  # TODO: Make required
+                        required=True)
     parser.add_argument('-c', '--comment',
                         help='The comment string which indicates the start of a parser specific directive',
                         default='PARSER: ', required=False)
+    parser.add_argument('--mapind',
+                        help='The comment prefix which indicates that the following string should be the name of the map',
+                        default='E18_MAP: ', required=False)
+    parser.add_argument('--arrind',
+                        help='The comment prefix which indicates that the following string should be the name of the array for the following translatable string',
+                        default='E18_ARR: ', required=False)
     parser.add_argument('-e', '--encoding',
                         help='The encoding of the input and output file | eg: utf8',
                         default='utf8', required=False)
+    parser.add_argument('--json',
+                        help='Export the extracted data in JSON format',
+                        action='store_true')
     args = vars(parser.parse_args())
 
-    # translated_data = extract_translated(args['path'], args['po'], args['encoding'])
-    # print(translated_data)
+    new_format = new_extract(path=args['path'], pot_name=args['pot'], encoding=args['encoding'], map_indicator=args['mapind'], array_indicator=args['arrind'])
 
-    # key_strings, array_names = process_pot(args['pot'], args['encoding'], args['comment'])
-    # print(key_strings)
-    # print(array_names)
+    if args['json']:  # If the output will be a json file
+        json_output_file = open(args['output'], 'w', encoding=args['encoding'])
+        json_output_file.write(json.dumps(new_format, indent=2))
+        json_output_file.close()
 
-    new_format = new_extract(path='locale/', pot_name='main', encoding='UTF-8', map_indicator='E18_MAP: ', array_indicator='E18_ARR: ')
-
-    print(json.dumps(new_format, indent=4))
-
-    # array_map = []
-    # for key in key_strings:
-    #     translated_list = [key] + [translated_data[locale][key] for locale in translated_data]
-    #     array_name = array_names[key]
-    #     array_map.append(array_name)
-    #     print(gen_translated_array(translated_list, array_name))
-    #     print(gen_translated_map(array_map))
+    # print(json.dumps(new_format, indent=2))
 
     # pofile = polib.pofile('po/es_ES/main_es_ES.po', encoding=args['encoding'])
     # print(pofile.metadata['Language'])
