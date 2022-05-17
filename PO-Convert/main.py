@@ -7,6 +7,7 @@ import os
 from io import StringIO
 import json
 import emoji
+# from ordered_set import OrderedSet
 # import xmltodict
 # import requests
 
@@ -49,14 +50,14 @@ def extract_pot(path: str, pot_name: str, encoding: str, map_indicator: str, arr
 
 
 def extract_po(path: str, pot_name: str, encoding: str) -> dict:
-    _po_map = {pot_name: {}}
+    _po_map = {pot_name: {'data': {}}}
     try:
         for sub_dir in (sub_dir for sub_dir in os.scandir(path) if sub_dir.is_dir()):  # Go through each of the directory items that is a sub directory
             file_path_and_name = f"{path}/{sub_dir.name}/{pot_name}.po"
             try:
                 po_file = polib.pofile(file_path_and_name, encoding=encoding)  # Open the po file in the directory
                 # Generate the dict of all the translations for the input file name
-                _po_map[pot_name][sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
+                _po_map[pot_name]['data'][sub_dir.name] = {po_file.translated_entries()[i].msgid: po_file.translated_entries()[i].msgstr for i in range(len(po_file.translated_entries()))}
             except IOError:
                 print(f"Could not open the po file with the path: {file_path_and_name}")
     except FileNotFoundError:
@@ -66,15 +67,15 @@ def extract_po(path: str, pot_name: str, encoding: str) -> dict:
 
 def new_extract(path: str, pot_name: str, encoding: str, map_indicator: str, array_indicator: str):
     _po_map = extract_pot(path, pot_name, encoding, map_indicator, array_indicator)
-    _po_map[pot_name] |= extract_po(path, pot_name, encoding)
+    _po_map[pot_name] |= extract_po(path, pot_name, encoding)[pot_name]
     return _po_map
 
 
 def gen_translated_map(translated_array_names: list, map_name: str):
     str_file = StringIO()
     hpp = codegen.CodeFile('', str_file)
-    comma_separated_strs = ', '.join(translated_array_names)
-    main_map = cppgen.CppVariable(name=f'{map_name}', type='std::array', is_constexpr=True, initialization_value=f'{{{comma_separated_strs}}}')
+    comma_separated_strs = ', \n'.join(translated_array_names)
+    main_map = cppgen.CppVariable(name=f'{map_name}', type='eternal::translation_map', is_constexpr=True, initialization_value=f'({{{comma_separated_strs}}})')
     main_map.render_to_string(hpp)
     str_file.seek(0)
     return str_file.read()
@@ -83,7 +84,7 @@ def gen_translated_map(translated_array_names: list, map_name: str):
 def gen_translated_array(translated_strs: list, array_name: str) -> str:
     str_file = StringIO()
     hpp = codegen.CodeFile('', str_file)
-    comma_separated_strs = ', '.join([wrap_u8_sv8(x) for x in translated_strs])
+    comma_separated_strs = ', \n'.join([wrap_u8_sv8(x) for x in translated_strs])
     main_map = cppgen.CppVariable(name=f'{array_name}', type='std::array', is_constexpr=True, initialization_value=f'{{{comma_separated_strs}}}')
     main_map.render_to_string(hpp)
     str_file.seek(0)
@@ -137,6 +138,9 @@ Example folder structure (script invoked from locale's parent folder):\n
     parser.add_argument('-e', '--encoding',
                         help='The encoding of the input and output file | eg: utf8',
                         default='utf8', required=False)
+    parser.add_argument('--defaultlocale',
+                        help='The locale used in the source files (the locale of the strings in the .pot file)',
+                        default='en_US', required=False)
     parser.add_argument('--json',
                         help='Export the extracted data in JSON format',
                         action='store_true')
@@ -144,10 +148,54 @@ Example folder structure (script invoked from locale's parent folder):\n
 
     new_format = new_extract(path=args['path'], pot_name=args['pot'], encoding=args['encoding'], map_indicator=args['mapind'], array_indicator=args['arrind'])
 
-    if args['json']:  # If the output will be a json file
-        json_output_file = open(args['output'], 'w', encoding=args['encoding'])
-        json_output_file.write(json.dumps(new_format, indent=2))
-        json_output_file.close()
+    # gen_translated_array(new_format)
+
+    new_format_file = new_format[args['pot']]
+
+    # languages = OrderedSet(locale for locale in new_format_file['data'])
+
+    # IMPORTANT: It is critical that the order of the locale names in the 'languages' list matches the order of the list in 'translations'
+    languages = [args['defaultlocale']] + [locale for locale in new_format_file['data']]  # Generate the list of locales which will be used to access the translated data
+    translations = {}
+    for key in new_format_file['keys']:  # Generate the list of translations for each word and have the keyword be first
+        translations |= {key: [key] + [new_format_file['data'][locale][key] for locale in new_format_file['data']]}
+
+    # for key in new_format_file['keys']:
+    #     for locale in new_format_file['data']:
+    #         languages.add(locale)
+    #         full_data += [key] + new_format_file['data'][locale][key]
+
+        # print([key] + [new_format_file['data'][x][key] for x in new_format_file['data']])
+
+    # print(languages)
+    # print(translations)
+    translated_arrays = [gen_translated_array(translations[key], new_format_file['array_names'][key]) for key in new_format_file['keys']]
+    print(translated_arrays)
+    array_names = [new_format_file['array_names'][key] for key in new_format_file['keys']]
+    translated_map = gen_translated_map(array_names, new_format_file['map_name'])
+    print(translated_map)
+
+    with open(args['output'], 'w', encoding=args['encoding']) as outfile:
+        if args['json']:  # If the output will be a json file
+            outfile.write(json.dumps(new_format, indent=2))
+        else:
+            hpp = codegen.CodeFile(args['output'], outfile)
+            def_name = args['output'].replace('.', '_').upper()
+            hpp(f"#ifndef {def_name}")
+            hpp(f"#define {def_name}\n")
+            hpp(f"#include <array>")
+            hpp(f"#include <string_view>\n")
+            hpp(f"#include \"E-I18n/eternalAdapted.hpp\"")
+            hpp(f"#include \"E-I18n/ei18n.hpp\"\n")
+            hpp("using namespace std::literals::string_view_literals;")
+            hpp("using namespace ei18n::literals::string_view_literals;\n")
+
+            for array in translated_arrays:
+                hpp(f"{array}")
+            hpp(translated_map)
+
+            hpp(f"#endif // {def_name}")
+
 
     # print(json.dumps(new_format, indent=2))
 
