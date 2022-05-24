@@ -1,8 +1,5 @@
 import argparse
-
-# import requests
 import re
-
 import xmltodict
 
 
@@ -22,7 +19,7 @@ def find_locale_point(data, *argv):
                     except TypeError:
                         raise KeyError  # If however it was not a dictionary, then there is some other issue (most likely not a locale specific entry for it) so skip to the next search level
             return result  # If it successfully completed the above for loop, then the data was found and it can be returned
-        except KeyError:
+        except KeyError:  # This most likely means that the locale data is not specified in the specific XML file, so proceed to the general XML file
             continue
 
 
@@ -36,64 +33,34 @@ parser.add_argument('-p', '--path',
 parser.add_argument('-l', '--locale',
                     help='The locale name',
                     required=True)
+parser.add_argument('--hex',
+                    help='Export the extracted data in hex format',
+                    action='store_true')
 args = vars(parser.parse_args())
 
 # url = args['url']
 path = args['path']
 locale_full = args['locale']
 language = args['locale'].split('_')[0]  # Get the language from the first couple letters before the underscore in the locale name
-
-locale_full = "ja_JP"
-language = "ja"
+hex_format = args['hex']
 
 with open(f'{path}/{language}.xml', 'rb') as general_locale:
     general_locale_map = xmltodict.parse(general_locale, encoding='UTF-8', xml_attribs=True)['ldml']
     with open(f'{path}/{locale_full}.xml', 'rb') as specific_locale:
         specific_locale_map = xmltodict.parse(specific_locale, encoding='UTF-8', xml_attribs=True)['ldml']
-        search_order = [specific_locale_map, general_locale_map]
+        search_order = [specific_locale_map, general_locale_map]  # These files should be in order from most specific (eg en_US) to least specific (eg en)
 
-        # print(find_locale_point(search_order, 'delimiters', 'quotationStart'))
-        # print(find_locale_point(search_order, 'delimiters', 'quotationEnd'))
-        # print(find_locale_point(search_order, 'delimiters', 'alternateQuotationStart'))
-        # print(find_locale_point(search_order, 'delimiters', 'alternateQuotationEnd'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'decimal'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'group'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'list'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'percentSign'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'plusSign'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'minusSign'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'exponential'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'superscriptingExponent'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'infinity'))
-        # print(find_locale_point(search_order, 'numbers', 'symbols', '@numberSystem=latn', 'nan'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sun', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=mon', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=tue', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=wed', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=thu', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=fri', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sat', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated',
-        #                         'dayPeriod', '@type=am', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated',
-        #                         'dayPeriod', '@type=pm', '#text'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=medium', 'timeFormat', 'pattern'))
-        # print(find_locale_point(search_order, 'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=short', 'timeFormat', 'pattern'))
-
-        test_file = open('HeaderFormatter', 'r')
+        test_file = open('HeaderFormatter', 'r')  # Read in the format file
         for str_line in test_file.readlines():
-            directives = re.findall(r"(?<=~).+?(?=~)", str_line)[0]
-            composition = f"found_char = find_locale_point(search_order, {directives})"
-            exec(composition)
-            var_name = re.findall(r".+?(?=~)", str_line)[0]
-            full_line = var_name + str(found_char)
+            directives = re.findall(r"(?<=~).+?(?=~)", str_line)[0]  # Extract everything between the two ~
+            composition = f"found_char = find_locale_point(search_order, {directives})"  # Build a function call in the string which assigns a variable to the returned value
+            exec(composition)  # Execute the string as code
+            if hex_format:  # If the output is in hex representation
+                if isinstance(found_char, str):  # Make sure it is a string as it could be a dict if there is draft data in CLDR
+                    found_char = found_char.encode('utf-8')  # Hex requires utf-8 byte string representation
+                    # found_char = '\\x' + '\\x'.join("{:02x}".format(ord(c)) for c in found_char)
+                    found_char = '\\x' + '\\x'.join("{:02x}".format(c) for c in found_char)  # Join all the bytes with the hex string prefix
+            line_start = re.findall(r".+?(?=~)", str_line)[0]  # Extract everything before the first ~
+            line_end = re.findall(r"(?<='~).+?(?:$|\n)", str_line)[0]  # Extract everything from '~ to the end of the line TODO: Split it instead
+            full_line = f'{line_start}"{str(found_char)}"{line_end}'  # Concatenate all the string portions together
             print(full_line)
-
-        # print(value)
-
-# with requests.get(f'{url}/{language}.xml') as general_locale:
-#     general_locale_map = xmltodict.parse(general_locale.text, encoding='UTF-8')['ldml']
-#     with requests.get(f'{url}/{locale_full}.xml') as specific_locale:
-#         specific_locale_map = xmltodict.parse(specific_locale.text, encoding = 'UTF-8')['ldml']
-#         # print(xmltodict.parse(specific_locale.text, encoding = 'UTF-8'))
-#         full_locale = general_locale_map | specific_locale_map

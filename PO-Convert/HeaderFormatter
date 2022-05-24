@@ -1,25 +1,25 @@
-quotation_start = ~'delimiters', 'quotationStart'~
-quotation_end = ~'delimiters', 'quotationEnd'~
-alt_quotation_start = ~'delimiters', 'alternateQuotationStart'~
-alt_quotation_end = ~'delimiters', 'alternateQuotationEnd'~
-decimal = ~'numbers', 'symbols', '@numberSystem=latn', 'decimal'~
-group = ~'numbers', 'symbols', '@numberSystem=latn', 'group'~
-list = ~'numbers', 'symbols', '@numberSystem=latn', 'list'~
-percent_sign = ~'numbers', 'symbols', '@numberSystem=latn', 'percentSign'~
-plus_sign = ~'numbers', 'symbols', '@numberSystem=latn', 'plusSign'~
-minus_sign = ~'numbers', 'symbols', '@numberSystem=latn', 'minusSign'~
-exponential = ~'numbers', 'symbols', '@numberSystem=latn', 'exponential'~
-superscripting_exponent = ~'numbers', 'symbols', '@numberSystem=latn', 'superscriptingExponent'~
-infinity = ~'numbers', 'symbols', '@numberSystem=latn', 'infinity'~
-nan = ~'numbers', 'symbols', '@numberSystem=latn', 'nan'~
-sun = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sun', '#text'~
-mon = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=mon', '#text'~
-tue = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=tue', '#text'~
-wed = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=wed', '#text'~
-thu = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=thu', '#text'~
-fri = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=fri', '#text'~
-sat = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sat', '#text'~
-am = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=am', '#text'~
-pm = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=pm', '#text'~
-time_format_h_m_s = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=medium', 'timeFormat', 'pattern'~
-time_format_h_m = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=short', 'timeFormat', 'pattern'~
+auto quotation_start = u8~'delimiters', 'quotationStart'~_sv8;
+auto quotation_end = u8~'delimiters', 'quotationEnd'~_sv8;
+auto alt_quotation_start = u8~'delimiters', 'alternateQuotationStart'~_sv8;
+auto alt_quotation_end = u8~'delimiters', 'alternateQuotationEnd'~_sv8;
+auto decimal = u8~'numbers', 'symbols', '@numberSystem=latn', 'decimal'~_sv8;
+auto group = u8~'numbers', 'symbols', '@numberSystem=latn', 'group'~_sv8;
+auto list = u8~'numbers', 'symbols', '@numberSystem=latn', 'list'~_sv8;
+auto percent_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'percentSign'~_sv8;
+auto plus_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'plusSign'~_sv8;
+auto minus_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'minusSign'~_sv8;
+auto exponential = u8~'numbers', 'symbols', '@numberSystem=latn', 'exponential'~_sv8;
+auto superscripting_exponent = u8~'numbers', 'symbols', '@numberSystem=latn', 'superscriptingExponent'~_sv8;
+auto infinity = u8~'numbers', 'symbols', '@numberSystem=latn', 'infinity'~_sv8;
+auto nan = u8~'numbers', 'symbols', '@numberSystem=latn', 'nan'~_sv8;
+std::array weekdays_shortened = {u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sun', '#text'~_sv8,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=mon', '#text'~_sv8,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=tue', '#text'~_sv8,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=wed', '#text'~_sv8,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=thu', '#text'~_sv8,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=fri', '#text'~_sv8,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sat', '#text'~_sv8};
+auto am = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=am', '#text'~_sv8;
+auto pm = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=pm', '#text'~_sv8;
+auto time_format_h_m_s = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=medium', 'timeFormat', 'pattern'~_sv8;
+auto time_format_h_m = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=short', 'timeFormat', 'pattern'~_sv8;
