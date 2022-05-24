@@ -1,0 +1,25 @@
+quotation_start = ~'delimiters', 'quotationStart'~
+quotation_end = ~'delimiters', 'quotationEnd'~
+alt_quotation_start = ~'delimiters', 'alternateQuotationStart'~
+alt_quotation_end = ~'delimiters', 'alternateQuotationEnd'~
+decimal = ~'numbers', 'symbols', '@numberSystem=latn', 'decimal'~
+group = ~'numbers', 'symbols', '@numberSystem=latn', 'group'~
+list = ~'numbers', 'symbols', '@numberSystem=latn', 'list'~
+percent_sign = ~'numbers', 'symbols', '@numberSystem=latn', 'percentSign'~
+plus_sign = ~'numbers', 'symbols', '@numberSystem=latn', 'plusSign'~
+minus_sign = ~'numbers', 'symbols', '@numberSystem=latn', 'minusSign'~
+exponential = ~'numbers', 'symbols', '@numberSystem=latn', 'exponential'~
+superscripting_exponent = ~'numbers', 'symbols', '@numberSystem=latn', 'superscriptingExponent'~
+infinity = ~'numbers', 'symbols', '@numberSystem=latn', 'infinity'~
+nan = ~'numbers', 'symbols', '@numberSystem=latn', 'nan'~
+sun = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sun', '#text'~
+mon = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=mon', '#text'~
+tue = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=tue', '#text'~
+wed = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=wed', '#text'~
+thu = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=thu', '#text'~
+fri = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=fri', '#text'~
+sat = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sat', '#text'~
+am = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=am', '#text'~
+pm = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=pm', '#text'~
+time_format_h_m_s = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=medium', 'timeFormat', 'pattern'~
+time_format_h_m = ~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=short', 'timeFormat', 'pattern'~
