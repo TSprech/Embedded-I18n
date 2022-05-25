@@ -4,6 +4,12 @@ import xmltodict
 
 
 def find_locale_point(data, *argv):
+    """
+    Finds locale data inside a CLDR XML file.
+    :param data: A list of file objects in decreasing specificity | eg. [en_US, en].
+    :param argv: The series of tags and attributes which specify the location of the desired data | eg. 'delimiters', 'quotationStart'.
+    :returns: The data found at the specified tag/attribute path.
+    """
     for file in data:
         try:  # Try to find the data in more specific files and move to more general files in accordance with the search_order list
             result = file  # Result will be the value found at the specified XML category
@@ -23,16 +29,27 @@ def find_locale_point(data, *argv):
             continue
 
 
+def write_locale_data(data: str, file):
+    if file is None:
+        print(data)
+    else:
+        file.write(data + '\n')
+
+
 parser = argparse.ArgumentParser(description='Convert PO files to header files')
 # parser.add_argument('-u', '--url',
 #                     help = 'The url to the "main" folder in the cldr repo',
 #                     required = True)
 parser.add_argument('-p', '--path',
-                    help='The path to the "main" folder in the cldr download',
+                    help='The path to the "main" folder in the cldr download | eg. .../Downloads/cldr/41.0/common/main',
                     required=True)
 parser.add_argument('-l', '--locale',
-                    help='The locale name',
+                    help='The full locale name | eg. en_US, ja_JP, da_DK',
                     required=True)
+parser.add_argument('-o', '--output',
+                    help='The file name/path of the output file, or "print" for console output | eg. locale/en_US.hpp',
+                    required=False,
+                    default='print')
 parser.add_argument('--hex',
                     help='Export the extracted data in hex format',
                     action='store_true')
@@ -43,6 +60,12 @@ path = args['path']
 locale_full = args['locale']
 language = args['locale'].split('_')[0]  # Get the language from the first couple letters before the underscore in the locale name
 hex_format = args['hex']
+output = args['output']
+
+if output == 'print':
+    outfile = None
+else:
+    outfile = open(output, 'w', encoding='utf-8')
 
 with open(f'{path}/{language}.xml', 'rb') as general_locale:
     general_locale_map = xmltodict.parse(general_locale, encoding='UTF-8', xml_attribs=True)['ldml']
@@ -58,9 +81,8 @@ with open(f'{path}/{language}.xml', 'rb') as general_locale:
             if hex_format:  # If the output is in hex representation
                 if isinstance(found_char, str):  # Make sure it is a string as it could be a dict if there is draft data in CLDR
                     found_char = found_char.encode('utf-8')  # Hex requires utf-8 byte string representation
-                    # found_char = '\\x' + '\\x'.join("{:02x}".format(ord(c)) for c in found_char)
                     found_char = '\\x' + '\\x'.join("{:02x}".format(c) for c in found_char)  # Join all the bytes with the hex string prefix
             line_start = re.findall(r".+?(?=~)", str_line)[0]  # Extract everything before the first ~
             line_end = re.findall(r"(?<='~).+?(?:$|\n)", str_line)[0]  # Extract everything from '~ to the end of the line TODO: Split it instead
             full_line = f'{line_start}"{str(found_char)}"{line_end}'  # Concatenate all the string portions together
-            print(full_line)
+            write_locale_data(full_line, outfile)
