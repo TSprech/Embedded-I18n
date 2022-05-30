@@ -8,6 +8,7 @@ add_link_options(--coverage) # Required to generate gcov data
 add_compile_options(--coverage) # Required to generate gcov data
 
 include_directories(include)
+include_directories(../Micro-String-Format/include) # TODO: Temporary since it is being developed alongside this
 
 set(SOURCES)
 set(TEST_SOURCES

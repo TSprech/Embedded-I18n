@@ -12,9 +12,26 @@
 #include "ExampleData.hpp"
 #include "E-I18n/GetString.hpp"
 
+#include "locales/en_US.hpp"
+#include "locales/es_ES.hpp"
+#include "locales/da_DK.hpp"
+#include "locales/ja_JP.hpp"
+
+#include "E-I18n/TranslationFormatter.hpp"
+
 #define MAP_NAME(name) name##_map
 
 int main(int ac, char* av[]) {
+  ei18n::Translatable translatable{};
+  std::array arr = {"First", "Second", "Third"};
+  std::cout << translatable.Translate(arr) << std::endl;
+  translatable.Locale(2);
+  std::cout << translatable.Translate(arr) << std::endl;
+  translatable.Locale(1);
+  std::cout << translatable.Translate(arr) << std::endl;
+
+  std::cout << reinterpret_cast<const char*>(std::get<ei18n::infinity>(en_US).data()) << std::endl;
+
   constexpr auto val = ei18n::GetMap(u8"Hello", MAP_NAME(ExampleData));
   static_assert(val.at(0) == u8"Hello");
   std::u32string str32;
