@@ -1,6 +1,8 @@
+import json
 import re
 from queue import LifoQueue as lifo
 # import queue
+import xmltodict
 
 camel_split = re.compile(r'[A-Z](?:[a-z]+|[A-Z]*(?=[A-Z]|$))')
 
@@ -58,33 +60,67 @@ path = r"C:/Users/treys/OneDrive/Downloads/cldr/41.0/common/main"
 locale_full = r'en_US'
 language = 'en_MINE'  # Get the language from the first couple letters before the underscore in the locale name
 
-with open(f'{path}/{language}.xml', 'r', encoding='utf-8') as general_locale:
-    struct_data = lifo()  # A lifo is used because the data is presented hierarchically, however we generate structs from the most specific to most broad to avoid having to forward declare all of them
-    for str_line in general_locale.readlines():
-        # if '<' in str_line and '>' in str_line:
-        if str_line.count('<') == 1 and str_line.count('>') == 1:  # Check if the str_line is a tag
-            directives = re.findall(r"(?<=<).+?(?=>)", str_line)[0]  # Extract everything between the < and >
-            struct_data.put(directives)  # Place the data in the LIFO
 
-    inverted_data = lifo()  # This LIFO will serve to invert the reversal of the first LIFO as the first LIFO is iterated through
+def replace(data):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if isinstance(value, str):
+                print(key + ': ' + value)
+            else:
+                print(key)
+            replace(data[key])
+    elif isinstance(data, list):
+        for value in data:
+            replace(value)
 
-    last_data = None  # The more specific (deeper in hierarchy) data tag
-    indent = 0
-    while not struct_data.empty():  # Go through all the tags
-        current_data = struct_data.get()
-        if not current_data[0] == '/':  # If the popped data is not a tag termination (eg. </dates>)
-            indent -= 2
-            # print(' ' * indent + 'struct ' + title_case_merge(camel_case_split(current_data)) + ' {')
-            if last_data is not None:  # The first iteration through there is no prior data
-                # print(' ' * (indent - 2) + title_case_merge(camel_case_split(last_data)) + ' ' + lower_underscore_merger(camel_case_split(last_data)))
-                inverted_data.put(' ' * (indent - 2) + title_case_merge(camel_case_split(last_data)) + ' ' + lower_underscore_merger(camel_case_split(last_data)))  # The last data (the last struct generated) will have a member instance in the parent struct
-            inverted_data.put(' ' * indent + 'struct ' + title_case_merge(camel_case_split(current_data)) + ' {')  # Generate the parent struct
-        else:
-            indent += 2
-            # print(' ' * indent + '}')
-            inverted_data.put(' ' * indent + '}')  # If it is a tag termination, then close the brace
-        last_data = current_data
 
-    # Print out the data
-    while not inverted_data.empty():
-        print(inverted_data.get())
+with open(f'{path}/{language}.xml', 'rb') as general_locale:
+    xml_data = xmltodict.parse(general_locale)
+    data_dict = dict()
+    replace(xml_data)
+
+
+    # for key, value in xml_data.items():
+    #     print(key)
+        # key2, value2 = value.items()
+        # print(key2)
+        # for key2, value2 in value.items():
+        #     print(key2)
+
+    # current_dict = xml_data
+    # for auto in current_dict:
+    #     if isinstance(current_dict[auto], dict):
+    #         print(f"Would generate struct for: {auto}")
+    #         current_dict = current_dict[auto]
+
+    # print(print(json.dumps(xml_data, indent=2)))
+
+    # struct_data = lifo()  # A lifo is used because the data is presented hierarchically, however we generate structs from the most specific to most broad to avoid having to forward declare all of them
+    # for str_line in general_locale.readlines():
+    #     # if '<' in str_line and '>' in str_line:
+    #     if str_line.count('<') == 1 and str_line.count('>') == 1:  # Check if the str_line is a tag
+    #         directives = re.findall(r"(?<=<).+?(?=>)", str_line)[0]  # Extract everything between the < and >
+    #         struct_data.put(directives)  # Place the data in the LIFO
+    #
+    # inverted_data = lifo()  # This LIFO will serve to invert the reversal of the first LIFO as the first LIFO is iterated through
+    #
+    # last_data = None  # The more specific (deeper in hierarchy) data tag
+    # indent = 0
+    # while not struct_data.empty():  # Go through all the tags
+    #     current_data = struct_data.get()
+    #     if not current_data[0] == '/':  # If the popped data is not a tag termination (eg. </dates>)
+    #         indent -= 2
+    #         # print(' ' * indent + 'struct ' + title_case_merge(camel_case_split(current_data)) + ' {')
+    #         if last_data is not None:  # The first iteration through there is no prior data
+    #             # print(' ' * (indent - 2) + title_case_merge(camel_case_split(last_data)) + ' ' + lower_underscore_merger(camel_case_split(last_data)))
+    #             inverted_data.put(' ' * (indent - 2) + title_case_merge(camel_case_split(last_data)) + ' ' + lower_underscore_merger(camel_case_split(last_data)))  # The last data (the last struct generated) will have a member instance in the parent struct
+    #         inverted_data.put(' ' * indent + 'struct ' + title_case_merge(camel_case_split(current_data)) + ' {')  # Generate the parent struct
+    #     else:
+    #         indent += 2
+    #         # print(' ' * indent + '}')
+    #         inverted_data.put(' ' * indent + '}')  # If it is a tag termination, then close the brace
+    #     last_data = current_data
+    #
+    # # Print out the data
+    # while not inverted_data.empty():
+    #     print(inverted_data.get())
