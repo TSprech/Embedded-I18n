@@ -64,7 +64,6 @@ language = 'en_MINE'  # Get the language from the first couple letters before th
 def replace(data, indent):
     if isinstance(data, dict):
         for key, value in data.items():
-            temp = 0
             if isinstance(value, dict) and isinstance(value[list(value.keys())[0]], str):
                 # print('UNIQUE:', end='')
                 print(' ' * indent + key + ': ' + value[list(value.keys())[0]])
@@ -73,12 +72,11 @@ def replace(data, indent):
                 # print(' ' * indent + key + ': ' +
                 # print(value)
                 for item in value:
-                    print('Test'+' ' * (indent - 4) + key + ': ' + item[list(value[0].keys())[0]])
+                    print(' ' * indent + key + ': ' + item[list(value[0].keys())[0]])
                     replace(item, indent)
-                temp = 0
                 continue
             else:
-                if not key[0] == '@':
+                if not key[0] == '@' and not key[0] == '#':
                     print(' ' * indent + key)
                 temp = 2
             replace(data[key], indent + temp)
