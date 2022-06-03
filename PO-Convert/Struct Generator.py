@@ -61,23 +61,41 @@ locale_full = r'en_US'
 language = 'en_MINE'  # Get the language from the first couple letters before the underscore in the locale name
 
 
-def replace(data):
+def replace(data, indent):
     if isinstance(data, dict):
         for key, value in data.items():
-            if isinstance(value, str):
-                print(key + ': ' + value)
+            temp = 0
+            if isinstance(value, dict) and isinstance(value[list(value.keys())[0]], str):
+                # print('UNIQUE:', end='')
+                print(' ' * indent + key + ': ' + value[list(value.keys())[0]])
+                temp = 2
+            elif isinstance(value, list):
+                # print(' ' * indent + key + ': ' +
+                # print(value)
+                for item in value:
+                    print('Test'+' ' * (indent - 4) + key + ': ' + item[list(value[0].keys())[0]])
+                    replace(item, indent)
+                temp = 0
+                continue
             else:
-                print(key)
-            replace(data[key])
+                if not key[0] == '@':
+                    print(' ' * indent + key)
+                temp = 2
+            replace(data[key], indent + temp)
     elif isinstance(data, list):
         for value in data:
-            replace(value)
+            # if isinstance(value, dict) and isinstance(value[list(value.keys())[0]], str):
+            #     print('UNIQUE 2', end='')
+                # print(value)
+            # elif isinstance(value, list) and isinstance(value[0], str):
+            #     print('UNIQUE 3')
+            replace(value, indent)
 
 
 with open(f'{path}/{language}.xml', 'rb') as general_locale:
     xml_data = xmltodict.parse(general_locale)
     data_dict = dict()
-    replace(xml_data)
+    replace(xml_data, 0)
 
 
     # for key, value in xml_data.items():
