@@ -73,16 +73,22 @@ with open(f'{path}/{language}.xml', 'rb') as general_locale:
         specific_locale_map = xmltodict.parse(specific_locale, encoding='UTF-8', xml_attribs=True)['ldml']
         search_order = [specific_locale_map, general_locale_map]  # These files should be in order from most specific (eg en_US) to least specific (eg en)
 
-        test_file = open('HeaderFormatter', 'r')  # Read in the format file
+        test_file = open('HeaderFormatter', 'r', encoding='utf-8')  # Read in the format file
         for str_line in test_file.readlines():
-            directives = re.findall(r"(?<=~).+?(?=~)", str_line)[0]  # Extract everything between the two ~
-            composition = f"found_char = find_locale_point(search_order, {directives})"  # Build a function call in the string which assigns a variable to the returned value
-            exec(composition)  # Execute the string as code
-            if hex_format:  # If the output is in hex representation
-                if isinstance(found_char, str):  # Make sure it is a string as it could be a dict if there is draft data in CLDR
-                    found_char = found_char.encode('utf-8')  # Hex requires utf-8 byte string representation
-                    found_char = '\\x' + '\\x'.join("{:02x}".format(c) for c in found_char)  # Join all the bytes with the hex string prefix
-            line_start = re.findall(r".+?(?=~)", str_line)[0]  # Extract everything before the first ~
-            line_end = re.findall(r"(?<='~).+?(?:$|\n)", str_line)[0]  # Extract everything from '~ to the end of the line TODO: Split it instead
-            full_line = f'{line_start}"{str(found_char)}"{line_end}'  # Concatenate all the string portions together
+            if '~' in str_line:
+                directives = re.findall(r"(?<=~).+?(?=~)", str_line)[0]  # Extract everything between the two ~
+                composition = f"found_char = find_locale_point(search_order, {directives})"  # Build a function call in the string which assigns a variable to the returned value
+                exec(composition)  # Execute the string as code
+                if hex_format:  # If the output is in hex representation
+                    if isinstance(found_char, str):  # Make sure it is a string as it could be a dict if there is draft data in CLDR
+                        found_char = found_char.encode('utf-8')  # Hex requires utf-8 byte string representation
+                        found_char = '\\x' + '\\x'.join("{:02x}".format(c) for c in found_char)  # Join all the bytes with the hex string prefix
+                line_start = re.findall(r".+?(?=~)", str_line)[0]  # Extract everything before the first ~
+                try:
+                    line_end = re.findall(r"(?<='~).+?(?:$|\n)", str_line)[0]  # Extract everything from '~ to the end of the line TODO: Split it instead
+                except IndexError:  # If there is nothing after the last ~
+                    line_end = ''
+                full_line = f'{line_start}"{str(found_char)}"{line_end}'  # Concatenate all the string portions together
+            else:
+                full_line = str_line[:-1]
             write_locale_data(full_line, outfile)

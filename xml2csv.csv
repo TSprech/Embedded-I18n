@@ -1,0 +1,5805 @@
+version,
+language,
+localePattern,"{0} ({1})"
+localeSeparator,"{0}, {1}"
+localeKeyTypePattern,"{0}: {1}"
+language,Afar
+language,Abkhazian
+language,Achinese
+language,Acoli
+language,Adangme
+language,Adyghe
+language,Avestan
+language,"Tunisian Arabic"
+language,Afrikaans
+language,Afrihili
+language,Aghem
+language,Ainu
+language,Akan
+language,Akkadian
+language,Alabama
+language,Aleut
+language,"Gheg Albanian"
+language,"Southern Altai"
+language,Amharic
+language,Aragonese
+language,"Old English"
+language,Angika
+language,Arabic
+language,"Modern Standard Arabic"
+language,Aramaic
+language,Mapuche
+language,Araona
+language,Arapaho
+language,"Algerian Arabic"
+language,"Najdi Arabic"
+language,"Arabic, Najdi"
+language,Arawak
+language,"Moroccan Arabic"
+language,"Egyptian Arabic"
+language,Assamese
+language,Asu
+language,"American Sign Language"
+language,Asturian
+language,Atikamekw
+language,Avaric
+language,Kotava
+language,Awadhi
+language,Aymara
+language,Azerbaijani
+language,Azeri
+language,Bashkir
+language,Baluchi
+language,Balinese
+language,Bavarian
+language,Basaa
+language,Bamun
+language,"Batak Toba"
+language,Ghomala
+language,Belarusian
+language,Beja
+language,Bemba
+language,Betawi
+language,Bena
+language,Bafut
+language,Badaga
+language,Bulgarian
+language,"Western Balochi"
+language,Bhojpuri
+language,Bislama
+language,Bikol
+language,Bini
+language,Banjar
+language,Kom
+language,Siksika
+language,"Tai Dam"
+language,Bambara
+language,Bangla
+language,Tibetan
+language,Bishnupriya
+language,Bakhtiari
+language,Breton
+language,Braj
+language,Brahui
+language,Bodo
+language,Bosnian
+language,Akoose
+language,Buriat
+language,Buginese
+language,Bulu
+language,Blin
+language,Medumba
+language,Catalan
+language,Caddo
+language,Carib
+language,Cayuga
+language,Atsam
+language,Chakma
+language,Chechen
+language,Cebuano
+language,Chiga
+language,Chamorro
+language,Chibcha
+language,Chagatai
+language,Chuukese
+language,Mari
+language,"Chinook Jargon"
+language,Choctaw
+language,Chipewyan
+language,Cherokee
+language,Cheyenne
+language,Chickasaw
+language,"Central Kurdish"
+language,"Kurdish, Central"
+language,"Kurdish, Sorani"
+language,Chilcotin
+language,Corsican
+language,Coptic
+language,Capiznon
+language,Cree
+language,Michif
+language,"Crimean Tatar"
+language,"Southern East Cree"
+language,"Plains Cree"
+language,"Northern East Cree"
+language,"Moose Cree"
+language,"Carolina Algonquian"
+language,"Seselwa Creole French"
+language,Czech
+language,Kashubian
+language,"Swampy Cree"
+language,"Church Slavic"
+language,Chuvash
+language,"Woods Cree"
+language,Welsh
+language,Danish
+language,Dakota
+language,Dargwa
+language,Taita
+language,German
+language,"Austrian German"
+language,"Swiss High German"
+language,Delaware
+language,Slave
+language,Dogrib
+language,Dinka
+language,Zarma
+language,Dogri
+language,"Lower Sorbian"
+language,"Central Dusun"
+language,Duala
+language,"Middle Dutch"
+language,Divehi
+language,Jola-Fonyi
+language,Dyula
+language,Dzongkha
+language,Dazaga
+language,Embu
+language,Ewe
+language,Efik
+language,Emilian
+language,"Ancient Egyptian"
+language,Ekajuk
+language,Greek
+language,Elamite
+language,English
+language,"Australian English"
+language,"Canadian English"
+language,"British English"
+language,"UK English"
+language,"American English"
+language,"US English"
+language,"Middle English"
+language,Esperanto
+language,Spanish
+language,"Latin American Spanish"
+language,"European Spanish"
+language,"Mexican Spanish"
+language,"Central Yupik"
+language,Estonian
+language,Basque
+language,Ewondo
+language,Extremaduran
+language,Persian
+language,Dari
+language,Fang
+language,Fanti
+language,Fulah
+language,Finnish
+language,Filipino
+language,"Tornedalen Finnish"
+language,Fijian
+language,Faroese
+language,Fon
+language,French
+language,"Canadian French"
+language,"Swiss French"
+language,"Cajun French"
+language,"Middle French"
+language,"Old French"
+language,Arpitan
+language,"Northern Frisian"
+language,"Eastern Frisian"
+language,Friulian
+language,"Western Frisian"
+language,Irish
+language,Ga
+language,Gagauz
+language,"Gan Chinese"
+language,Gayo
+language,Gbaya
+language,"Zoroastrian Dari"
+language,"Scottish Gaelic"
+language,Geez
+language,Gilbertese
+language,Galician
+language,Gilaki
+language,"Middle High German"
+language,Guarani
+language,"Old High German"
+language,"Goan Konkani"
+language,Gondi
+language,Gorontalo
+language,Gothic
+language,Grebo
+language,"Ancient Greek"
+language,"Swiss German"
+language,Gujarati
+language,Wayuu
+language,Frafra
+language,Gusii
+language,Manx
+language,Gwichʼin
+language,Hausa
+language,Haida
+language,"Hakka Chinese"
+language,Hawaiian
+language,"Southern Haida"
+language,"Northern Haida"
+language,Hebrew
+language,Hindi
+language,"Fiji Hindi"
+language,Hiligaynon
+language,Hittite
+language,Hmong
+language,"Hmong Njua"
+language,"Hiri Motu"
+language,Croatian
+language,"Upper Sorbian"
+language,"Xiang Chinese"
+language,"Haitian Creole"
+language,Hungarian
+language,Hupa
+language,Halkomelem
+language,Armenian
+language,Herero
+language,Interlingua
+language,Iban
+language,Ibibio
+language,Indonesian
+language,Interlingue
+language,Igbo
+language,"Sichuan Yi"
+language,Inupiaq
+language,"Eastern Canadian Inuktitut"
+language,"Western Canadian Inuktitut"
+language,Iloko
+language,Ingush
+language,Ido
+language,Icelandic
+language,Italian
+language,Inuktitut
+language,Ingrian
+language,Japanese
+language,"Jamaican Creole English"
+language,Lojban
+language,Ngomba
+language,Machame
+language,Judeo-Persian
+language,Judeo-Arabic
+language,Jutish
+language,Javanese
+language,Georgian
+language,Kara-Kalpak
+language,Kabyle
+language,Kachin
+language,Jju
+language,Kamba
+language,Kawi
+language,Kabardian
+language,Kanembu
+language,Tyap
+language,Makonde
+language,Kabuverdianu
+language,Kenyang
+language,Koro
+language,Kongo
+language,Kaingang
+language,Khasi
+language,Khotanese
+language,"Koyra Chiini"
+language,Khowar
+language,Kikuyu
+language,Kirmanjki
+language,Kuanyama
+language,Kazakh
+language,Kako
+language,Kalaallisut
+language,Kalenjin
+language,Khmer
+language,Kimbundu
+language,Kannada
+language,Korean
+language,Komi-Permyak
+language,Konkani
+language,Kosraean
+language,Kpelle
+language,Kanuri
+language,Karachay-Balkar
+language,Krio
+language,Kinaray-a
+language,Karelian
+language,Kurukh
+language,Kashmiri
+language,Shambala
+language,Bafia
+language,Colognian
+language,Kurdish
+language,Kumyk
+language,Kutenai
+language,Komi
+language,Cornish
+language,Kwakʼwala
+language,Kyrgyz
+language,Kirghiz
+language,Latin
+language,Ladino
+language,Langi
+language,Lahnda
+language,Lamba
+language,Luxembourgish
+language,Lezghian
+language,"Lingua Franca Nova"
+language,Ganda
+language,Limburgish
+language,Ligurian
+language,Lillooet
+language,Livonian
+language,Lakota
+language,Lombard
+language,Lingala
+language,Lao
+language,Mongo
+language,"Louisiana Creole"
+language,Lozi
+language,"Northern Luri"
+language,Lithuanian
+language,Latgalian
+language,Luba-Katanga
+language,Luba-Lulua
+language,Luiseno
+language,Lunda
+language,Luo
+language,Mizo
+language,Luyia
+language,Latvian
+language,"Literary Chinese"
+language,Laz
+language,Madurese
+language,Mafa
+language,Magahi
+language,Maithili
+language,Makasar
+language,Mandingo
+language,Masai
+language,Maba
+language,Moksha
+language,Mandar
+language,Mende
+language,Meru
+language,Morisyen
+language,Malagasy
+language,"Middle Irish"
+language,Makhuwa-Meetto
+language,Metaʼ
+language,Marshallese
+language,Māori
+language,Mi'kmaq
+language,Minangkabau
+language,Macedonian
+language,Malayalam
+language,Mongolian
+language,Manchu
+language,Manipuri
+language,Innu-aimun
+language,Mohawk
+language,Mossi
+language,Marathi
+language,"Western Mari"
+language,Malay
+language,Maltese
+language,Mundang
+language,"Multiple languages"
+language,Muscogee
+language,Mirandese
+language,Marwari
+language,Mentawai
+language,Burmese
+language,"Myanmar Language"
+language,Myene
+language,Erzya
+language,Mazanderani
+language,Nauru
+language,"Min Nan Chinese"
+language,Neapolitan
+language,Nama
+language,"Norwegian Bokmål"
+language,"North Ndebele"
+language,"Low German"
+language,"Low Saxon"
+language,Nepali
+language,Newari
+language,Ndonga
+language,Nias
+language,Niuean
+language,"Ao Naga"
+language,Dutch
+language,Flemish
+language,Kwasio
+language,"Norwegian Nynorsk"
+language,Ngiemboon
+language,Norwegian
+language,Nogai
+language,"Old Norse"
+language,Novial
+language,N’Ko
+language,"South Ndebele"
+language,"Northern Sotho"
+language,Nuer
+language,Navajo
+language,"Classical Newari"
+language,Nyanja
+language,Nyamwezi
+language,Nyankole
+language,Nyoro
+language,Nzima
+language,Occitan
+language,Ojibwa
+language,"Northwestern Ojibwa"
+language,"Central Ojibwa"
+language,"Eastern Ojibwa"
+language,Oji-Cree
+language,"Western Ojibwa"
+language,Okanagan
+language,Oromo
+language,Odia
+language,Ossetic
+language,Osage
+language,"Ottoman Turkish"
+language,Punjabi
+language,Pangasinan
+language,Pahlavi
+language,Pampanga
+language,Papiamento
+language,Palauan
+language,Picard
+language,"Nigerian Pidgin"
+language,"Pennsylvania German"
+language,Plautdietsch
+language,"Old Persian"
+language,"Palatine German"
+language,Phoenician
+language,Pali
+language,Polish
+language,Piedmontese
+language,Pontic
+language,Pohnpeian
+language,Malecite
+language,Prussian
+language,"Old Provençal"
+language,Pashto
+language,Pushto
+language,Portuguese
+language,"Brazilian Portuguese"
+language,"European Portuguese"
+language,Quechua
+language,Kʼicheʼ
+language,"Chimborazo Highland Quichua"
+language,Rajasthani
+language,Rapanui
+language,Rarotongan
+language,Romagnol
+language,Rohingya
+language,Riffian
+language,Romansh
+language,Rundi
+language,Romanian
+language,Moldavian
+language,Rombo
+language,Romany
+language,Rotuman
+language,Russian
+language,Rusyn
+language,Roviana
+language,Aromanian
+language,Kinyarwanda
+language,Rwa
+language,Sanskrit
+language,Sandawe
+language,Sakha
+language,"Samaritan Aramaic"
+language,Samburu
+language,Sasak
+language,Santali
+language,Saurashtra
+language,Ngambay
+language,Sangu
+language,Sardinian
+language,Sicilian
+language,Scots
+language,Sindhi
+language,"Sassarese Sardinian"
+language,"Southern Kurdish"
+language,"Northern Sami"
+language,"Sami, Northern"
+language,Seneca
+language,Sena
+language,Seri
+language,Selkup
+language,"Koyraboro Senni"
+language,Sango
+language,"Old Irish"
+language,Samogitian
+language,Serbo-Croatian
+language,Tachelhit
+language,Shan
+language,"Chadian Arabic"
+language,Sinhala
+language,Sidamo
+language,Slovak
+language,Slovenian
+language,"Southern Lushootseed"
+language,"Lower Silesian"
+language,Selayar
+language,Samoan
+language,"Southern Sami"
+language,"Sami, Southern"
+language,"Lule Sami"
+language,"Sami, Lule"
+language,"Inari Sami"
+language,"Sami, Inari"
+language,"Skolt Sami"
+language,"Sami, Skolt"
+language,Shona
+language,Soninke
+language,Somali
+language,Sogdien
+language,Albanian
+language,Serbian
+language,Montenegrin
+language,"Sranan Tongo"
+language,Serer
+language,Swati
+language,Saho
+language,"Southern Sotho"
+language,"Saterland Frisian"
+language,"Straits Salish"
+language,Sundanese
+language,Sukuma
+language,Susu
+language,Sumerian
+language,Swedish
+language,Swahili
+language,"Congo Swahili"
+language,Comorian
+language,"Classical Syriac"
+language,Syriac
+language,Silesian
+language,Tamil
+language,"Southern Tutchone"
+language,Tulu
+language,Telugu
+language,Timne
+language,Teso
+language,Tereno
+language,Tetum
+language,Tajik
+language,Tagish
+language,Thai
+language,Tahltan
+language,Tigrinya
+language,Tigre
+language,Tiv
+language,Turkmen
+language,Tokelau
+language,Tsakhur
+language,Tagalog
+language,Klingon
+language,Tlingit
+language,Talysh
+language,Tamashek
+language,Tswana
+language,Tongan
+language,"Nyasa Tonga"
+language,"Tok Pisin"
+language,Turkish
+language,Turoyo
+language,Taroko
+language,Torwali
+language,Tsonga
+language,Tsakonian
+language,Tsimshian
+language,Tatar
+language,"Northern Tutchone"
+language,"Muslim Tat"
+language,Tumbuka
+language,Tuvalu
+language,Twi
+language,Tasawaq
+language,Tahitian
+language,Tuvinian
+language,"Central Atlas Tamazight"
+language,Udmurt
+language,Uyghur
+language,Uighur
+language,Ugaritic
+language,Ukrainian
+language,Umbundu
+language,"Unknown language"
+language,Urdu
+language,Uzbek
+language,Vai
+language,Venda
+language,Venetian
+language,Veps
+language,Vietnamese
+language,"West Flemish"
+language,Main-Franconian
+language,Volapük
+language,Votic
+language,Võro
+language,Vunjo
+language,Walloon
+language,Walser
+language,Wolaytta
+language,Waray
+language,Washo
+language,Warlpiri
+language,Wolof
+language,"Wu Chinese"
+language,Kalmyk
+language,Xhosa
+language,Mingrelian
+language,Soga
+language,Yao
+language,Yapese
+language,Yangben
+language,Yemba
+language,Yiddish
+language,Yoruba
+language,Nheengatu
+language,Cantonese
+language,"Chinese, Cantonese"
+language,Zhuang
+language,Zapotec
+language,Blissymbols
+language,Zeelandic
+language,Zenaga
+language,"Standard Moroccan Tamazight"
+language,Chinese
+language,"Mandarin Chinese"
+language,"Chinese, Mandarin"
+language,"Simplified Chinese"
+language,"Simplified Mandarin Chinese"
+language,"Traditional Chinese"
+language,"Traditional Mandarin Chinese"
+language,Zulu
+language,Zuni
+language,"No linguistic content"
+language,Zaza
+script,Adlam
+script,Afaka
+script,"Caucasian Albanian"
+script,Ahom
+script,Arabic
+script,Perso-Arabic
+script,Nastaliq
+script,"Imperial Aramaic"
+script,Armenian
+script,Avestan
+script,Balinese
+script,Bamum
+script,"Bassa Vah"
+script,Batak
+script,Bangla
+script,Bhaiksuki
+script,Blissymbols
+script,Bopomofo
+script,Brahmi
+script,Braille
+script,Buginese
+script,Buhid
+script,Chakma
+script,"Unified Canadian Aboriginal Syllabics"
+script,UCAS
+script,Carian
+script,Cham
+script,Cherokee
+script,Chorasmian
+script,Cirth
+script,Coptic
+script,Cypro-Minoan
+script,Cypriot
+script,Cyrillic
+script,"Old Church Slavonic Cyrillic"
+script,Devanagari
+script,"Dives Akuru"
+script,Dogra
+script,Deseret
+script,"Duployan shorthand"
+script,"Egyptian demotic"
+script,"Egyptian hieratic"
+script,"Egyptian hieroglyphs"
+script,Elbasan
+script,Elymaic
+script,Ethiopic
+script,"Georgian Khutsuri"
+script,Georgian
+script,Glagolitic
+script,"Gunjala Gondi"
+script,"Masaram Gondi"
+script,Gothic
+script,Grantha
+script,Greek
+script,Gujarati
+script,Gurmukhi
+script,"Han with Bopomofo"
+script,Hangul
+script,Han
+script,Hanunoo
+script,Simplified
+script,"Simplified Han"
+script,Traditional
+script,"Traditional Han"
+script,Hatran
+script,Hebrew
+script,Hiragana
+script,"Anatolian Hieroglyphs"
+script,"Pahawh Hmong"
+script,"Nyiakeng Puachue Hmong"
+script,"Japanese syllabaries"
+script,"Old Hungarian"
+script,Indus
+script,"Old Italic"
+script,Jamo
+script,Javanese
+script,Japanese
+script,Jurchen
+script,"Kayah Li"
+script,Katakana
+script,Kawi
+script,Kharoshthi
+script,Khmer
+script,Khojki
+script,"Khitan small script"
+script,Kannada
+script,Korean
+script,Kpelle
+script,Kaithi
+script,Lanna
+script,Lao
+script,"Fraktur Latin"
+script,"Gaelic Latin"
+script,Latin
+script,Lepcha
+script,Limbu
+script,"Linear A"
+script,"Linear B"
+script,Fraser
+script,Loma
+script,Lycian
+script,Lydian
+script,Mahajani
+script,Makasar
+script,Mandaean
+script,Manichaean
+script,Marchen
+script,"Mayan hieroglyphs"
+script,Medefaidrin
+script,Mende
+script,"Meroitic Cursive"
+script,Meroitic
+script,Malayalam
+script,Modi
+script,Mongolian
+script,Moon
+script,Mro
+script,"Meitei Mayek"
+script,Multani
+script,Myanmar
+script,"Nag Mundari"
+script,Nandinagari
+script,"Old North Arabian"
+script,Nabataean
+script,Newa
+script,"Naxi Geba"
+script,N’Ko
+script,Nüshu
+script,Ogham
+script,"Ol Chiki"
+script,Orkhon
+script,Odia
+script,Osage
+script,Osmanya
+script,"Old Uyghur"
+script,Palmyrene
+script,"Pau Cin Hau"
+script,"Old Permic"
+script,Phags-pa
+script,"Inscriptional Pahlavi"
+script,"Psalter Pahlavi"
+script,"Book Pahlavi"
+script,Phoenician
+script,"Pollard Phonetic"
+script,"Inscriptional Parthian"
+script,Zawgyi
+script,Rejang
+script,Hanifi
+script,"Hanifi Rohingya"
+script,Rongorongo
+script,Runic
+script,Samaritan
+script,Sarati
+script,"Old South Arabian"
+script,Saurashtra
+script,SignWriting
+script,Shavian
+script,Sharada
+script,Siddham
+script,Khudawadi
+script,Sinhala
+script,Sogdian
+script,"Old Sogdian"
+script,"Sora Sompeng"
+script,Soyombo
+script,Sundanese
+script,"Syloti Nagri"
+script,Syriac
+script,"Estrangelo Syriac"
+script,"Western Syriac"
+script,"Eastern Syriac"
+script,Tagbanwa
+script,Takri
+script,"Tai Le"
+script,"New Tai Lue"
+script,Tamil
+script,Tangut
+script,"Tai Viet"
+script,Telugu
+script,Tengwar
+script,Tifinagh
+script,Tagalog
+script,Thaana
+script,Thai
+script,Tibetan
+script,Tirhuta
+script,Tangsa
+script,Toto
+script,Ugaritic
+script,Vai
+script,"Visible Speech"
+script,Vithkuqi
+script,"Varang Kshiti"
+script,Wancho
+script,Woleai
+script,"Old Persian"
+script,"Sumero-Akkadian Cuneiform"
+script,"S-A Cuneiform"
+script,Yezidi
+script,Yi
+script,"Zanabazar Square"
+script,Inherited
+script,"Mathematical Notation"
+script,Emoji
+script,Symbols
+script,Unwritten
+script,Common
+script,"Unknown Script"
+territory,world
+territory,Africa
+territory,"North America"
+territory,"South America"
+territory,Oceania
+territory,"Western Africa"
+territory,"Central America"
+territory,"Eastern Africa"
+territory,"Northern Africa"
+territory,"Middle Africa"
+territory,"Southern Africa"
+territory,Americas
+territory,"Northern America"
+territory,Caribbean
+territory,"Eastern Asia"
+territory,"Southern Asia"
+territory,"Southeast Asia"
+territory,"Southern Europe"
+territory,Australasia
+territory,Melanesia
+territory,"Micronesian Region"
+territory,Polynesia
+territory,Asia
+territory,"Central Asia"
+territory,"Western Asia"
+territory,Europe
+territory,"Eastern Europe"
+territory,"Northern Europe"
+territory,"Western Europe"
+territory,"Sub-Saharan Africa"
+territory,"Latin America"
+territory,"Ascension Island"
+territory,Andorra
+territory,"United Arab Emirates"
+territory,Afghanistan
+territory,"Antigua & Barbuda"
+territory,Anguilla
+territory,Albania
+territory,Armenia
+territory,Angola
+territory,Antarctica
+territory,Argentina
+territory,"American Samoa"
+territory,Austria
+territory,Australia
+territory,Aruba
+territory,"Åland Islands"
+territory,Azerbaijan
+territory,"Bosnia & Herzegovina"
+territory,Bosnia
+territory,Barbados
+territory,Bangladesh
+territory,Belgium
+territory,"Burkina Faso"
+territory,Bulgaria
+territory,Bahrain
+territory,Burundi
+territory,Benin
+territory,"St. Barthélemy"
+territory,Bermuda
+territory,Brunei
+territory,Bolivia
+territory,"Caribbean Netherlands"
+territory,Brazil
+territory,Bahamas
+territory,Bhutan
+territory,"Bouvet Island"
+territory,Botswana
+territory,Belarus
+territory,Belize
+territory,Canada
+territory,"Cocos (Keeling) Islands"
+territory,"Congo - Kinshasa"
+territory,"Congo (DRC)"
+territory,"Central African Republic"
+territory,"Congo - Brazzaville"
+territory,"Congo (Republic)"
+territory,Switzerland
+territory,"Côte d’Ivoire"
+territory,"Ivory Coast"
+territory,"Cook Islands"
+territory,Chile
+territory,Cameroon
+territory,China
+territory,Colombia
+territory,"Clipperton Island"
+territory,"Costa Rica"
+territory,Cuba
+territory,"Cape Verde"
+territory,"Cabo Verde"
+territory,Curaçao
+territory,"Christmas Island"
+territory,Cyprus
+territory,Czechia
+territory,"Czech Republic"
+territory,Germany
+territory,"Diego Garcia"
+territory,Djibouti
+territory,Denmark
+territory,Dominica
+territory,"Dominican Republic"
+territory,Algeria
+territory,"Ceuta & Melilla"
+territory,Ecuador
+territory,Estonia
+territory,Egypt
+territory,"Western Sahara"
+territory,Eritrea
+territory,Spain
+territory,Ethiopia
+territory,"European Union"
+territory,Eurozone
+territory,Finland
+territory,Fiji
+territory,"Falkland Islands"
+territory,"Falkland Islands (Islas Malvinas)"
+territory,Micronesia
+territory,"Faroe Islands"
+territory,France
+territory,Gabon
+territory,"United Kingdom"
+territory,UK
+territory,Grenada
+territory,Georgia
+territory,"French Guiana"
+territory,Guernsey
+territory,Ghana
+territory,Gibraltar
+territory,Greenland
+territory,Gambia
+territory,Guinea
+territory,Guadeloupe
+territory,"Equatorial Guinea"
+territory,Greece
+territory,"South Georgia & South Sandwich Islands"
+territory,Guatemala
+territory,Guam
+territory,Guinea-Bissau
+territory,Guyana
+territory,"Hong Kong SAR China"
+territory,"Hong Kong"
+territory,"Heard & McDonald Islands"
+territory,Honduras
+territory,Croatia
+territory,Haiti
+territory,Hungary
+territory,"Canary Islands"
+territory,Indonesia
+territory,Ireland
+territory,Israel
+territory,"Isle of Man"
+territory,India
+territory,"British Indian Ocean Territory"
+territory,Iraq
+territory,Iran
+territory,Iceland
+territory,Italy
+territory,Jersey
+territory,Jamaica
+territory,Jordan
+territory,Japan
+territory,Kenya
+territory,Kyrgyzstan
+territory,Cambodia
+territory,Kiribati
+territory,Comoros
+territory,"St. Kitts & Nevis"
+territory,"North Korea"
+territory,"South Korea"
+territory,Kuwait
+territory,"Cayman Islands"
+territory,Kazakhstan
+territory,Laos
+territory,Lebanon
+territory,"St. Lucia"
+territory,Liechtenstein
+territory,"Sri Lanka"
+territory,Liberia
+territory,Lesotho
+territory,Lithuania
+territory,Luxembourg
+territory,Latvia
+territory,Libya
+territory,Morocco
+territory,Monaco
+territory,Moldova
+territory,Montenegro
+territory,"St. Martin"
+territory,Madagascar
+territory,"Marshall Islands"
+territory,"North Macedonia"
+territory,Mali
+territory,"Myanmar (Burma)"
+territory,Myanmar
+territory,Mongolia
+territory,"Macao SAR China"
+territory,Macao
+territory,"Northern Mariana Islands"
+territory,Martinique
+territory,Mauritania
+territory,Montserrat
+territory,Malta
+territory,Mauritius
+territory,Maldives
+territory,Malawi
+territory,Mexico
+territory,Malaysia
+territory,Mozambique
+territory,Namibia
+territory,"New Caledonia"
+territory,Niger
+territory,"Norfolk Island"
+territory,Nigeria
+territory,Nicaragua
+territory,Netherlands
+territory,Norway
+territory,Nepal
+territory,Nauru
+territory,Niue
+territory,"New Zealand"
+territory,Oman
+territory,Panama
+territory,Peru
+territory,"French Polynesia"
+territory,"Papua New Guinea"
+territory,Philippines
+territory,Pakistan
+territory,Poland
+territory,"St. Pierre & Miquelon"
+territory,"Pitcairn Islands"
+territory,"Puerto Rico"
+territory,"Palestinian Territories"
+territory,Palestine
+territory,Portugal
+territory,Palau
+territory,Paraguay
+territory,Qatar
+territory,"Outlying Oceania"
+territory,Réunion
+territory,Romania
+territory,Serbia
+territory,Russia
+territory,Rwanda
+territory,"Saudi Arabia"
+territory,"Solomon Islands"
+territory,Seychelles
+territory,Sudan
+territory,Sweden
+territory,Singapore
+territory,"St. Helena"
+territory,Slovenia
+territory,"Svalbard & Jan Mayen"
+territory,Slovakia
+territory,"Sierra Leone"
+territory,"San Marino"
+territory,Senegal
+territory,Somalia
+territory,Suriname
+territory,"South Sudan"
+territory,"São Tomé & Príncipe"
+territory,"El Salvador"
+territory,"Sint Maarten"
+territory,Syria
+territory,Eswatini
+territory,Swaziland
+territory,"Tristan da Cunha"
+territory,"Turks & Caicos Islands"
+territory,Chad
+territory,"French Southern Territories"
+territory,Togo
+territory,Thailand
+territory,Tajikistan
+territory,Tokelau
+territory,Timor-Leste
+territory,"East Timor"
+territory,Turkmenistan
+territory,Tunisia
+territory,Tonga
+territory,Turkey
+territory,"Trinidad & Tobago"
+territory,Tuvalu
+territory,Taiwan
+territory,Tanzania
+territory,Ukraine
+territory,Uganda
+territory,"U.S. Outlying Islands"
+territory,"United Nations"
+territory,UN
+territory,"United States"
+territory,US
+territory,Uruguay
+territory,Uzbekistan
+territory,"Vatican City"
+territory,"St. Vincent & Grenadines"
+territory,Venezuela
+territory,"British Virgin Islands"
+territory,"U.S. Virgin Islands"
+territory,Vietnam
+territory,Vanuatu
+territory,"Wallis & Futuna"
+territory,Samoa
+territory,Pseudo-Accents
+territory,Pseudo-Bidi
+territory,Kosovo
+territory,Yemen
+territory,Mayotte
+territory,"South Africa"
+territory,Zambia
+territory,Zimbabwe
+territory,"Unknown Region"
+variant,"Traditional German orthography"
+variant,"Standardized Resian orthography"
+variant,"German orthography of 1996"
+variant,"Late Middle French to 1606"
+variant,"Early Modern French"
+variant,Academic
+variant,"Orthographic formulation of 1943"
+variant,"ALA-LC Romanization, 1997 edition"
+variant,"Aluku dialect"
+variant,"Portuguese Language Orthographic Agreement of 1990"
+variant,"Eastern Armenian"
+variant,"Western Armenian"
+variant,"Unified Turkic Latin Alphabet"
+variant,"Balanka dialect of Anii"
+variant,"Barlavento dialect group of Kabuverdianu"
+variant,"San Giorgio/Bila dialect"
+variant,"Bohorič alphabet"
+variant,Boontling
+variant,"Portuguese-Brazilian Orthographic Convention of 1945"
+variant,"Dajnko alphabet"
+variant,"Serbian with Ekavian pronunciation"
+variant,"Early Modern English"
+variant,"IPA Phonetics"
+variant,"UPA Phonetics"
+variant,"Hepburn romanization"
+variant,"Serbian with Ijekavian pronunciation"
+variant,"Common Orthography"
+variant,"Standard Orthography"
+variant,"The Lipovaz dialect of Resian"
+variant,"Metelko alphabet"
+variant,Monotonic
+variant,"Ndyuka dialect"
+variant,"Natisone dialect"
+variant,"Gniva/Njiva dialect"
+variant,"Modern Volapük"
+variant,"Oseacco/Osojane dialect"
+variant,"Oxford English Dictionary spelling"
+variant,"Pamaka dialect"
+variant,"Pinyin Romanization"
+variant,Polytonic
+variant,Computer
+variant,"Revised Orthography"
+variant,"Classic Volapük"
+variant,Resian
+variant,Saho
+variant,"Scottish Standard English"
+variant,Scouse
+variant,"Stolvizza/Solbica dialect"
+variant,"Sotavento dialect group of Kabuverdianu"
+variant,"Taraskievica orthography"
+variant,"Unified Orthography"
+variant,"Unified Revised Orthography"
+variant,"Unifon phonetic alphabet"
+variant,Valencian
+variant,"Wade-Giles Romanization"
+key,Calendar
+key,"Currency Format"
+key,"Ignore Symbols Sorting"
+key,"Reversed Accent Sorting"
+key,"Uppercase/Lowercase Ordering"
+key,"Case Sensitive Sorting"
+key,"Sort Order"
+key,"Normalized Sorting"
+key,"Numeric Sorting"
+key,"Script/Block Reordering"
+key,"Sorting Strength"
+key,Currency
+key,"Transform Destination"
+key,"Dictionary Break Exclusions"
+key,"Emoji Presentation Style"
+key,"First day of week"
+key,Mixed-in
+key,"Hour Cycle (12 vs 24)"
+key,"Input Method"
+key,Keyboard
+key,"Highest Ignored"
+key,"Line Break Style"
+key,"Line Breaks In Words Setting"
+key,"Transform Rules"
+key,"Measurement System"
+key,Numbers
+key,"Region For Supplemental Data"
+key,"Transform Source"
+key,"Region Subdivision"
+key,"Sentence Break Suppressions Type"
+key,Transform
+key,"Machine Translated"
+key,"Time Zone"
+key,"Locale Variant"
+key,Private-Use
+key,"Private-Use Transform"
+type,"Buddhist Calendar"
+type,"Chinese Calendar"
+type,"Coptic Calendar"
+type,"Dangi Calendar"
+type,"Ethiopic Calendar"
+type,"Ethiopic Amete Alem Calendar"
+type,"Gregorian Calendar"
+type,"Hebrew Calendar"
+type,"Indian National Calendar"
+type,"Islamic Calendar"
+type,"Islamic Calendar (tabular, civil epoch)"
+type,"Islamic Calendar (Saudi Arabia, sighting)"
+type,"Islamic Calendar (tabular, astronomical epoch)"
+type,"Islamic Calendar (Umm al-Qura)"
+type,"ISO-8601 Calendar"
+type,"Japanese Calendar"
+type,"Persian Calendar"
+type,"Minguo Calendar"
+type,"Accounting Currency Format"
+type,"Standard Currency Format"
+type,"Sort Symbols"
+type,"Sort Ignoring Symbols"
+type,"Sort Accents Normally"
+type,"Sort Accents Reversed"
+type,"Sort Lowercase First"
+type,"Sort Normal Case Order"
+type,"Sort Uppercase First"
+type,"Sort Case Insensitive"
+type,"Sort Case Sensitive"
+type,"Traditional Chinese Sort Order - Big5"
+type,"Previous Sort Order, for compatibility"
+type,"Dictionary Sort Order"
+type,"Default Unicode Sort Order"
+type,"Emoji Sort Order"
+type,"European Ordering Rules"
+type,"Simplified Chinese Sort Order - GB2312"
+type,"Phonebook Sort Order"
+type,"Phonetic Sort Order"
+type,"Pinyin Sort Order"
+type,"Reformed Sort Order"
+type,"General-Purpose Search"
+type,"Search By Hangul Initial Consonant"
+type,"Standard Sort Order"
+type,"Stroke Sort Order"
+type,"Traditional Sort Order"
+type,"Radical-Stroke Sort Order"
+type,"Zhuyin Sort Order"
+type,"Sort Without Normalization"
+type,"Sort Unicode Normalized"
+type,"Sort Digits Individually"
+type,"Sort Digits Numerically"
+type,Currency
+type,Digits
+type,Punctuation
+type,Whitespace
+type,Symbol
+type,"Sort All"
+type,"Sort Base Letters Only"
+type,"Sort Accents/Case/Width/Kana"
+type,"Sort Accents"
+type,"Sort Accents/Case/Width"
+type,"To Accented Characters From ASCII Sequence"
+type,"To ASCII"
+type,"To Casefolded"
+type,"To Unicode Character Names"
+type,"To Digit Form Of Accent"
+type,"To Unicode FCC"
+type,"To Unicode FCD"
+type,"To Fullwidth"
+type,"To Hexadecimal Codes"
+type,"To Halfwidth"
+type,"To Lowercase"
+type,"To Morse Code"
+type,"To Unicode NFC"
+type,"To Unicode NFD"
+type,"To Unicode NFKC"
+type,"To Unicode NFKD"
+type,"To Pinyin With Numeric Tones"
+type,"No Change"
+type,"To Publishing Characters From ASCII"
+type,"To Empty String"
+type,"To Titlecase"
+type,"To Uppercase"
+type,"To Zawgyi Myanmar Encoding"
+type,"Use Default Presentation For Emoji Characters"
+type,"Prefer Emoji Presentation For Emoji Characters"
+type,"Prefer Text Presentation For Emoji Characters"
+type,"First Day of Week Is Friday"
+type,"First Day of Week Is Monday"
+type,"First Day of Week Is Saturday"
+type,"First Day of Week Is Sunday"
+type,"First Day of Week Is Thursday"
+type,"First Day of Week Is Tuesday"
+type,"First Day of Week Is Wednesday"
+type,Hybrid
+type,"12 Hour System (0–11)"
+type,"12 Hour System (1–12)"
+type,"24 Hour System (0–23)"
+type,"24 Hour System (1–24)"
+type,"Handwriting Input Method"
+type,"Pinyin Input Method"
+type,"Unspecified Input Method"
+type,"Wubi Input Method"
+type,"101-Key Keyboard"
+type,"102-Key Keyboard"
+type,"600 dpi Keyboard"
+type,"768 dpi Keyboard"
+type,"Android Keyboard"
+type,"AZERTY-Based Keyboard"
+type,"ChromeOS Keyboard"
+type,"Colemak Keyboard"
+type,"Dvorak Keyboard"
+type,"Dvorak Left-Handed Keyboard"
+type,"Dvorak Right-Handed Keyboard"
+type,"Greek 220 Keyboard"
+type,"Greek 319 Keyboard"
+type,"Keyboard With Many Extra Characters"
+type,"Google Virtual Keyboard"
+type,"Persian ISIRI Keyboard"
+type,"Legacy Keyboard"
+type,"Lithuanian LST 1205 Keyboard"
+type,"Lithuanian LST 1582 Keyboard"
+type,"Inuktitut Nutaaq Keyboard"
+type,"macOS Keyboard"
+type,"Thai Pattachote Keyboard"
+type,"QWERTY-Based Keyboard"
+type,"QWERTZ-Based Keyboard"
+type,"Tamil 99 Keyboard"
+type,"Unspecified Keyboard"
+type,"Keyboard Variant"
+type,"Vietnamese VIQR Keyboard"
+type,"Windows Keyboard"
+type,"Ignore Symbols affects spaces, punctuation, all symbols"
+type,"Ignore Symbols affects spaces and punctuation only"
+type,"Ignore Symbols affects spaces only"
+type,"Ignore Symbols affects spaces, punctuation, non-currency symbols"
+type,"Loose Line Break Style"
+type,"Normal Line Break Style"
+type,"Strict Line Break Style"
+type,"Allow Line Breaks In All Words"
+type,"Prevent Line Breaks In All Words"
+type,"Normal Line Breaks For Words"
+type,"Prevent Line Breaks In Phrases"
+type,"Encylopedia Aethiopica Transliteration"
+type,"US ALA-LOC Transliteration"
+type,"Beta Maṣāḥǝft Transliteration"
+type,"US BGN Transliteration"
+type,"Buckwalter Arabic Transliteration"
+type,"Hex transform using C11 syntax"
+type,"Hex transform using CSS syntax"
+type,"German DIN Transliteration"
+type,"Ethiopian Standards Agency ES 3842:2014 Ethiopic-Latin Transliteration"
+type,"Extended Wylie Transliteration Scheme"
+type,"CIS GOST Transliteration"
+type,"Gurage Legacy to Modern Transliteration"
+type,"Yaros Gutgarts Ethiopic-Cyrillic Transliteration"
+type,"International Alphabet of Sanskrit Transliteration"
+type,"IES/JES Amharic Transliteration"
+type,"ISO Transliteration"
+type,"Hex transform using Java syntax"
+type,"Thomas Oden Lambdin Ethiopic-Latin Transliteration"
+type,"Korean MCST Transliteration"
+type,"Mongolian National Standard Transliteration"
+type,"Hex transform using percent syntax"
+type,"Hex transform using Perl syntax"
+type,"Hex transform with no surrounding syntax"
+type,"Personal name transliteration variant"
+type,"Standard Arabic Technical Transliteration"
+type,"System for Ethiopic Representation in ASCII"
+type,"Tekie Alibekit Blin-Latin Transliteration"
+type,"UN GEGN Transliteration"
+type,"Hex transform using Unicode syntax"
+type,"Eritrean Ministry of Education Blin-Latin Transliteration"
+type,"Hex transform using XML syntax"
+type,"Hex transform using XML decimal syntax"
+type,"Metric System"
+type,"Imperial Measurement System"
+type,"US Measurement System"
+type,"Adlam Digits"
+type,"Ahom Digits"
+type,"Arabic-Indic Digits"
+type,"Extended Arabic-Indic Digits"
+type,"X Arabic-Indic Digits"
+type,"Armenian Numerals"
+type,"Armenian Lowercase Numerals"
+type,"Balinese Digits"
+type,"Bangla Digits"
+type,"Bhaiksuki Digits"
+type,"Brahmi Digits"
+type,"Chakma Digits"
+type,"Cham Digits"
+type,"Cyrillic Numerals"
+type,"Devanagari Digits"
+type,"Dives Akuru Digits"
+type,"Ethiopic Numerals"
+type,"Financial Numerals"
+type,"Full-Width Digits"
+type,"Georgian Numerals"
+type,"Gunjala Gondi digits"
+type,"Masaram Gondi digits"
+type,"Greek Numerals"
+type,"Greek Lowercase Numerals"
+type,"Gujarati Digits"
+type,"Gurmukhi Digits"
+type,"Chinese Calendar Day-of-Month Numerals"
+type,"Chinese Decimal Numerals"
+type,"Simplified Chinese Numerals"
+type,"Simplified Chinese Financial Numerals"
+type,"Traditional Chinese Numerals"
+type,"Traditional Chinese Financial Numerals"
+type,"Hebrew Numerals"
+type,"Pahawh Hmong Digits"
+type,"Nyiakeng Puachue Hmong Digits"
+type,"Javanese Digits"
+type,"Japanese Numerals"
+type,"Japanese Financial Numerals"
+type,"Japanese Calendar Gannen Year Numerals"
+type,"Kayah Li Digits"
+type,"Khmer Digits"
+type,"Kannada Digits"
+type,"Tai Tham Hora Digits"
+type,"Tai Tham Tham Digits"
+type,"Lao Digits"
+type,"Western Digits"
+type,"Lepcha Digits"
+type,"Limbu Digits"
+type,"Mathematical Bold Digits"
+type,"Mathematical Double-Struck Digits"
+type,"Mathematical Monospace Digits"
+type,"Mathematical Sans-Serif Bold Digits"
+type,"Mathematical Sans-Serif Digits"
+type,"Malayalam Digits"
+type,"Modi Digits"
+type,"Mongolian Digits"
+type,"Mro Digits"
+type,"Meetei Mayek Digits"
+type,"Myanmar Digits"
+type,"Myanmar Shan Digits"
+type,"Myanmar Tai Laing Digits"
+type,"Native Digits"
+type,"Newa Digits"
+type,"N’Ko Digits"
+type,"Ol Chiki Digits"
+type,"Odia Digits"
+type,"Osmanya Digits"
+type,"Hanifi Rohingya digits"
+type,"Roman Numerals"
+type,"Roman Lowercase Numerals"
+type,"Saurashtra Digits"
+type,"Segmented Digits"
+type,"Sharada Digits"
+type,"Khudawadi Digits"
+type,"Sinhala Lith Digits"
+type,"Sora Sompeng Digits"
+type,"Sundanese Digits"
+type,"Takri Digits"
+type,"New Tai Lue Digits"
+type,"Traditional Tamil Numerals"
+type,"Tamil Digits"
+type,"Telugu Digits"
+type,"Thai Digits"
+type,"Tibetan Digits"
+type,"Tirhuta Digits"
+type,"Tangsa Digits"
+type,"Traditional Numerals"
+type,"Vai Digits"
+type,"Warang Citi Digits"
+type,"Wancho Digits"
+type,"From Accented Characters To ASCII Sequence"
+type,"From ASCII"
+type,"From Hexadecimal Codes"
+type,"From Morse Code"
+type,"From Pinyin With Numeric Tones"
+type,"From Publishing Punctuation To ASCII"
+type,"From Zawgyi Myanmar Encoding"
+type,"Sentence Breaks Without Abbreviation Handling"
+type,"Suppress Sentence Breaks After Standard Abbreviations"
+type,"Unspecified Machine Translation"
+type,"POSIX Compliant Locale"
+measurementSystemName,Metric
+measurementSystemName,UK
+measurementSystemName,US
+codePattern,"Language: {0}"
+codePattern,"Script: {0}"
+codePattern,"Region: {0}"
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+contextTransform,titlecase-firstword
+exemplarCharacters,"[a b c d e f g h i j k l m n o p q r s t u v w x y z]"
+exemplarCharacters,"[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]"
+exemplarCharacters,"[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]"
+exemplarCharacters,"[\- ‑ , . % ‰ + 0 1 2 3 4 5 6 7 8 9]"
+exemplarCharacters,"[\- ‐ ‑ – — , ; \: ! ? . … ' ‘ ’ "" “ ” ( ) \[ \] § @ * / \& # † ‡ ′ ″]"
+quotationStart,“
+quotationEnd,”
+alternateQuotationStart,‘
+alternateQuotationEnd,’
+era,BE
+month,Mo1
+month,Mo2
+month,Mo3
+month,Mo4
+month,Mo5
+month,Mo6
+month,Mo7
+month,Mo8
+month,Mo9
+month,Mo10
+month,Mo11
+month,Mo12
+month,"First Month"
+month,"Second Month"
+month,"Third Month"
+month,"Fourth Month"
+month,"Fifth Month"
+month,"Sixth Month"
+month,"Seventh Month"
+month,"Eighth Month"
+month,"Ninth Month"
+month,"Tenth Month"
+month,"Eleventh Month"
+month,"Twelfth Month"
+cyclicName,Rat
+cyclicName,Ox
+cyclicName,Tiger
+cyclicName,Rabbit
+cyclicName,Dragon
+cyclicName,Snake
+cyclicName,Horse
+cyclicName,Goat
+cyclicName,Monkey
+cyclicName,Rooster
+cyclicName,Dog
+cyclicName,Pig
+pattern,"EEEE, MMMM d, r(U)"
+datetimeSkeleton,rMMMMEEEEd
+pattern,"MMMM d, r(U)"
+datetimeSkeleton,rMMMMd
+pattern,"MMM d, r"
+datetimeSkeleton,rMMMd
+pattern,M/d/r
+datetimeSkeleton,rMd
+pattern,"{1} 'at' {0}"
+pattern,"{1} 'at' {0}"
+pattern,"{1}, {0}"
+pattern,"{1}, {0}"
+dateFormatItem,"h B"
+dateFormatItem,"h:mm B"
+dateFormatItem,"h:mm:ss B"
+dateFormatItem,d
+dateFormatItem,ccc
+dateFormatItem,"E h:mm B"
+dateFormatItem,"E h:mm:ss B"
+dateFormatItem,"d E"
+dateFormatItem,"E h:mm a"
+dateFormatItem,"E HH:mm"
+dateFormatItem,"E h:mm:ss a"
+dateFormatItem,"E HH:mm:ss"
+dateFormatItem,r(U)
+dateFormatItem,"MMM r"
+dateFormatItem,"MMM d, r"
+dateFormatItem,"E, MMM d, r"
+dateFormatItem,"MMMM r(U)"
+dateFormatItem,"MMMM d, r(U)"
+dateFormatItem,"E, MMMM d, r(U)"
+dateFormatItem,"h a"
+dateFormatItem,HH
+dateFormatItem,"h:mm a"
+dateFormatItem,HH:mm
+dateFormatItem,"h:mm:ss a"
+dateFormatItem,HH:mm:ss
+dateFormatItem,L
+dateFormatItem,M/d
+dateFormatItem,"E, M/d"
+dateFormatItem,LLL
+dateFormatItem,"MMM d"
+dateFormatItem,"E, MMM d"
+dateFormatItem,"MMMM d"
+dateFormatItem,mm:ss
+dateFormatItem,M/U
+dateFormatItem,M/d/U
+dateFormatItem,"MMM U"
+dateFormatItem,"MMM d, U"
+dateFormatItem,r(U)
+dateFormatItem,r(U)
+dateFormatItem,M/r
+dateFormatItem,M/d/r
+dateFormatItem,"E, M/d/r"
+dateFormatItem,"MMM r"
+dateFormatItem,"MMM d, r"
+dateFormatItem,"E, MMM d, r"
+dateFormatItem,"MMMM r(U)"
+dateFormatItem,"MMMM d, r(U)"
+dateFormatItem,"E, MMMM d, r(U)"
+dateFormatItem,"QQQ r(U)"
+dateFormatItem,"QQQQ r(U)"
+intervalFormatFallback,"{0} – {1}"
+greatestDifference,"h B – h B"
+greatestDifference,"h – h B"
+greatestDifference,"h:mm B – h:mm B"
+greatestDifference,"h:mm – h:mm B"
+greatestDifference,"h:mm – h:mm B"
+greatestDifference,"d – d"
+greatestDifference,"h a – h a"
+greatestDifference,"h – h a"
+greatestDifference,"HH – HH"
+greatestDifference,"h:mm a – h:mm a"
+greatestDifference,"h:mm – h:mm a"
+greatestDifference,"h:mm – h:mm a"
+greatestDifference,"HH:mm – HH:mm"
+greatestDifference,"HH:mm – HH:mm"
+greatestDifference,"h:mm a – h:mm a v"
+greatestDifference,"h:mm – h:mm a v"
+greatestDifference,"h:mm – h:mm a v"
+greatestDifference,"HH:mm – HH:mm v"
+greatestDifference,"HH:mm – HH:mm v"
+greatestDifference,"h a – h a v"
+greatestDifference,"h – h a v"
+greatestDifference,"HH – HH v"
+greatestDifference,"M – M"
+greatestDifference,"M/d – M/d"
+greatestDifference,"M/d – M/d"
+greatestDifference,"E, M/d – E, M/d"
+greatestDifference,"E, M/d – E, M/d"
+greatestDifference,"MMM – MMM"
+greatestDifference,"MMM d – d"
+greatestDifference,"MMM d – MMM d"
+greatestDifference,"E, MMM d – E, MMM d"
+greatestDifference,"E, MMM d – E, MMM d"
+greatestDifference,"U – U"
+greatestDifference,"M/y – M/y"
+greatestDifference,"M/y – M/y"
+greatestDifference,"M/d/y – M/d/y"
+greatestDifference,"M/d/y – M/d/y"
+greatestDifference,"M/d/y – M/d/y"
+greatestDifference,"E, M/d/y – E, M/d/y"
+greatestDifference,"E, M/d/y – E, M/d/y"
+greatestDifference,"E, M/d/y – E, M/d/y"
+greatestDifference,"MMM – MMM U"
+greatestDifference,"MMM U – MMM U"
+greatestDifference,"MMM d – d, U"
+greatestDifference,"MMM d – MMM d, U"
+greatestDifference,"MMM d, U – MMM d, U"
+greatestDifference,"E, MMM d – E, MMM d, U"
+greatestDifference,"E, MMM d – E, MMM d, U"
+greatestDifference,"E, MMM d, U – E, MMM d, U"
+greatestDifference,"MMMM – MMMM U"
+greatestDifference,"MMMM U – MMMM U"
+pattern,"EEEE, MMMM d, y G"
+datetimeSkeleton,GyMMMMEEEEd
+pattern,"MMMM d, y G"
+datetimeSkeleton,GyMMMMd
+pattern,"MMM d, y G"
+datetimeSkeleton,GyMMMd
+pattern,"M/d/y GGGGG"
+datetimeSkeleton,GGGGGyMd
+pattern,"{1} 'at' {0}"
+pattern,"{1} 'at' {0}"
+pattern,"{1}, {0}"
+pattern,"{1}, {0}"
+dateFormatItem,"h B"
+dateFormatItem,"h:mm B"
+dateFormatItem,"h:mm:ss B"
+dateFormatItem,d
+dateFormatItem,ccc
+dateFormatItem,"E h:mm B"
+dateFormatItem,"E h:mm:ss B"
+dateFormatItem,"d E"
+dateFormatItem,"E h:mm a"
+dateFormatItem,"E HH:mm"
+dateFormatItem,"E h:mm:ss a"
+dateFormatItem,"E HH:mm:ss"
+dateFormatItem,"y G"
+dateFormatItem,"M/d/y GGGGG"
+dateFormatItem,"MMM y G"
+dateFormatItem,"MMM d, y G"
+dateFormatItem,"E, MMM d, y G"
+dateFormatItem,"h a"
+dateFormatItem,HH
+dateFormatItem,"h:mm a"
+dateFormatItem,HH:mm
+dateFormatItem,"h:mm:ss a"
+dateFormatItem,HH:mm:ss
+dateFormatItem,L
+dateFormatItem,M/d
+dateFormatItem,"E, M/d"
+dateFormatItem,LLL
+dateFormatItem,"MMM d"
+dateFormatItem,"E, MMM d"
+dateFormatItem,"MMMM d"
+dateFormatItem,mm:ss
+dateFormatItem,"y G"
+dateFormatItem,"y G"
+dateFormatItem,"M/y GGGGG"
+dateFormatItem,"M/d/y GGGGG"
+dateFormatItem,"E, M/d/y GGGGG"
+dateFormatItem,"MMM y G"
+dateFormatItem,"MMM d, y G"
+dateFormatItem,"E, MMM d, y G"
+dateFormatItem,"MMMM y G"
+dateFormatItem,"QQQ y G"
+dateFormatItem,"QQQQ y G"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} {1}"
+appendItem,"{0} {1}"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} {1}"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} {1}"
+intervalFormatFallback,"{0} – {1}"
+greatestDifference,"h B – h B"
+greatestDifference,"h – h B"
+greatestDifference,"h:mm B – h:mm B"
+greatestDifference,"h:mm – h:mm B"
+greatestDifference,"h:mm – h:mm B"
+greatestDifference,"d – d"
+greatestDifference,"y G – y G"
+greatestDifference,"y – y G"
+greatestDifference,"M/y GGGGG – M/y GGGGG"
+greatestDifference,"M/y – M/y GGGGG"
+greatestDifference,"M/y – M/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"M/d/y GGGGG – M/d/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y GGGGG – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"MMM y G – MMM y G"
+greatestDifference,"MMM – MMM y G"
+greatestDifference,"MMM y – MMM y G"
+greatestDifference,"MMM d – d, y G"
+greatestDifference,"MMM d, y G – MMM d, y G"
+greatestDifference,"MMM d – MMM d, y G"
+greatestDifference,"MMM d, y – MMM d, y G"
+greatestDifference,"E, MMM d – E, MMM d, y G"
+greatestDifference,"E, MMM d, y G – E, MMM d, y G"
+greatestDifference,"E, MMM d – E, MMM d, y G"
+greatestDifference,"E, MMM d, y – E, MMM d, y G"
+greatestDifference,"h a – h a"
+greatestDifference,"h – h a"
+greatestDifference,"HH – HH"
+greatestDifference,"h:mm a – h:mm a"
+greatestDifference,"h:mm – h:mm a"
+greatestDifference,"h:mm – h:mm a"
+greatestDifference,"HH:mm – HH:mm"
+greatestDifference,"HH:mm – HH:mm"
+greatestDifference,"h:mm a – h:mm a v"
+greatestDifference,"h:mm – h:mm a v"
+greatestDifference,"h:mm – h:mm a v"
+greatestDifference,"HH:mm – HH:mm v"
+greatestDifference,"HH:mm – HH:mm v"
+greatestDifference,"h a – h a v"
+greatestDifference,"h – h a v"
+greatestDifference,"HH – HH v"
+greatestDifference,"M – M"
+greatestDifference,"M/d – M/d"
+greatestDifference,"M/d – M/d"
+greatestDifference,"E, M/d – E, M/d"
+greatestDifference,"E, M/d – E, M/d"
+greatestDifference,"MMM – MMM"
+greatestDifference,"MMM d – d"
+greatestDifference,"MMM d – MMM d"
+greatestDifference,"E, MMM d – E, MMM d"
+greatestDifference,"E, MMM d – E, MMM d"
+greatestDifference,"y – y G"
+greatestDifference,"M/y – M/y GGGGG"
+greatestDifference,"M/y – M/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"MMM – MMM y G"
+greatestDifference,"MMM y – MMM y G"
+greatestDifference,"MMM d – d, y G"
+greatestDifference,"MMM d – MMM d, y G"
+greatestDifference,"MMM d, y – MMM d, y G"
+greatestDifference,"E, MMM d – E, MMM d, y G"
+greatestDifference,"E, MMM d – E, MMM d, y G"
+greatestDifference,"E, MMM d, y – E, MMM d, y G"
+greatestDifference,"MMMM – MMMM y G"
+greatestDifference,"MMMM y – MMMM y G"
+month,Jan
+month,Feb
+month,Mar
+month,Apr
+month,May
+month,Jun
+month,Jul
+month,Aug
+month,Sep
+month,Oct
+month,Nov
+month,Dec
+month,January
+month,February
+month,March
+month,April
+month,May
+month,June
+month,July
+month,August
+month,September
+month,October
+month,November
+month,December
+month,J
+month,F
+month,M
+month,A
+month,M
+month,J
+month,J
+month,A
+month,S
+month,O
+month,N
+month,D
+day,Sun
+day,Mon
+day,Tue
+day,Wed
+day,Thu
+day,Fri
+day,Sat
+day,Su
+day,Mo
+day,Tu
+day,We
+day,Th
+day,Fr
+day,Sa
+day,Sunday
+day,Monday
+day,Tuesday
+day,Wednesday
+day,Thursday
+day,Friday
+day,Saturday
+day,S
+day,M
+day,T
+day,W
+day,T
+day,F
+day,S
+quarter,Q1
+quarter,Q2
+quarter,Q3
+quarter,Q4
+quarter,"1st quarter"
+quarter,"2nd quarter"
+quarter,"3rd quarter"
+quarter,"4th quarter"
+quarter,1
+quarter,2
+quarter,3
+quarter,4
+dayPeriod,midnight
+dayPeriod,AM
+dayPeriod,am
+dayPeriod,noon
+dayPeriod,PM
+dayPeriod,pm
+dayPeriod,"in the morning"
+dayPeriod,"in the afternoon"
+dayPeriod,"in the evening"
+dayPeriod,"at night"
+dayPeriod,mi
+dayPeriod,a
+dayPeriod,n
+dayPeriod,p
+dayPeriod,"in the morning"
+dayPeriod,"in the afternoon"
+dayPeriod,"in the evening"
+dayPeriod,"at night"
+dayPeriod,midnight
+dayPeriod,AM
+dayPeriod,am
+dayPeriod,noon
+dayPeriod,PM
+dayPeriod,pm
+dayPeriod,"in the morning"
+dayPeriod,"in the afternoon"
+dayPeriod,"in the evening"
+dayPeriod,"at night"
+dayPeriod,midnight
+dayPeriod,AM
+dayPeriod,noon
+dayPeriod,PM
+dayPeriod,morning
+dayPeriod,afternoon
+dayPeriod,evening
+dayPeriod,night
+dayPeriod,midnight
+dayPeriod,AM
+dayPeriod,noon
+dayPeriod,PM
+dayPeriod,morning
+dayPeriod,afternoon
+dayPeriod,evening
+dayPeriod,night
+era,"Before Christ"
+era,"Before Common Era"
+era,"Anno Domini"
+era,"Common Era"
+era,BC
+era,BCE
+era,AD
+era,CE
+era,B
+era,A
+pattern,"EEEE, MMMM d, y"
+datetimeSkeleton,yMMMMEEEEd
+pattern,"MMMM d, y"
+datetimeSkeleton,yMMMMd
+pattern,"MMM d, y"
+datetimeSkeleton,yMMMd
+pattern,M/d/yy
+datetimeSkeleton,yyMd
+pattern,"h:mm:ss a zzzz"
+datetimeSkeleton,ahmmsszzzz
+pattern,"h:mm:ss a z"
+datetimeSkeleton,ahmmssz
+pattern,"h:mm:ss a"
+datetimeSkeleton,ahmmss
+pattern,"h:mm a"
+datetimeSkeleton,ahmm
+pattern,"{1} 'at' {0}"
+pattern,"{1} 'at' {0}"
+pattern,"{1}, {0}"
+pattern,"{1}, {0}"
+dateFormatItem,"h B"
+dateFormatItem,"h:mm B"
+dateFormatItem,"h:mm:ss B"
+dateFormatItem,d
+dateFormatItem,ccc
+dateFormatItem,"E h:mm B"
+dateFormatItem,"E h:mm:ss B"
+dateFormatItem,"d E"
+dateFormatItem,"E h:mm a"
+dateFormatItem,"E HH:mm"
+dateFormatItem,"E h:mm:ss a"
+dateFormatItem,"E HH:mm:ss"
+dateFormatItem,"y G"
+dateFormatItem,"M/d/y GGGGG"
+dateFormatItem,"MMM y G"
+dateFormatItem,"MMM d, y G"
+dateFormatItem,"E, MMM d, y G"
+dateFormatItem,"h a"
+dateFormatItem,HH
+dateFormatItem,"h:mm a"
+dateFormatItem,HH:mm
+dateFormatItem,"h:mm:ss a"
+dateFormatItem,HH:mm:ss
+dateFormatItem,"h:mm:ss a v"
+dateFormatItem,"HH:mm:ss v"
+dateFormatItem,"h:mm a v"
+dateFormatItem,"HH:mm v"
+dateFormatItem,L
+dateFormatItem,M/d
+dateFormatItem,"E, M/d"
+dateFormatItem,LLL
+dateFormatItem,"MMM d"
+dateFormatItem,"E, MMM d"
+dateFormatItem,"MMMM d"
+dateFormatItem,"'week' W 'of' MMMM"
+dateFormatItem,"'week' W 'of' MMMM"
+dateFormatItem,mm:ss
+dateFormatItem,y
+dateFormatItem,M/y
+dateFormatItem,M/d/y
+dateFormatItem,"E, M/d/y"
+dateFormatItem,"MMM y"
+dateFormatItem,"MMM d, y"
+dateFormatItem,"E, MMM d, y"
+dateFormatItem,"MMMM y"
+dateFormatItem,"QQQ y"
+dateFormatItem,"QQQQ y"
+dateFormatItem,"'week' w 'of' Y"
+dateFormatItem,"'week' w 'of' Y"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} {1}"
+appendItem,"{0} {1}"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} {1}"
+appendItem,"{0} ({2}: {1})"
+appendItem,"{0} {1}"
+intervalFormatFallback,"{0} – {1}"
+greatestDifference,"h B – h B"
+greatestDifference,"h – h B"
+greatestDifference,"h:mm B – h:mm B"
+greatestDifference,"h:mm – h:mm B"
+greatestDifference,"h:mm – h:mm B"
+greatestDifference,"d – d"
+greatestDifference,"y G – y G"
+greatestDifference,"y – y G"
+greatestDifference,"M/y GGGGG – M/y GGGGG"
+greatestDifference,"M/y – M/y GGGGG"
+greatestDifference,"M/y – M/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"M/d/y GGGGG – M/d/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"M/d/y – M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y GGGGG – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"E, M/d/y – E, M/d/y GGGGG"
+greatestDifference,"MMM y G – MMM y G"
+greatestDifference,"MMM – MMM y G"
+greatestDifference,"MMM y – MMM y G"
+greatestDifference,"MMM d – d, y G"
+greatestDifference,"MMM d, y G – MMM d, y G"
+greatestDifference,"MMM d – MMM d, y G"
+greatestDifference,"MMM d, y – MMM d, y G"
+greatestDifference,"E, MMM d – E, MMM d, y G"
+greatestDifference,"E, MMM d, y G – E, MMM d, y G"
+greatestDifference,"E, MMM d – E, MMM d, y G"
+greatestDifference,"E, MMM d, y – E, MMM d, y G"
+greatestDifference,"h a – h a"
+greatestDifference,"h – h a"
+greatestDifference,"HH – HH"
+greatestDifference,"h:mm a – h:mm a"
+greatestDifference,"h:mm – h:mm a"
+greatestDifference,"h:mm – h:mm a"
+greatestDifference,"HH:mm – HH:mm"
+greatestDifference,"HH:mm – HH:mm"
+greatestDifference,"h:mm a – h:mm a v"
+greatestDifference,"h:mm – h:mm a v"
+greatestDifference,"h:mm – h:mm a v"
+greatestDifference,"HH:mm – HH:mm v"
+greatestDifference,"HH:mm – HH:mm v"
+greatestDifference,"h a – h a v"
+greatestDifference,"h – h a v"
+greatestDifference,"HH – HH v"
+greatestDifference,"M – M"
+greatestDifference,"M/d – M/d"
+greatestDifference,"M/d – M/d"
+greatestDifference,"E, M/d – E, M/d"
+greatestDifference,"E, M/d – E, M/d"
+greatestDifference,"MMM – MMM"
+greatestDifference,"MMM d – d"
+greatestDifference,"MMM d – MMM d"
+greatestDifference,"E, MMM d – E, MMM d"
+greatestDifference,"E, MMM d – E, MMM d"
+greatestDifference,"y – y"
+greatestDifference,"M/y – M/y"
+greatestDifference,"M/y – M/y"
+greatestDifference,"M/d/y – M/d/y"
+greatestDifference,"M/d/y – M/d/y"
+greatestDifference,"M/d/y – M/d/y"
+greatestDifference,"E, M/d/y – E, M/d/y"
+greatestDifference,"E, M/d/y – E, M/d/y"
+greatestDifference,"E, M/d/y – E, M/d/y"
+greatestDifference,"MMM – MMM y"
+greatestDifference,"MMM y – MMM y"
+greatestDifference,"MMM d – d, y"
+greatestDifference,"MMM d – MMM d, y"
+greatestDifference,"MMM d, y – MMM d, y"
+greatestDifference,"E, MMM d – E, MMM d, y"
+greatestDifference,"E, MMM d – E, MMM d, y"
+greatestDifference,"E, MMM d, y – E, MMM d, y"
+greatestDifference,"MMMM – MMMM y"
+greatestDifference,"MMMM y – MMMM y"
+era,AM
+pattern,"EEEE, d MMMM y"
+datetimeSkeleton,yMMMMEEEEd
+pattern,"d MMMM y"
+datetimeSkeleton,yMMMMd
+pattern,"d MMM y"
+datetimeSkeleton,yMMMd
+pattern,"d MMM y"
+datetimeSkeleton,yMMMd
+dateFormatItem,"y G"
+dateFormatItem,"d MMM y GGGGG"
+dateFormatItem,"MMM y G"
+dateFormatItem,"d MMM y G"
+dateFormatItem,"E, d MMM y G"
+dateFormatItem,L
+dateFormatItem,"d MMM"
+dateFormatItem,"E, d MMM"
+dateFormatItem,LLL
+dateFormatItem,"d MMM"
+dateFormatItem,"E, d MMM"
+dateFormatItem,"d MMMM"
+dateFormatItem,y
+dateFormatItem,"MMM y"
+dateFormatItem,"d MMM y"
+dateFormatItem,"E, d MMM y"
+dateFormatItem,"MMM y"
+dateFormatItem,"d MMM y"
+dateFormatItem,"E, d MMM y"
+dateFormatItem,"MMMM y"
+dateFormatItem,"QQQ y"
+dateFormatItem,"QQQQ y"
+greatestDifference,"MMM – MMM"
+greatestDifference,"d – d MMM"
+greatestDifference,"d MMM – d MMM"
+greatestDifference,"E, d MMM – E, d MMM"
+greatestDifference,"E, d MMM – E, d MMM"
+greatestDifference,"MMM – MMM"
+greatestDifference,"d – d MMM"
+greatestDifference,"d MMM – d MMM"
+greatestDifference,"E, d MMM – E, d MMM"
+greatestDifference,"E, d MMM – E, d MMM"
+greatestDifference,"y – y G"
+greatestDifference,"MMM – MMM y"
+greatestDifference,"MMM y – MMM y"
+greatestDifference,"d – d MMM y"
+greatestDifference,"d MMM – d MMM y"
+greatestDifference,"d MMM y – d MMM y"
+greatestDifference,"E, d MMM – E, d MMM y"
+greatestDifference,"E, d MMM – E, d MMM y"
+greatestDifference,"E, d MMM y – E, d MMM y"
+greatestDifference,"MMM – MMM y"
+greatestDifference,"MMM y – MMM y"
+greatestDifference,"d – d MMM y"
+greatestDifference,"d MMM – d MMM y"
+greatestDifference,"d MMM y – d MMM y"
+greatestDifference,"E, d MMM – E, d MMM y"
+greatestDifference,"E, d MMM – E, d MMM y"
+greatestDifference,"E, d MMM y – E, d MMM y"
+greatestDifference,"MMMM – MMMM y"
+greatestDifference,"MMMM y – MMMM y"
+era,AH
+pattern,"EEEE, MMMM d, y G"
+datetimeSkeleton,GyMMMMEEEEd
+pattern,"MMMM d, y G"
+datetimeSkeleton,GyMMMMd
+pattern,"MMM d, y G"
+datetimeSkeleton,GyMMMd
+pattern,"M/d/y GGGGG"
+datetimeSkeleton,GGGGGyMd
+era,B.R.O.C.
+era,Minguo
+displayName,era
+displayName,era
+displayName,year
+relative,"last year"
+relative,"this year"
+relative,"next year"
+relativeTimePattern,"in {0} year"
+relativeTimePattern,"in {0} years"
+relativeTimePattern,"{0} year ago"
+relativeTimePattern,"{0} years ago"
+displayName,yr.
+relative,"last yr."
+relative,"this yr."
+relative,"next yr."
+relativeTimePattern,"in {0} yr."
+relativeTimePattern,"in {0} yr."
+relativeTimePattern,"{0} yr. ago"
+relativeTimePattern,"{0} yr. ago"
+displayName,quarter
+relative,"last quarter"
+relative,"this quarter"
+relative,"next quarter"
+relativeTimePattern,"in {0} quarter"
+relativeTimePattern,"in {0} quarters"
+relativeTimePattern,"{0} quarter ago"
+relativeTimePattern,"{0} quarters ago"
+displayName,qtr.
+relative,"last qtr."
+relative,"this qtr."
+relative,"next qtr."
+relativeTimePattern,"in {0} qtr."
+relativeTimePattern,"in {0} qtrs."
+relativeTimePattern,"{0} qtr. ago"
+relativeTimePattern,"{0} qtrs. ago"
+displayName,month
+relative,"last month"
+relative,"this month"
+relative,"next month"
+relativeTimePattern,"in {0} month"
+relativeTimePattern,"in {0} months"
+relativeTimePattern,"{0} month ago"
+relativeTimePattern,"{0} months ago"
+displayName,mo.
+relative,"last mo."
+relative,"this mo."
+relative,"next mo."
+relativeTimePattern,"in {0} mo."
+relativeTimePattern,"in {0} mo."
+relativeTimePattern,"{0} mo. ago"
+relativeTimePattern,"{0} mo. ago"
+displayName,week
+relative,"last week"
+relative,"this week"
+relative,"next week"
+relativeTimePattern,"in {0} week"
+relativeTimePattern,"in {0} weeks"
+relativeTimePattern,"{0} week ago"
+relativeTimePattern,"{0} weeks ago"
+relativePeriod,"the week of {0}"
+displayName,wk.
+relative,"last wk."
+relative,"this wk."
+relative,"next wk."
+relativeTimePattern,"in {0} wk."
+relativeTimePattern,"in {0} wk."
+relativeTimePattern,"{0} wk. ago"
+relativeTimePattern,"{0} wk. ago"
+displayName,"week of month"
+displayName,"wk. of mo."
+displayName,day
+relative,yesterday
+relative,today
+relative,tomorrow
+relativeTimePattern,"in {0} day"
+relativeTimePattern,"in {0} days"
+relativeTimePattern,"{0} day ago"
+relativeTimePattern,"{0} days ago"
+displayName,day
+relativeTimePattern,"in {0} day"
+relativeTimePattern,"in {0} days"
+relativeTimePattern,"{0} day ago"
+relativeTimePattern,"{0} days ago"
+displayName,"day of year"
+displayName,"day of yr."
+displayName,"day of the week"
+displayName,"day of wk."
+displayName,"weekday of the month"
+displayName,"wkday. of mo."
+relative,"last Sunday"
+relative,"this Sunday"
+relative,"next Sunday"
+relativeTimePattern,"in {0} Sunday"
+relativeTimePattern,"in {0} Sundays"
+relativeTimePattern,"{0} Sunday ago"
+relativeTimePattern,"{0} Sundays ago"
+relative,"last Sun."
+relative,"this Sun."
+relative,"next Sun."
+relativeTimePattern,"in {0} Sun."
+relativeTimePattern,"in {0} Sun."
+relativeTimePattern,"{0} Sun. ago"
+relativeTimePattern,"{0} Sun. ago"
+relative,"last Su"
+relative,"this Su"
+relative,"next Su"
+relativeTimePattern,"in {0} Su"
+relativeTimePattern,"in {0} Su"
+relativeTimePattern,"{0} Su ago"
+relativeTimePattern,"{0} Su ago"
+relative,"last Monday"
+relative,"this Monday"
+relative,"next Monday"
+relativeTimePattern,"in {0} Monday"
+relativeTimePattern,"in {0} Mondays"
+relativeTimePattern,"{0} Monday ago"
+relativeTimePattern,"{0} Mondays ago"
+relative,"last Mon."
+relative,"this Mon."
+relative,"next Mon."
+relativeTimePattern,"in {0} Mon."
+relativeTimePattern,"in {0} Mon."
+relativeTimePattern,"{0} Mon. ago"
+relativeTimePattern,"{0} Mon. ago"
+relative,"last M"
+relative,"this M"
+relative,"next M"
+relativeTimePattern,"in {0} M"
+relativeTimePattern,"in {0} M"
+relativeTimePattern,"{0} M ago"
+relativeTimePattern,"{0} M ago"
+relative,"last Tuesday"
+relative,"this Tuesday"
+relative,"next Tuesday"
+relativeTimePattern,"in {0} Tuesday"
+relativeTimePattern,"in {0} Tuesdays"
+relativeTimePattern,"{0} Tuesday ago"
+relativeTimePattern,"{0} Tuesdays ago"
+relative,"last Tue."
+relative,"this Tue."
+relative,"next Tue."
+relativeTimePattern,"in {0} Tue."
+relativeTimePattern,"in {0} Tue."
+relativeTimePattern,"{0} Tue. ago"
+relativeTimePattern,"{0} Tue. ago"
+relative,"last Tu"
+relative,"this Tu"
+relative,"next Tu"
+relativeTimePattern,"in {0} Tu"
+relativeTimePattern,"in {0} Tu"
+relativeTimePattern,"{0} Tu ago"
+relativeTimePattern,"{0} Tu ago"
+relative,"last Wednesday"
+relative,"this Wednesday"
+relative,"next Wednesday"
+relativeTimePattern,"in {0} Wednesday"
+relativeTimePattern,"in {0} Wednesdays"
+relativeTimePattern,"{0} Wednesday ago"
+relativeTimePattern,"{0} Wednesdays ago"
+relative,"last Wed."
+relative,"this Wed."
+relative,"next Wed."
+relativeTimePattern,"in {0} Wed."
+relativeTimePattern,"in {0} Wed."
+relativeTimePattern,"{0} Wed. ago"
+relativeTimePattern,"{0} Wed. ago"
+relative,"last W"
+relative,"this W"
+relative,"next W"
+relativeTimePattern,"in {0} W"
+relativeTimePattern,"in {0} W"
+relativeTimePattern,"{0} W ago"
+relativeTimePattern,"{0} W ago"
+relative,"last Thursday"
+relative,"this Thursday"
+relative,"next Thursday"
+relativeTimePattern,"in {0} Thursday"
+relativeTimePattern,"in {0} Thursdays"
+relativeTimePattern,"{0} Thursday ago"
+relativeTimePattern,"{0} Thursdays ago"
+relative,"last Thu."
+relative,"this Thu."
+relative,"next Thu."
+relativeTimePattern,"in {0} Thu."
+relativeTimePattern,"in {0} Thu."
+relativeTimePattern,"{0} Thu. ago"
+relativeTimePattern,"{0} Thu. ago"
+relative,"last Th"
+relative,"this Th"
+relative,"next Th"
+relativeTimePattern,"in {0} Th"
+relativeTimePattern,"in {0} Th"
+relativeTimePattern,"{0} Th ago"
+relativeTimePattern,"{0} Th ago"
+relative,"last Friday"
+relative,"this Friday"
+relative,"next Friday"
+relativeTimePattern,"in {0} Friday"
+relativeTimePattern,"in {0} Fridays"
+relativeTimePattern,"{0} Friday ago"
+relativeTimePattern,"{0} Fridays ago"
+relative,"last Fri."
+relative,"this Fri."
+relative,"next Fri."
+relativeTimePattern,"in {0} Fri."
+relativeTimePattern,"in {0} Fri."
+relativeTimePattern,"{0} Fri. ago"
+relativeTimePattern,"{0} Fri. ago"
+relative,"last F"
+relative,"this F"
+relative,"next F"
+relativeTimePattern,"in {0} F"
+relativeTimePattern,"in {0} F"
+relativeTimePattern,"{0} F ago"
+relativeTimePattern,"{0} F ago"
+relative,"last Saturday"
+relative,"this Saturday"
+relative,"next Saturday"
+relativeTimePattern,"in {0} Saturday"
+relativeTimePattern,"in {0} Saturdays"
+relativeTimePattern,"{0} Saturday ago"
+relativeTimePattern,"{0} Saturdays ago"
+relative,"last Sat."
+relative,"this Sat."
+relative,"next Sat."
+relativeTimePattern,"in {0} Sat."
+relativeTimePattern,"in {0} Sat."
+relativeTimePattern,"{0} Sat. ago"
+relativeTimePattern,"{0} Sat. ago"
+relative,"last Sa"
+relative,"this Sa"
+relative,"next Sa"
+relativeTimePattern,"in {0} Sa"
+relativeTimePattern,"in {0} Sa"
+relativeTimePattern,"{0} Sa ago"
+relativeTimePattern,"{0} Sa ago"
+displayName,AM/PM
+displayName,am/pm
+displayName,AM/PM
+displayName,am/pm
+displayName,hour
+relative,"this hour"
+relativeTimePattern,"in {0} hour"
+relativeTimePattern,"in {0} hours"
+relativeTimePattern,"{0} hour ago"
+relativeTimePattern,"{0} hours ago"
+displayName,hr.
+relativeTimePattern,"in {0} hr."
+relativeTimePattern,"in {0} hr."
+relativeTimePattern,"{0} hr. ago"
+relativeTimePattern,"{0} hr. ago"
+displayName,minute
+relative,"this minute"
+relativeTimePattern,"in {0} minute"
+relativeTimePattern,"in {0} minutes"
+relativeTimePattern,"{0} minute ago"
+relativeTimePattern,"{0} minutes ago"
+displayName,min.
+relativeTimePattern,"in {0} min."
+relativeTimePattern,"in {0} min."
+relativeTimePattern,"{0} min. ago"
+relativeTimePattern,"{0} min. ago"
+displayName,second
+relative,now
+relativeTimePattern,"in {0} second"
+relativeTimePattern,"in {0} seconds"
+relativeTimePattern,"{0} second ago"
+relativeTimePattern,"{0} seconds ago"
+displayName,sec.
+relative,now
+relativeTimePattern,"in {0} sec."
+relativeTimePattern,"in {0} sec."
+relativeTimePattern,"{0} sec. ago"
+relativeTimePattern,"{0} sec. ago"
+displayName,"time zone"
+displayName,zone
+hourFormat,+HH:mm;-HH:mm
+gmtFormat,GMT{0}
+regionFormat,"{0} Time"
+regionFormat,"{0} Daylight Time"
+regionFormat,"{0} Standard Time"
+fallbackFormat,"{1} ({0})"
+standard,"Coordinated Universal Time"
+exemplarCity,"Unknown City"
+exemplarCity,"Dumont d’Urville"
+exemplarCity,"St. Barthélemy"
+exemplarCity,Curaçao
+daylight,"British Summer Time"
+daylight,"Irish Standard Time"
+exemplarCity,Kostanay
+exemplarCity,Asunción
+exemplarCity,Réunion
+exemplarCity,"São Tomé"
+exemplarCity,Uzhhorod
+exemplarCity,Kyiv
+generic,HST
+standard,HST
+daylight,HDT
+exemplarCity,"Ho Chi Minh City"
+generic,"Acre Time"
+standard,"Acre Standard Time"
+daylight,"Acre Summer Time"
+standard,"Afghanistan Time"
+standard,"Central Africa Time"
+standard,"East Africa Time"
+standard,"South Africa Standard Time"
+generic,"West Africa Time"
+standard,"West Africa Standard Time"
+daylight,"West Africa Summer Time"
+generic,"Alaska Time"
+standard,"Alaska Standard Time"
+daylight,"Alaska Daylight Time"
+generic,AKT
+standard,AKST
+daylight,AKDT
+generic,"Almaty Time"
+standard,"Almaty Standard Time"
+daylight,"Almaty Summer Time"
+generic,"Amazon Time"
+standard,"Amazon Standard Time"
+daylight,"Amazon Summer Time"
+generic,"Central Time"
+standard,"Central Standard Time"
+daylight,"Central Daylight Time"
+generic,CT
+standard,CST
+daylight,CDT
+generic,"Eastern Time"
+standard,"Eastern Standard Time"
+daylight,"Eastern Daylight Time"
+generic,ET
+standard,EST
+daylight,EDT
+generic,"Mountain Time"
+standard,"Mountain Standard Time"
+daylight,"Mountain Daylight Time"
+generic,MT
+standard,MST
+daylight,MDT
+generic,"Pacific Time"
+standard,"Pacific Standard Time"
+daylight,"Pacific Daylight Time"
+generic,PT
+standard,PST
+daylight,PDT
+generic,"Anadyr Time"
+standard,"Anadyr Standard Time"
+daylight,"Anadyr Summer Time"
+generic,"Apia Time"
+standard,"Apia Standard Time"
+daylight,"Apia Daylight Time"
+generic,"Aqtau Time"
+standard,"Aqtau Standard Time"
+daylight,"Aqtau Summer Time"
+generic,"Aqtobe Time"
+standard,"Aqtobe Standard Time"
+daylight,"Aqtobe Summer Time"
+generic,"Arabian Time"
+standard,"Arabian Standard Time"
+daylight,"Arabian Daylight Time"
+generic,"Argentina Time"
+standard,"Argentina Standard Time"
+daylight,"Argentina Summer Time"
+generic,"Western Argentina Time"
+standard,"Western Argentina Standard Time"
+daylight,"Western Argentina Summer Time"
+generic,"Armenia Time"
+standard,"Armenia Standard Time"
+daylight,"Armenia Summer Time"
+generic,"Atlantic Time"
+standard,"Atlantic Standard Time"
+daylight,"Atlantic Daylight Time"
+generic,AT
+standard,AST
+daylight,ADT
+generic,"Central Australia Time"
+standard,"Australian Central Standard Time"
+daylight,"Australian Central Daylight Time"
+generic,"Australian Central Western Time"
+standard,"Australian Central Western Standard Time"
+daylight,"Australian Central Western Daylight Time"
+generic,"Eastern Australia Time"
+standard,"Australian Eastern Standard Time"
+daylight,"Australian Eastern Daylight Time"
+generic,"Western Australia Time"
+standard,"Australian Western Standard Time"
+daylight,"Australian Western Daylight Time"
+generic,"Azerbaijan Time"
+standard,"Azerbaijan Standard Time"
+daylight,"Azerbaijan Summer Time"
+generic,"Azores Time"
+standard,"Azores Standard Time"
+daylight,"Azores Summer Time"
+generic,"Bangladesh Time"
+standard,"Bangladesh Standard Time"
+daylight,"Bangladesh Summer Time"
+standard,"Bhutan Time"
+standard,"Bolivia Time"
+generic,"Brasilia Time"
+standard,"Brasilia Standard Time"
+daylight,"Brasilia Summer Time"
+standard,"Brunei Darussalam Time"
+generic,"Cape Verde Time"
+standard,"Cape Verde Standard Time"
+daylight,"Cape Verde Summer Time"
+standard,"Casey Time"
+standard,"Chamorro Standard Time"
+generic,"Chatham Time"
+standard,"Chatham Standard Time"
+daylight,"Chatham Daylight Time"
+generic,"Chile Time"
+standard,"Chile Standard Time"
+daylight,"Chile Summer Time"
+generic,"China Time"
+standard,"China Standard Time"
+daylight,"China Daylight Time"
+generic,"Choibalsan Time"
+standard,"Choibalsan Standard Time"
+daylight,"Choibalsan Summer Time"
+standard,"Christmas Island Time"
+standard,"Cocos Islands Time"
+generic,"Colombia Time"
+standard,"Colombia Standard Time"
+daylight,"Colombia Summer Time"
+generic,"Cook Islands Time"
+standard,"Cook Islands Standard Time"
+daylight,"Cook Islands Half Summer Time"
+generic,"Cuba Time"
+standard,"Cuba Standard Time"
+daylight,"Cuba Daylight Time"
+standard,"Davis Time"
+standard,"Dumont-d’Urville Time"
+standard,"East Timor Time"
+generic,"Easter Island Time"
+standard,"Easter Island Standard Time"
+daylight,"Easter Island Summer Time"
+standard,"Ecuador Time"
+generic,"Central European Time"
+standard,"Central European Standard Time"
+daylight,"Central European Summer Time"
+generic,"Eastern European Time"
+standard,"Eastern European Standard Time"
+daylight,"Eastern European Summer Time"
+standard,"Further-eastern European Time"
+generic,"Western European Time"
+standard,"Western European Standard Time"
+daylight,"Western European Summer Time"
+generic,"Falkland Islands Time"
+standard,"Falkland Islands Standard Time"
+daylight,"Falkland Islands Summer Time"
+generic,"Fiji Time"
+standard,"Fiji Standard Time"
+daylight,"Fiji Summer Time"
+standard,"French Guiana Time"
+standard,"French Southern & Antarctic Time"
+standard,"Galapagos Time"
+standard,"Gambier Time"
+generic,"Georgia Time"
+standard,"Georgia Standard Time"
+daylight,"Georgia Summer Time"
+standard,"Gilbert Islands Time"
+standard,"Greenwich Mean Time"
+standard,GMT
+generic,"East Greenland Time"
+standard,"East Greenland Standard Time"
+daylight,"East Greenland Summer Time"
+generic,"West Greenland Time"
+standard,"West Greenland Standard Time"
+daylight,"West Greenland Summer Time"
+standard,"Guam Standard Time"
+standard,"Gulf Standard Time"
+standard,"Guyana Time"
+generic,"Hawaii-Aleutian Time"
+standard,"Hawaii-Aleutian Standard Time"
+daylight,"Hawaii-Aleutian Daylight Time"
+generic,HAT
+standard,HAST
+daylight,HADT
+generic,"Hong Kong Time"
+standard,"Hong Kong Standard Time"
+daylight,"Hong Kong Summer Time"
+generic,"Hovd Time"
+standard,"Hovd Standard Time"
+daylight,"Hovd Summer Time"
+standard,"India Standard Time"
+standard,"Indian Ocean Time"
+standard,"Indochina Time"
+standard,"Central Indonesia Time"
+standard,"Eastern Indonesia Time"
+standard,"Western Indonesia Time"
+generic,"Iran Time"
+standard,"Iran Standard Time"
+daylight,"Iran Daylight Time"
+generic,"Irkutsk Time"
+standard,"Irkutsk Standard Time"
+daylight,"Irkutsk Summer Time"
+generic,"Israel Time"
+standard,"Israel Standard Time"
+daylight,"Israel Daylight Time"
+generic,"Japan Time"
+standard,"Japan Standard Time"
+daylight,"Japan Daylight Time"
+generic,"Petropavlovsk-Kamchatski Time"
+standard,"Petropavlovsk-Kamchatski Standard Time"
+daylight,"Petropavlovsk-Kamchatski Summer Time"
+standard,"East Kazakhstan Time"
+standard,"West Kazakhstan Time"
+generic,"Korean Time"
+standard,"Korean Standard Time"
+daylight,"Korean Daylight Time"
+standard,"Kosrae Time"
+generic,"Krasnoyarsk Time"
+standard,"Krasnoyarsk Standard Time"
+daylight,"Krasnoyarsk Summer Time"
+standard,"Kyrgyzstan Time"
+standard,"Lanka Time"
+standard,"Line Islands Time"
+generic,"Lord Howe Time"
+standard,"Lord Howe Standard Time"
+daylight,"Lord Howe Daylight Time"
+generic,"Macao Time"
+standard,"Macao Standard Time"
+daylight,"Macao Summer Time"
+standard,"Macquarie Island Time"
+generic,"Magadan Time"
+standard,"Magadan Standard Time"
+daylight,"Magadan Summer Time"
+standard,"Malaysia Time"
+standard,"Maldives Time"
+standard,"Marquesas Time"
+standard,"Marshall Islands Time"
+generic,"Mauritius Time"
+standard,"Mauritius Standard Time"
+daylight,"Mauritius Summer Time"
+standard,"Mawson Time"
+generic,"Northwest Mexico Time"
+standard,"Northwest Mexico Standard Time"
+daylight,"Northwest Mexico Daylight Time"
+generic,"Mexican Pacific Time"
+standard,"Mexican Pacific Standard Time"
+daylight,"Mexican Pacific Daylight Time"
+generic,"Ulaanbaatar Time"
+standard,"Ulaanbaatar Standard Time"
+daylight,"Ulaanbaatar Summer Time"
+generic,"Moscow Time"
+standard,"Moscow Standard Time"
+daylight,"Moscow Summer Time"
+standard,"Myanmar Time"
+standard,"Nauru Time"
+standard,"Nepal Time"
+generic,"New Caledonia Time"
+standard,"New Caledonia Standard Time"
+daylight,"New Caledonia Summer Time"
+generic,"New Zealand Time"
+standard,"New Zealand Standard Time"
+daylight,"New Zealand Daylight Time"
+generic,"Newfoundland Time"
+standard,"Newfoundland Standard Time"
+daylight,"Newfoundland Daylight Time"
+standard,"Niue Time"
+generic,"Norfolk Island Time"
+standard,"Norfolk Island Standard Time"
+daylight,"Norfolk Island Daylight Time"
+generic,"Fernando de Noronha Time"
+standard,"Fernando de Noronha Standard Time"
+daylight,"Fernando de Noronha Summer Time"
+standard,"North Mariana Islands Time"
+generic,"Novosibirsk Time"
+standard,"Novosibirsk Standard Time"
+daylight,"Novosibirsk Summer Time"
+generic,"Omsk Time"
+standard,"Omsk Standard Time"
+daylight,"Omsk Summer Time"
+generic,"Pakistan Time"
+standard,"Pakistan Standard Time"
+daylight,"Pakistan Summer Time"
+standard,"Palau Time"
+standard,"Papua New Guinea Time"
+generic,"Paraguay Time"
+standard,"Paraguay Standard Time"
+daylight,"Paraguay Summer Time"
+generic,"Peru Time"
+standard,"Peru Standard Time"
+daylight,"Peru Summer Time"
+generic,"Philippine Time"
+standard,"Philippine Standard Time"
+daylight,"Philippine Summer Time"
+standard,"Phoenix Islands Time"
+generic,"St. Pierre & Miquelon Time"
+standard,"St. Pierre & Miquelon Standard Time"
+daylight,"St. Pierre & Miquelon Daylight Time"
+standard,"Pitcairn Time"
+standard,"Ponape Time"
+standard,"Pyongyang Time"
+generic,"Qyzylorda Time"
+standard,"Qyzylorda Standard Time"
+daylight,"Qyzylorda Summer Time"
+standard,"Réunion Time"
+standard,"Rothera Time"
+generic,"Sakhalin Time"
+standard,"Sakhalin Standard Time"
+daylight,"Sakhalin Summer Time"
+generic,"Samara Time"
+standard,"Samara Standard Time"
+daylight,"Samara Summer Time"
+generic,"Samoa Time"
+standard,"Samoa Standard Time"
+daylight,"Samoa Daylight Time"
+standard,"Seychelles Time"
+standard,"Singapore Standard Time"
+standard,"Solomon Islands Time"
+standard,"South Georgia Time"
+standard,"Suriname Time"
+standard,"Syowa Time"
+standard,"Tahiti Time"
+generic,"Taipei Time"
+standard,"Taipei Standard Time"
+daylight,"Taipei Daylight Time"
+standard,"Tajikistan Time"
+standard,"Tokelau Time"
+generic,"Tonga Time"
+standard,"Tonga Standard Time"
+daylight,"Tonga Summer Time"
+standard,"Chuuk Time"
+generic,"Turkmenistan Time"
+standard,"Turkmenistan Standard Time"
+daylight,"Turkmenistan Summer Time"
+standard,"Tuvalu Time"
+generic,"Uruguay Time"
+standard,"Uruguay Standard Time"
+daylight,"Uruguay Summer Time"
+generic,"Uzbekistan Time"
+standard,"Uzbekistan Standard Time"
+daylight,"Uzbekistan Summer Time"
+generic,"Vanuatu Time"
+standard,"Vanuatu Standard Time"
+daylight,"Vanuatu Summer Time"
+standard,"Venezuela Time"
+generic,"Vladivostok Time"
+standard,"Vladivostok Standard Time"
+daylight,"Vladivostok Summer Time"
+generic,"Volgograd Time"
+standard,"Volgograd Standard Time"
+daylight,"Volgograd Summer Time"
+standard,"Vostok Time"
+standard,"Wake Island Time"
+standard,"Wallis & Futuna Time"
+generic,"Yakutsk Time"
+standard,"Yakutsk Standard Time"
+daylight,"Yakutsk Summer Time"
+generic,"Yekaterinburg Time"
+standard,"Yekaterinburg Standard Time"
+daylight,"Yekaterinburg Summer Time"
+standard,"Yukon Time"
+decimal,.
+group,","
+list,;
+percentSign,%
+plusSign,+
+minusSign,-
+exponential,E
+superscriptingExponent,×
+perMille,‰
+infinity,∞
+nan,NaN
+pattern,"#,##0.###"
+pattern,"0 thousand"
+pattern,"0 thousand"
+pattern,"00 thousand"
+pattern,"00 thousand"
+pattern,"000 thousand"
+pattern,"000 thousand"
+pattern,"0 million"
+pattern,"0 million"
+pattern,"00 million"
+pattern,"00 million"
+pattern,"000 million"
+pattern,"000 million"
+pattern,"0 billion"
+pattern,"0 billion"
+pattern,"00 billion"
+pattern,"00 billion"
+pattern,"000 billion"
+pattern,"000 billion"
+pattern,"0 trillion"
+pattern,"0 trillion"
+pattern,"00 trillion"
+pattern,"00 trillion"
+pattern,"000 trillion"
+pattern,"000 trillion"
+pattern,0K
+pattern,0K
+pattern,00K
+pattern,00K
+pattern,000K
+pattern,000K
+pattern,0M
+pattern,0M
+pattern,00M
+pattern,00M
+pattern,000M
+pattern,000M
+pattern,0B
+pattern,0B
+pattern,00B
+pattern,00B
+pattern,000B
+pattern,000B
+pattern,0T
+pattern,0T
+pattern,00T
+pattern,00T
+pattern,000T
+pattern,000T
+pattern,#E0
+pattern,"#,##0%"
+pattern,"¤#,##0.00"
+pattern,"¤#,##0.00;(¤#,##0.00)"
+pattern,¤0K
+pattern,¤0K
+pattern,¤00K
+pattern,¤00K
+pattern,¤000K
+pattern,¤000K
+pattern,¤0M
+pattern,¤0M
+pattern,¤00M
+pattern,¤00M
+pattern,¤000M
+pattern,¤000M
+pattern,¤0B
+pattern,¤0B
+pattern,¤00B
+pattern,¤00B
+pattern,¤000B
+pattern,¤000B
+pattern,¤0T
+pattern,¤0T
+pattern,¤00T
+pattern,¤00T
+pattern,¤000T
+pattern,¤000T
+unitPattern,"{0} {1}"
+unitPattern,"{0} {1}"
+displayName,"Andorran Peseta"
+displayName,"Andorran peseta"
+displayName,"Andorran pesetas"
+displayName,"United Arab Emirates Dirham"
+displayName,"UAE dirham"
+displayName,"UAE dirhams"
+displayName,"Afghan Afghani (1927–2002)"
+displayName,"Afghan afghani (1927–2002)"
+displayName,"Afghan afghanis (1927–2002)"
+displayName,"Afghan Afghani"
+displayName,"Afghan Afghani"
+displayName,"Afghan Afghanis"
+displayName,"Albanian Lek (1946–1965)"
+displayName,"Albanian lek (1946–1965)"
+displayName,"Albanian lekë (1946–1965)"
+displayName,"Albanian Lek"
+displayName,"Albanian lek"
+displayName,"Albanian lekë"
+displayName,"Armenian Dram"
+displayName,"Armenian dram"
+displayName,"Armenian drams"
+displayName,"Netherlands Antillean Guilder"
+displayName,"Netherlands Antillean guilder"
+displayName,"Netherlands Antillean guilders"
+displayName,"Angolan Kwanza"
+displayName,"Angolan kwanza"
+displayName,"Angolan kwanzas"
+displayName,"Angolan Kwanza (1977–1991)"
+displayName,"Angolan kwanza (1977–1991)"
+displayName,"Angolan kwanzas (1977–1991)"
+displayName,"Angolan New Kwanza (1990–2000)"
+displayName,"Angolan new kwanza (1990–2000)"
+displayName,"Angolan new kwanzas (1990–2000)"
+displayName,"Angolan Readjusted Kwanza (1995–1999)"
+displayName,"Angolan readjusted kwanza (1995–1999)"
+displayName,"Angolan readjusted kwanzas (1995–1999)"
+displayName,"Argentine Austral"
+displayName,"Argentine austral"
+displayName,"Argentine australs"
+displayName,"Argentine Peso Ley (1970–1983)"
+displayName,"Argentine peso ley (1970–1983)"
+displayName,"Argentine pesos ley (1970–1983)"
+displayName,"Argentine Peso (1881–1970)"
+displayName,"Argentine peso (1881–1970)"
+displayName,"Argentine pesos (1881–1970)"
+displayName,"Argentine Peso (1983–1985)"
+displayName,"Argentine peso (1983–1985)"
+displayName,"Argentine pesos (1983–1985)"
+displayName,"Argentine Peso"
+displayName,"Argentine peso"
+displayName,"Argentine pesos"
+displayName,"Austrian Schilling"
+displayName,"Austrian schilling"
+displayName,"Austrian schillings"
+displayName,"Australian Dollar"
+displayName,"Australian dollar"
+displayName,"Australian dollars"
+displayName,"Aruban Florin"
+displayName,"Aruban florin"
+displayName,"Aruban florin"
+displayName,"Azerbaijani Manat (1993–2006)"
+displayName,"Azerbaijani manat (1993–2006)"
+displayName,"Azerbaijani manats (1993–2006)"
+displayName,"Azerbaijani Manat"
+displayName,"Azerbaijani manat"
+displayName,"Azerbaijani manats"
+displayName,"Bosnia-Herzegovina Dinar (1992–1994)"
+displayName,"Bosnia-Herzegovina dinar (1992–1994)"
+displayName,"Bosnia-Herzegovina dinars (1992–1994)"
+displayName,"Bosnia-Herzegovina Convertible Mark"
+displayName,"Bosnia-Herzegovina convertible mark"
+displayName,"Bosnia-Herzegovina convertible marks"
+displayName,"Bosnia-Herzegovina New Dinar (1994–1997)"
+displayName,"Bosnia-Herzegovina new dinar (1994–1997)"
+displayName,"Bosnia-Herzegovina new dinars (1994–1997)"
+displayName,"Barbadian Dollar"
+displayName,"Barbadian dollar"
+displayName,"Barbadian dollars"
+displayName,"Bangladeshi Taka"
+displayName,"Bangladeshi taka"
+displayName,"Bangladeshi takas"
+displayName,"Belgian Franc (convertible)"
+displayName,"Belgian franc (convertible)"
+displayName,"Belgian francs (convertible)"
+displayName,"Belgian Franc"
+displayName,"Belgian franc"
+displayName,"Belgian francs"
+displayName,"Belgian Franc (financial)"
+displayName,"Belgian franc (financial)"
+displayName,"Belgian francs (financial)"
+displayName,"Bulgarian Hard Lev"
+displayName,"Bulgarian hard lev"
+displayName,"Bulgarian hard leva"
+displayName,"Bulgarian Socialist Lev"
+displayName,"Bulgarian socialist lev"
+displayName,"Bulgarian socialist leva"
+displayName,"Bulgarian Lev"
+displayName,"Bulgarian lev"
+displayName,"Bulgarian leva"
+displayName,"Bulgarian Lev (1879–1952)"
+displayName,"Bulgarian lev (1879–1952)"
+displayName,"Bulgarian leva (1879–1952)"
+displayName,"Bahraini Dinar"
+displayName,"Bahraini dinar"
+displayName,"Bahraini dinars"
+displayName,"Burundian Franc"
+displayName,"Burundian franc"
+displayName,"Burundian francs"
+displayName,"Bermudan Dollar"
+displayName,"Bermudan dollar"
+displayName,"Bermudan dollars"
+displayName,"Brunei Dollar"
+displayName,"Brunei dollar"
+displayName,"Brunei dollars"
+displayName,"Bolivian Boliviano"
+displayName,"Bolivian boliviano"
+displayName,"Bolivian bolivianos"
+displayName,"Bolivian Boliviano (1863–1963)"
+displayName,"Bolivian boliviano (1863–1963)"
+displayName,"Bolivian bolivianos (1863–1963)"
+displayName,"Bolivian Peso"
+displayName,"Bolivian peso"
+displayName,"Bolivian pesos"
+displayName,"Bolivian Mvdol"
+displayName,"Bolivian mvdol"
+displayName,"Bolivian mvdols"
+displayName,"Brazilian New Cruzeiro (1967–1986)"
+displayName,"Brazilian new cruzeiro (1967–1986)"
+displayName,"Brazilian new cruzeiros (1967–1986)"
+displayName,"Brazilian Cruzado (1986–1989)"
+displayName,"Brazilian cruzado (1986–1989)"
+displayName,"Brazilian cruzados (1986–1989)"
+displayName,"Brazilian Cruzeiro (1990–1993)"
+displayName,"Brazilian cruzeiro (1990–1993)"
+displayName,"Brazilian cruzeiros (1990–1993)"
+displayName,"Brazilian Real"
+displayName,"Brazilian real"
+displayName,"Brazilian reals"
+displayName,"Brazilian New Cruzado (1989–1990)"
+displayName,"Brazilian new cruzado (1989–1990)"
+displayName,"Brazilian new cruzados (1989–1990)"
+displayName,"Brazilian Cruzeiro (1993–1994)"
+displayName,"Brazilian cruzeiro (1993–1994)"
+displayName,"Brazilian cruzeiros (1993–1994)"
+displayName,"Brazilian Cruzeiro (1942–1967)"
+displayName,"Brazilian cruzeiro (1942–1967)"
+displayName,"Brazilian cruzeiros (1942–1967)"
+displayName,"Bahamian Dollar"
+displayName,"Bahamian dollar"
+displayName,"Bahamian dollars"
+displayName,"Bhutanese Ngultrum"
+displayName,"Bhutanese ngultrum"
+displayName,"Bhutanese ngultrums"
+displayName,"Burmese Kyat"
+displayName,"Burmese kyat"
+displayName,"Burmese kyats"
+displayName,"Botswanan Pula"
+displayName,"Botswanan pula"
+displayName,"Botswanan pulas"
+displayName,"Belarusian Ruble (1994–1999)"
+displayName,"Belarusian ruble (1994–1999)"
+displayName,"Belarusian rubles (1994–1999)"
+displayName,"Belarusian Ruble"
+displayName,"Belarusian ruble"
+displayName,"Belarusian rubles"
+displayName,"Belarusian Ruble (2000–2016)"
+displayName,"Belarusian ruble (2000–2016)"
+displayName,"Belarusian rubles (2000–2016)"
+displayName,"Belize Dollar"
+displayName,"Belize dollar"
+displayName,"Belize dollars"
+displayName,"Canadian Dollar"
+displayName,"Canadian dollar"
+displayName,"Canadian dollars"
+displayName,"Congolese Franc"
+displayName,"Congolese franc"
+displayName,"Congolese francs"
+displayName,"WIR Euro"
+displayName,"WIR euro"
+displayName,"WIR euros"
+displayName,"Swiss Franc"
+displayName,"Swiss franc"
+displayName,"Swiss francs"
+displayName,"WIR Franc"
+displayName,"WIR franc"
+displayName,"WIR francs"
+displayName,"Chilean Escudo"
+displayName,"Chilean escudo"
+displayName,"Chilean escudos"
+displayName,"Chilean Unit of Account (UF)"
+displayName,"Chilean unit of account (UF)"
+displayName,"Chilean units of account (UF)"
+displayName,"Chilean Peso"
+displayName,"Chilean peso"
+displayName,"Chilean pesos"
+displayName,"Chinese Yuan (offshore)"
+displayName,"Chinese yuan (offshore)"
+displayName,"Chinese yuan (offshore)"
+displayName,"Chinese People’s Bank Dollar"
+displayName,"Chinese People’s Bank dollar"
+displayName,"Chinese People’s Bank dollars"
+displayName,"Chinese Yuan"
+displayName,"Chinese yuan"
+displayName,"Chinese yuan"
+displayName,"Colombian Peso"
+displayName,"Colombian peso"
+displayName,"Colombian pesos"
+displayName,"Colombian Real Value Unit"
+displayName,"Colombian real value unit"
+displayName,"Colombian real value units"
+displayName,"Costa Rican Colón"
+displayName,"Costa Rican colón"
+displayName,"Costa Rican colóns"
+displayName,"Serbian Dinar (2002–2006)"
+displayName,"Serbian dinar (2002–2006)"
+displayName,"Serbian dinars (2002–2006)"
+displayName,"Czechoslovak Hard Koruna"
+displayName,"Czechoslovak hard koruna"
+displayName,"Czechoslovak hard korunas"
+displayName,"Cuban Convertible Peso"
+displayName,"Cuban convertible peso"
+displayName,"Cuban convertible pesos"
+displayName,"Cuban Peso"
+displayName,"Cuban peso"
+displayName,"Cuban pesos"
+displayName,"Cape Verdean Escudo"
+displayName,"Cape Verdean escudo"
+displayName,"Cape Verdean escudos"
+displayName,"Cypriot Pound"
+displayName,"Cypriot pound"
+displayName,"Cypriot pounds"
+displayName,"Czech Koruna"
+displayName,"Czech koruna"
+displayName,"Czech korunas"
+displayName,"East German Mark"
+displayName,"East German mark"
+displayName,"East German marks"
+displayName,"German Mark"
+displayName,"German mark"
+displayName,"German marks"
+displayName,"Djiboutian Franc"
+displayName,"Djiboutian franc"
+displayName,"Djiboutian francs"
+displayName,"Danish Krone"
+displayName,"Danish krone"
+displayName,"Danish kroner"
+displayName,"Dominican Peso"
+displayName,"Dominican peso"
+displayName,"Dominican pesos"
+displayName,"Algerian Dinar"
+displayName,"Algerian dinar"
+displayName,"Algerian dinars"
+displayName,"Ecuadorian Sucre"
+displayName,"Ecuadorian sucre"
+displayName,"Ecuadorian sucres"
+displayName,"Ecuadorian Unit of Constant Value"
+displayName,"Ecuadorian unit of constant value"
+displayName,"Ecuadorian units of constant value"
+displayName,"Estonian Kroon"
+displayName,"Estonian kroon"
+displayName,"Estonian kroons"
+displayName,"Egyptian Pound"
+displayName,"Egyptian pound"
+displayName,"Egyptian pounds"
+displayName,"Eritrean Nakfa"
+displayName,"Eritrean nakfa"
+displayName,"Eritrean nakfas"
+displayName,"Spanish Peseta (A account)"
+displayName,"Spanish peseta (A account)"
+displayName,"Spanish pesetas (A account)"
+displayName,"Spanish Peseta (convertible account)"
+displayName,"Spanish peseta (convertible account)"
+displayName,"Spanish pesetas (convertible account)"
+displayName,"Spanish Peseta"
+displayName,"Spanish peseta"
+displayName,"Spanish pesetas"
+displayName,"Ethiopian Birr"
+displayName,"Ethiopian birr"
+displayName,"Ethiopian birrs"
+displayName,Euro
+displayName,euro
+displayName,euros
+displayName,"Finnish Markka"
+displayName,"Finnish markka"
+displayName,"Finnish markkas"
+displayName,"Fijian Dollar"
+displayName,"Fijian dollar"
+displayName,"Fijian dollars"
+displayName,"Falkland Islands Pound"
+displayName,"Falkland Islands pound"
+displayName,"Falkland Islands pounds"
+displayName,"French Franc"
+displayName,"French franc"
+displayName,"French francs"
+displayName,"British Pound"
+displayName,"British pound"
+displayName,"British pounds"
+displayName,"Georgian Kupon Larit"
+displayName,"Georgian kupon larit"
+displayName,"Georgian kupon larits"
+displayName,"Georgian Lari"
+displayName,"Georgian lari"
+displayName,"Georgian laris"
+displayName,"Ghanaian Cedi (1979–2007)"
+displayName,"Ghanaian cedi (1979–2007)"
+displayName,"Ghanaian cedis (1979–2007)"
+displayName,"Ghanaian Cedi"
+displayName,"Ghanaian cedi"
+displayName,"Ghanaian cedis"
+displayName,"Gibraltar Pound"
+displayName,"Gibraltar pound"
+displayName,"Gibraltar pounds"
+displayName,"Gambian Dalasi"
+displayName,"Gambian dalasi"
+displayName,"Gambian dalasis"
+displayName,"Guinean Franc"
+displayName,"Guinean franc"
+displayName,"Guinean francs"
+displayName,"Guinean Syli"
+displayName,"Guinean syli"
+displayName,"Guinean sylis"
+displayName,"Equatorial Guinean Ekwele"
+displayName,"Equatorial Guinean ekwele"
+displayName,"Equatorial Guinean ekwele"
+displayName,"Greek Drachma"
+displayName,"Greek drachma"
+displayName,"Greek drachmas"
+displayName,"Guatemalan Quetzal"
+displayName,"Guatemalan quetzal"
+displayName,"Guatemalan quetzals"
+displayName,"Portuguese Guinea Escudo"
+displayName,"Portuguese Guinea escudo"
+displayName,"Portuguese Guinea escudos"
+displayName,"Guinea-Bissau Peso"
+displayName,"Guinea-Bissau peso"
+displayName,"Guinea-Bissau pesos"
+displayName,"Guyanaese Dollar"
+displayName,"Guyanaese dollar"
+displayName,"Guyanaese dollars"
+displayName,"Hong Kong Dollar"
+displayName,"Hong Kong dollar"
+displayName,"Hong Kong dollars"
+displayName,"Honduran Lempira"
+displayName,"Honduran lempira"
+displayName,"Honduran lempiras"
+displayName,"Croatian Dinar"
+displayName,"Croatian dinar"
+displayName,"Croatian dinars"
+displayName,"Croatian Kuna"
+displayName,"Croatian kuna"
+displayName,"Croatian kunas"
+displayName,"Haitian Gourde"
+displayName,"Haitian gourde"
+displayName,"Haitian gourdes"
+displayName,"Hungarian Forint"
+displayName,"Hungarian forint"
+displayName,"Hungarian forints"
+displayName,"Indonesian Rupiah"
+displayName,"Indonesian rupiah"
+displayName,"Indonesian rupiahs"
+displayName,"Irish Pound"
+displayName,"Irish pound"
+displayName,"Irish pounds"
+displayName,"Israeli Pound"
+displayName,"Israeli pound"
+displayName,"Israeli pounds"
+displayName,"Israeli Shekel (1980–1985)"
+displayName,"Israeli shekel (1980–1985)"
+displayName,"Israeli shekels (1980–1985)"
+displayName,"Israeli New Shekel"
+displayName,"Israeli new shekel"
+displayName,"Israeli new shekels"
+displayName,"Indian Rupee"
+displayName,"Indian rupee"
+displayName,"Indian rupees"
+displayName,"Iraqi Dinar"
+displayName,"Iraqi dinar"
+displayName,"Iraqi dinars"
+displayName,"Iranian Rial"
+displayName,"Iranian rial"
+displayName,"Iranian rials"
+displayName,"Icelandic Króna (1918–1981)"
+displayName,"Icelandic króna (1918–1981)"
+displayName,"Icelandic krónur (1918–1981)"
+displayName,"Icelandic Króna"
+displayName,"Icelandic króna"
+displayName,"Icelandic krónur"
+displayName,"Italian Lira"
+displayName,"Italian lira"
+displayName,"Italian liras"
+displayName,"Jamaican Dollar"
+displayName,"Jamaican dollar"
+displayName,"Jamaican dollars"
+displayName,"Jordanian Dinar"
+displayName,"Jordanian dinar"
+displayName,"Jordanian dinars"
+displayName,"Japanese Yen"
+displayName,"Japanese yen"
+displayName,"Japanese yen"
+symbol,¥
+displayName,"Kenyan Shilling"
+displayName,"Kenyan shilling"
+displayName,"Kenyan shillings"
+displayName,"Kyrgystani Som"
+displayName,"Kyrgystani som"
+displayName,"Kyrgystani soms"
+displayName,"Cambodian Riel"
+displayName,"Cambodian riel"
+displayName,"Cambodian riels"
+displayName,"Comorian Franc"
+displayName,"Comorian franc"
+displayName,"Comorian francs"
+displayName,"North Korean Won"
+displayName,"North Korean won"
+displayName,"North Korean won"
+displayName,"South Korean Hwan (1953–1962)"
+displayName,"South Korean hwan (1953–1962)"
+displayName,"South Korean hwan (1953–1962)"
+displayName,"South Korean Won (1945–1953)"
+displayName,"South Korean won (1945–1953)"
+displayName,"South Korean won (1945–1953)"
+displayName,"South Korean Won"
+displayName,"South Korean won"
+displayName,"South Korean won"
+displayName,"Kuwaiti Dinar"
+displayName,"Kuwaiti dinar"
+displayName,"Kuwaiti dinars"
+displayName,"Cayman Islands Dollar"
+displayName,"Cayman Islands dollar"
+displayName,"Cayman Islands dollars"
+displayName,"Kazakhstani Tenge"
+displayName,"Kazakhstani tenge"
+displayName,"Kazakhstani tenges"
+displayName,"Laotian Kip"
+displayName,"Laotian kip"
+displayName,"Laotian kips"
+displayName,"Lebanese Pound"
+displayName,"Lebanese pound"
+displayName,"Lebanese pounds"
+displayName,"Sri Lankan Rupee"
+displayName,"Sri Lankan rupee"
+displayName,"Sri Lankan rupees"
+displayName,"Liberian Dollar"
+displayName,"Liberian dollar"
+displayName,"Liberian dollars"
+displayName,"Lesotho Loti"
+displayName,"Lesotho loti"
+displayName,"Lesotho lotis"
+displayName,"Lithuanian Litas"
+displayName,"Lithuanian litas"
+displayName,"Lithuanian litai"
+displayName,"Lithuanian Talonas"
+displayName,"Lithuanian talonas"
+displayName,"Lithuanian talonases"
+displayName,"Luxembourgian Convertible Franc"
+displayName,"Luxembourgian convertible franc"
+displayName,"Luxembourgian convertible francs"
+displayName,"Luxembourgian Franc"
+displayName,"Luxembourgian franc"
+displayName,"Luxembourgian francs"
+displayName,"Luxembourg Financial Franc"
+displayName,"Luxembourg financial franc"
+displayName,"Luxembourg financial francs"
+displayName,"Latvian Lats"
+displayName,"Latvian lats"
+displayName,"Latvian lati"
+displayName,"Latvian Ruble"
+displayName,"Latvian ruble"
+displayName,"Latvian rubles"
+displayName,"Libyan Dinar"
+displayName,"Libyan dinar"
+displayName,"Libyan dinars"
+displayName,"Moroccan Dirham"
+displayName,"Moroccan dirham"
+displayName,"Moroccan dirhams"
+displayName,"Moroccan Franc"
+displayName,"Moroccan franc"
+displayName,"Moroccan francs"
+displayName,"Monegasque Franc"
+displayName,"Monegasque franc"
+displayName,"Monegasque francs"
+displayName,"Moldovan Cupon"
+displayName,"Moldovan cupon"
+displayName,"Moldovan cupon"
+displayName,"Moldovan Leu"
+displayName,"Moldovan leu"
+displayName,"Moldovan lei"
+displayName,"Malagasy Ariary"
+displayName,"Malagasy ariary"
+displayName,"Malagasy ariaries"
+displayName,"Malagasy Franc"
+displayName,"Malagasy franc"
+displayName,"Malagasy francs"
+displayName,"Macedonian Denar"
+displayName,"Macedonian denar"
+displayName,"Macedonian denari"
+displayName,"Macedonian Denar (1992–1993)"
+displayName,"Macedonian denar (1992–1993)"
+displayName,"Macedonian denari (1992–1993)"
+displayName,"Malian Franc"
+displayName,"Malian franc"
+displayName,"Malian francs"
+displayName,"Myanmar Kyat"
+displayName,"Myanmar kyat"
+displayName,"Myanmar kyats"
+displayName,"Mongolian Tugrik"
+displayName,"Mongolian tugrik"
+displayName,"Mongolian tugriks"
+displayName,"Macanese Pataca"
+displayName,"Macanese pataca"
+displayName,"Macanese patacas"
+displayName,"Mauritanian Ouguiya (1973–2017)"
+displayName,"Mauritanian ouguiya (1973–2017)"
+displayName,"Mauritanian ouguiyas (1973–2017)"
+displayName,"Mauritanian Ouguiya"
+displayName,"Mauritanian ouguiya"
+displayName,"Mauritanian ouguiyas"
+displayName,"Maltese Lira"
+displayName,"Maltese lira"
+displayName,"Maltese lira"
+displayName,"Maltese Pound"
+displayName,"Maltese pound"
+displayName,"Maltese pounds"
+displayName,"Mauritian Rupee"
+displayName,"Mauritian rupee"
+displayName,"Mauritian rupees"
+displayName,"Maldivian Rupee (1947–1981)"
+displayName,"Maldivian rupee (1947–1981)"
+displayName,"Maldivian rupees (1947–1981)"
+displayName,"Maldivian Rufiyaa"
+displayName,"Maldivian rufiyaa"
+displayName,"Maldivian rufiyaas"
+displayName,"Malawian Kwacha"
+displayName,"Malawian kwacha"
+displayName,"Malawian kwachas"
+displayName,"Mexican Peso"
+displayName,"Mexican peso"
+displayName,"Mexican pesos"
+displayName,"Mexican Silver Peso (1861–1992)"
+displayName,"Mexican silver peso (1861–1992)"
+displayName,"Mexican silver pesos (1861–1992)"
+displayName,"Mexican Investment Unit"
+displayName,"Mexican investment unit"
+displayName,"Mexican investment units"
+displayName,"Malaysian Ringgit"
+displayName,"Malaysian ringgit"
+displayName,"Malaysian ringgits"
+displayName,"Mozambican Escudo"
+displayName,"Mozambican escudo"
+displayName,"Mozambican escudos"
+displayName,"Mozambican Metical (1980–2006)"
+displayName,"Mozambican metical (1980–2006)"
+displayName,"Mozambican meticals (1980–2006)"
+displayName,"Mozambican Metical"
+displayName,"Mozambican metical"
+displayName,"Mozambican meticals"
+displayName,"Namibian Dollar"
+displayName,"Namibian dollar"
+displayName,"Namibian dollars"
+displayName,"Nigerian Naira"
+displayName,"Nigerian naira"
+displayName,"Nigerian nairas"
+displayName,"Nicaraguan Córdoba (1988–1991)"
+displayName,"Nicaraguan córdoba (1988–1991)"
+displayName,"Nicaraguan córdobas (1988–1991)"
+displayName,"Nicaraguan Córdoba"
+displayName,"Nicaraguan córdoba"
+displayName,"Nicaraguan córdobas"
+displayName,"Dutch Guilder"
+displayName,"Dutch guilder"
+displayName,"Dutch guilders"
+displayName,"Norwegian Krone"
+displayName,"Norwegian krone"
+displayName,"Norwegian kroner"
+displayName,"Nepalese Rupee"
+displayName,"Nepalese rupee"
+displayName,"Nepalese rupees"
+displayName,"New Zealand Dollar"
+displayName,"New Zealand dollar"
+displayName,"New Zealand dollars"
+displayName,"Omani Rial"
+displayName,"Omani rial"
+displayName,"Omani rials"
+displayName,"Panamanian Balboa"
+displayName,"Panamanian balboa"
+displayName,"Panamanian balboas"
+displayName,"Peruvian Inti"
+displayName,"Peruvian inti"
+displayName,"Peruvian intis"
+displayName,"Peruvian Sol"
+displayName,"Peruvian sol"
+displayName,"Peruvian soles"
+displayName,"Peruvian Sol (1863–1965)"
+displayName,"Peruvian sol (1863–1965)"
+displayName,"Peruvian soles (1863–1965)"
+displayName,"Papua New Guinean Kina"
+displayName,"Papua New Guinean kina"
+displayName,"Papua New Guinean kina"
+displayName,"Philippine Peso"
+displayName,"Philippine peso"
+displayName,"Philippine pesos"
+displayName,"Pakistani Rupee"
+displayName,"Pakistani rupee"
+displayName,"Pakistani rupees"
+displayName,"Polish Zloty"
+displayName,"Polish zloty"
+displayName,"Polish zlotys"
+displayName,"Polish Zloty (1950–1995)"
+displayName,"Polish zloty (PLZ)"
+displayName,"Polish zlotys (PLZ)"
+displayName,"Portuguese Escudo"
+displayName,"Portuguese escudo"
+displayName,"Portuguese escudos"
+displayName,"Paraguayan Guarani"
+displayName,"Paraguayan guarani"
+displayName,"Paraguayan guaranis"
+displayName,"Qatari Rial"
+displayName,"Qatari rial"
+displayName,"Qatari rials"
+displayName,"Rhodesian Dollar"
+displayName,"Rhodesian dollar"
+displayName,"Rhodesian dollars"
+displayName,"Romanian Leu (1952–2006)"
+displayName,"Romanian leu (1952–2006)"
+displayName,"Romanian Lei (1952–2006)"
+displayName,"Romanian Leu"
+displayName,"Romanian leu"
+displayName,"Romanian lei"
+displayName,"Serbian Dinar"
+displayName,"Serbian dinar"
+displayName,"Serbian dinars"
+displayName,"Russian Ruble"
+displayName,"Russian ruble"
+displayName,"Russian rubles"
+displayName,"Russian Ruble (1991–1998)"
+displayName,"Russian ruble (1991–1998)"
+displayName,"Russian rubles (1991–1998)"
+displayName,"Rwandan Franc"
+displayName,"Rwandan franc"
+displayName,"Rwandan francs"
+displayName,"Saudi Riyal"
+displayName,"Saudi riyal"
+displayName,"Saudi riyals"
+displayName,"Solomon Islands Dollar"
+displayName,"Solomon Islands dollar"
+displayName,"Solomon Islands dollars"
+displayName,"Seychellois Rupee"
+displayName,"Seychellois rupee"
+displayName,"Seychellois rupees"
+displayName,"Sudanese Dinar (1992–2007)"
+displayName,"Sudanese dinar (1992–2007)"
+displayName,"Sudanese dinars (1992–2007)"
+displayName,"Sudanese Pound"
+displayName,"Sudanese pound"
+displayName,"Sudanese pounds"
+displayName,"Sudanese Pound (1957–1998)"
+displayName,"Sudanese pound (1957–1998)"
+displayName,"Sudanese pounds (1957–1998)"
+displayName,"Swedish Krona"
+displayName,"Swedish krona"
+displayName,"Swedish kronor"
+displayName,"Singapore Dollar"
+displayName,"Singapore dollar"
+displayName,"Singapore dollars"
+displayName,"St. Helena Pound"
+displayName,"St. Helena pound"
+displayName,"St. Helena pounds"
+displayName,"Slovenian Tolar"
+displayName,"Slovenian tolar"
+displayName,"Slovenian tolars"
+displayName,"Slovak Koruna"
+displayName,"Slovak koruna"
+displayName,"Slovak korunas"
+displayName,"Sierra Leonean New Leone"
+displayName,"Sierra Leonean new leone"
+displayName,"Sierra Leonean new leones"
+displayName,"Sierra Leonean Leone"
+displayName,"Sierra Leonean leone"
+displayName,"Sierra Leonean leones"
+displayName,"Somali Shilling"
+displayName,"Somali shilling"
+displayName,"Somali shillings"
+displayName,"Surinamese Dollar"
+displayName,"Surinamese dollar"
+displayName,"Surinamese dollars"
+displayName,"Surinamese Guilder"
+displayName,"Surinamese guilder"
+displayName,"Surinamese guilders"
+displayName,"South Sudanese Pound"
+displayName,"South Sudanese pound"
+displayName,"South Sudanese pounds"
+displayName,"São Tomé & Príncipe Dobra (1977–2017)"
+displayName,"São Tomé & Príncipe dobra (1977–2017)"
+displayName,"São Tomé & Príncipe dobras (1977–2017)"
+displayName,"São Tomé & Príncipe Dobra"
+displayName,"São Tomé & Príncipe dobra"
+displayName,"São Tomé & Príncipe dobras"
+displayName,"Soviet Rouble"
+displayName,"Soviet rouble"
+displayName,"Soviet roubles"
+displayName,"Salvadoran Colón"
+displayName,"Salvadoran colón"
+displayName,"Salvadoran colones"
+displayName,"Syrian Pound"
+displayName,"Syrian pound"
+displayName,"Syrian pounds"
+displayName,"Swazi Lilangeni"
+displayName,"Swazi lilangeni"
+displayName,"Swazi emalangeni"
+displayName,"Thai Baht"
+displayName,"Thai baht"
+displayName,"Thai baht"
+displayName,"Tajikistani Ruble"
+displayName,"Tajikistani ruble"
+displayName,"Tajikistani rubles"
+displayName,"Tajikistani Somoni"
+displayName,"Tajikistani somoni"
+displayName,"Tajikistani somonis"
+displayName,"Turkmenistani Manat (1993–2009)"
+displayName,"Turkmenistani manat (1993–2009)"
+displayName,"Turkmenistani manat (1993–2009)"
+displayName,"Turkmenistani Manat"
+displayName,"Turkmenistani manat"
+displayName,"Turkmenistani manat"
+displayName,"Tunisian Dinar"
+displayName,"Tunisian dinar"
+displayName,"Tunisian dinars"
+displayName,"Tongan Paʻanga"
+displayName,"Tongan paʻanga"
+displayName,"Tongan paʻanga"
+displayName,"Timorese Escudo"
+displayName,"Timorese escudo"
+displayName,"Timorese escudos"
+displayName,"Turkish Lira (1922–2005)"
+displayName,"Turkish lira (1922–2005)"
+displayName,"Turkish Lira (1922–2005)"
+displayName,"Turkish Lira"
+displayName,"Turkish lira"
+displayName,"Turkish Lira"
+displayName,"Trinidad & Tobago Dollar"
+displayName,"Trinidad & Tobago dollar"
+displayName,"Trinidad & Tobago dollars"
+displayName,"New Taiwan Dollar"
+displayName,"New Taiwan dollar"
+displayName,"New Taiwan dollars"
+displayName,"Tanzanian Shilling"
+displayName,"Tanzanian shilling"
+displayName,"Tanzanian shillings"
+displayName,"Ukrainian Hryvnia"
+displayName,"Ukrainian hryvnia"
+displayName,"Ukrainian hryvnias"
+displayName,"Ukrainian Karbovanets"
+displayName,"Ukrainian karbovanets"
+displayName,"Ukrainian karbovantsiv"
+displayName,"Ugandan Shilling (1966–1987)"
+displayName,"Ugandan shilling (1966–1987)"
+displayName,"Ugandan shillings (1966–1987)"
+displayName,"Ugandan Shilling"
+displayName,"Ugandan shilling"
+displayName,"Ugandan shillings"
+displayName,"US Dollar"
+displayName,"US dollar"
+displayName,"US dollars"
+symbol,$
+displayName,"US Dollar (Next day)"
+displayName,"US dollar (next day)"
+displayName,"US dollars (next day)"
+displayName,"US Dollar (Same day)"
+displayName,"US dollar (same day)"
+displayName,"US dollars (same day)"
+displayName,"Uruguayan Peso (Indexed Units)"
+displayName,"Uruguayan peso (indexed units)"
+displayName,"Uruguayan pesos (indexed units)"
+displayName,"Uruguayan Peso (1975–1993)"
+displayName,"Uruguayan peso (1975–1993)"
+displayName,"Uruguayan pesos (1975–1993)"
+displayName,"Uruguayan Peso"
+displayName,"Uruguayan peso"
+displayName,"Uruguayan pesos"
+displayName,"Uruguayan Nominal Wage Index Unit"
+displayName,"Uruguayan nominal wage index unit"
+displayName,"Uruguayan nominal wage index units"
+displayName,"Uzbekistani Som"
+displayName,"Uzbekistani som"
+displayName,"Uzbekistani som"
+displayName,"Venezuelan Bolívar (1871–2008)"
+displayName,"Venezuelan bolívar (1871–2008)"
+displayName,"Venezuelan bolívars (1871–2008)"
+displayName,"Bolívar Soberano"
+displayName,"Bolívar Soberano"
+displayName,"Bolívar Soberanos"
+displayName,"Venezuelan Bolívar (2008–2018)"
+displayName,"Venezuelan bolívar (2008–2018)"
+displayName,"Venezuelan bolívars (2008–2018)"
+displayName,"Venezuelan Bolívar"
+displayName,"Venezuelan bolívar"
+displayName,"Venezuelan bolívars"
+displayName,"Vietnamese Dong"
+displayName,"Vietnamese dong"
+displayName,"Vietnamese dong"
+displayName,"Vietnamese Dong (1978–1985)"
+displayName,"Vietnamese dong (1978–1985)"
+displayName,"Vietnamese dong (1978–1985)"
+displayName,"Vanuatu Vatu"
+displayName,"Vanuatu vatu"
+displayName,"Vanuatu vatus"
+displayName,"Samoan Tala"
+displayName,"Samoan tala"
+displayName,"Samoan tala"
+displayName,"Central African CFA Franc"
+displayName,"Central African CFA franc"
+displayName,"Central African CFA francs"
+displayName,Silver
+displayName,"troy ounce of silver"
+displayName,"troy ounces of silver"
+displayName,Gold
+displayName,"troy ounce of gold"
+displayName,"troy ounces of gold"
+displayName,"European Composite Unit"
+displayName,"European composite unit"
+displayName,"European composite units"
+displayName,"European Monetary Unit"
+displayName,"European monetary unit"
+displayName,"European monetary units"
+displayName,"European Unit of Account (XBC)"
+displayName,"European unit of account (XBC)"
+displayName,"European units of account (XBC)"
+displayName,"European Unit of Account (XBD)"
+displayName,"European unit of account (XBD)"
+displayName,"European units of account (XBD)"
+displayName,"East Caribbean Dollar"
+displayName,"East Caribbean dollar"
+displayName,"East Caribbean dollars"
+displayName,"Special Drawing Rights"
+displayName,"special drawing rights"
+displayName,"special drawing rights"
+displayName,"European Currency Unit"
+displayName,"European currency unit"
+displayName,"European currency units"
+displayName,"French Gold Franc"
+displayName,"French gold franc"
+displayName,"French gold francs"
+displayName,"French UIC-Franc"
+displayName,"French UIC-franc"
+displayName,"French UIC-francs"
+displayName,"West African CFA Franc"
+displayName,"West African CFA franc"
+displayName,"West African CFA francs"
+displayName,Palladium
+displayName,"troy ounce of palladium"
+displayName,"troy ounces of palladium"
+displayName,"CFP Franc"
+displayName,"CFP franc"
+displayName,"CFP francs"
+displayName,Platinum
+displayName,"troy ounce of platinum"
+displayName,"troy ounces of platinum"
+displayName,"RINET Funds"
+displayName,"RINET Funds unit"
+displayName,"RINET Funds units"
+displayName,Sucre
+displayName,Sucre
+displayName,Sucres
+displayName,"Testing Currency Code"
+displayName,"Testing Currency unit"
+displayName,"Testing Currency units"
+displayName,"ADB Unit of Account"
+displayName,"ADB unit of account"
+displayName,"ADB units of account"
+displayName,"Unknown Currency"
+displayName,"(unknown unit of currency)"
+displayName,"(unknown currency)"
+displayName,"Yemeni Dinar"
+displayName,"Yemeni dinar"
+displayName,"Yemeni dinars"
+displayName,"Yemeni Rial"
+displayName,"Yemeni rial"
+displayName,"Yemeni rials"
+displayName,"Yugoslavian Hard Dinar (1966–1990)"
+displayName,"Yugoslavian hard dinar (1966–1990)"
+displayName,"Yugoslavian hard dinars (1966–1990)"
+displayName,"Yugoslavian New Dinar (1994–2002)"
+displayName,"Yugoslavian new dinar (1994–2002)"
+displayName,"Yugoslavian new dinars (1994–2002)"
+displayName,"Yugoslavian Convertible Dinar (1990–1992)"
+displayName,"Yugoslavian convertible dinar (1990–1992)"
+displayName,"Yugoslavian convertible dinars (1990–1992)"
+displayName,"Yugoslavian Reformed Dinar (1992–1993)"
+displayName,"Yugoslavian reformed dinar (1992–1993)"
+displayName,"Yugoslavian reformed dinars (1992–1993)"
+displayName,"South African Rand (financial)"
+displayName,"South African rand (financial)"
+displayName,"South African rands (financial)"
+displayName,"South African Rand"
+displayName,"South African rand"
+displayName,"South African rand"
+displayName,"Zambian Kwacha (1968–2012)"
+displayName,"Zambian kwacha (1968–2012)"
+displayName,"Zambian kwachas (1968–2012)"
+displayName,"Zambian Kwacha"
+displayName,"Zambian kwacha"
+displayName,"Zambian kwachas"
+displayName,"Zairean New Zaire (1993–1998)"
+displayName,"Zairean new zaire (1993–1998)"
+displayName,"Zairean new zaires (1993–1998)"
+displayName,"Zairean Zaire (1971–1993)"
+displayName,"Zairean zaire (1971–1993)"
+displayName,"Zairean zaires (1971–1993)"
+displayName,"Zimbabwean Dollar (1980–2008)"
+displayName,"Zimbabwean dollar (1980–2008)"
+displayName,"Zimbabwean dollars (1980–2008)"
+displayName,"Zimbabwean Dollar (2009)"
+displayName,"Zimbabwean dollar (2009)"
+displayName,"Zimbabwean dollars (2009)"
+displayName,"Zimbabwean Dollar (2008)"
+displayName,"Zimbabwean dollar (2008)"
+displayName,"Zimbabwean dollars (2008)"
+pattern,{0}+
+pluralMinimalPairs,{0} day
+pluralMinimalPairs,{0} days
+ordinalMinimalPairs,Take the {0}rd right.
+ordinalMinimalPairs,Take the {0}st right.
+ordinalMinimalPairs,Take the {0}th right.
+ordinalMinimalPairs,Take the {0}nd right.
+unitPrefixPattern,deci{0}
+unitPrefixPattern,centi{0}
+unitPrefixPattern,milli{0}
+unitPrefixPattern,micro{0}
+unitPrefixPattern,nano{0}
+unitPrefixPattern,pico{0}
+unitPrefixPattern,femto{0}
+unitPrefixPattern,atto{0}
+unitPrefixPattern,zepto{0}
+unitPrefixPattern,yocto{0}
+unitPrefixPattern,deka{0}
+unitPrefixPattern,hecto{0}
+unitPrefixPattern,kilo{0}
+unitPrefixPattern,mega{0}
+unitPrefixPattern,giga{0}
+unitPrefixPattern,tera{0}
+unitPrefixPattern,peta{0}
+unitPrefixPattern,exa{0}
+unitPrefixPattern,zetta{0}
+unitPrefixPattern,yotta{0}
+unitPrefixPattern,kibi{0}
+unitPrefixPattern,mebi{0}
+unitPrefixPattern,gibi{0}
+unitPrefixPattern,tebi{0}
+unitPrefixPattern,pebi{0}
+unitPrefixPattern,exbi{0}
+unitPrefixPattern,zebi{0}
+unitPrefixPattern,yobi{0}
+compoundUnitPattern,"{0} per {1}"
+compoundUnitPattern1,"square {0}"
+compoundUnitPattern1,"square {0}"
+compoundUnitPattern1,"square {0}"
+compoundUnitPattern1,"cubic {0}"
+compoundUnitPattern1,"cubic {0}"
+compoundUnitPattern1,"cubic {0}"
+compoundUnitPattern,{0}-{1}
+displayName,g-force
+unitPattern,"{0} g-force"
+unitPattern,"{0} g-force"
+displayName,"meters per second squared"
+unitPattern,"{0} meter per second squared"
+unitPattern,"{0} meters per second squared"
+displayName,revolutions
+unitPattern,"{0} revolution"
+unitPattern,"{0} revolutions"
+displayName,radians
+unitPattern,"{0} radian"
+unitPattern,"{0} radians"
+displayName,degrees
+unitPattern,"{0} degree"
+unitPattern,"{0} degrees"
+displayName,arcminutes
+unitPattern,"{0} arcminute"
+unitPattern,"{0} arcminutes"
+displayName,arcseconds
+unitPattern,"{0} arcsecond"
+unitPattern,"{0} arcseconds"
+displayName,"square kilometers"
+unitPattern,"{0} square kilometer"
+unitPattern,"{0} square kilometers"
+perUnitPattern,"{0} per square kilometer"
+displayName,hectares
+unitPattern,"{0} hectare"
+unitPattern,"{0} hectares"
+displayName,"square meters"
+unitPattern,"{0} square meter"
+unitPattern,"{0} square meters"
+perUnitPattern,"{0} per square meter"
+displayName,"square centimeters"
+unitPattern,"{0} square centimeter"
+unitPattern,"{0} square centimeters"
+perUnitPattern,"{0} per square centimeter"
+displayName,"square miles"
+unitPattern,"{0} square mile"
+unitPattern,"{0} square miles"
+perUnitPattern,"{0} per square mile"
+displayName,acres
+unitPattern,"{0} acre"
+unitPattern,"{0} acres"
+displayName,"square yards"
+unitPattern,"{0} square yard"
+unitPattern,"{0} square yards"
+displayName,"square feet"
+unitPattern,"{0} square foot"
+unitPattern,"{0} square feet"
+displayName,"square inches"
+unitPattern,"{0} square inch"
+unitPattern,"{0} square inches"
+perUnitPattern,"{0} per square inch"
+displayName,dunams
+unitPattern,"{0} dunam"
+unitPattern,"{0} dunams"
+displayName,karats
+unitPattern,"{0} karat"
+unitPattern,"{0} karats"
+displayName,"milligrams per deciliter"
+unitPattern,"{0} milligram per deciliter"
+unitPattern,"{0} milligrams per deciliter"
+displayName,"millimoles per liter"
+unitPattern,"{0} millimole per liter"
+unitPattern,"{0} millimoles per liter"
+displayName,items
+unitPattern,"{0} item"
+unitPattern,"{0} items"
+displayName,"parts per million"
+unitPattern,"{0} part per million"
+unitPattern,"{0} parts per million"
+displayName,percent
+unitPattern,"{0} percent"
+unitPattern,"{0} percent"
+displayName,permille
+unitPattern,"{0} permille"
+unitPattern,"{0} permille"
+displayName,permyriad
+unitPattern,"{0} permyriad"
+unitPattern,"{0} permyriad"
+displayName,moles
+unitPattern,"{0} mole"
+unitPattern,"{0} moles"
+displayName,"liters per kilometer"
+unitPattern,"{0} liter per kilometer"
+unitPattern,"{0} liters per kilometer"
+displayName,"liters per 100 kilometers"
+unitPattern,"{0} liter per 100 kilometers"
+unitPattern,"{0} liters per 100 kilometers"
+displayName,"miles per gallon"
+unitPattern,"{0} mile per gallon"
+unitPattern,"{0} miles per gallon"
+displayName,"miles per Imp. gallon"
+unitPattern,"{0} mile per Imp. gallon"
+unitPattern,"{0} miles per Imp. gallon"
+displayName,petabytes
+unitPattern,"{0} petabyte"
+unitPattern,"{0} petabytes"
+displayName,terabytes
+unitPattern,"{0} terabyte"
+unitPattern,"{0} terabytes"
+displayName,terabits
+unitPattern,"{0} terabit"
+unitPattern,"{0} terabits"
+displayName,gigabytes
+unitPattern,"{0} gigabyte"
+unitPattern,"{0} gigabytes"
+displayName,gigabits
+unitPattern,"{0} gigabit"
+unitPattern,"{0} gigabits"
+displayName,megabytes
+unitPattern,"{0} megabyte"
+unitPattern,"{0} megabytes"
+displayName,megabits
+unitPattern,"{0} megabit"
+unitPattern,"{0} megabits"
+displayName,kilobytes
+unitPattern,"{0} kilobyte"
+unitPattern,"{0} kilobytes"
+displayName,kilobits
+unitPattern,"{0} kilobit"
+unitPattern,"{0} kilobits"
+displayName,bytes
+unitPattern,"{0} byte"
+unitPattern,"{0} bytes"
+displayName,bits
+unitPattern,"{0} bit"
+unitPattern,"{0} bits"
+displayName,centuries
+unitPattern,"{0} century"
+unitPattern,"{0} centuries"
+displayName,decades
+unitPattern,"{0} decade"
+unitPattern,"{0} decades"
+displayName,years
+unitPattern,"{0} year"
+unitPattern,"{0} years"
+perUnitPattern,"{0} per year"
+displayName,months
+unitPattern,"{0} month"
+unitPattern,"{0} months"
+perUnitPattern,"{0} per month"
+displayName,weeks
+unitPattern,"{0} week"
+unitPattern,"{0} weeks"
+perUnitPattern,"{0} per week"
+displayName,days
+unitPattern,"{0} day"
+unitPattern,"{0} days"
+perUnitPattern,"{0} per day"
+displayName,hours
+unitPattern,"{0} hour"
+unitPattern,"{0} hours"
+perUnitPattern,"{0} per hour"
+displayName,minutes
+unitPattern,"{0} minute"
+unitPattern,"{0} minutes"
+perUnitPattern,"{0} per minute"
+displayName,seconds
+unitPattern,"{0} second"
+unitPattern,"{0} seconds"
+perUnitPattern,"{0} per second"
+displayName,milliseconds
+unitPattern,"{0} millisecond"
+unitPattern,"{0} milliseconds"
+displayName,microseconds
+unitPattern,"{0} microsecond"
+unitPattern,"{0} microseconds"
+displayName,nanoseconds
+unitPattern,"{0} nanosecond"
+unitPattern,"{0} nanoseconds"
+displayName,amperes
+unitPattern,"{0} ampere"
+unitPattern,"{0} amperes"
+displayName,milliamperes
+unitPattern,"{0} milliampere"
+unitPattern,"{0} milliamperes"
+displayName,ohms
+unitPattern,"{0} ohm"
+unitPattern,"{0} ohms"
+displayName,volts
+unitPattern,"{0} volt"
+unitPattern,"{0} volts"
+displayName,kilocalories
+unitPattern,"{0} kilocalorie"
+unitPattern,"{0} kilocalories"
+displayName,calories
+unitPattern,"{0} calorie"
+unitPattern,"{0} calories"
+displayName,Calories
+unitPattern,"{0} Calorie"
+unitPattern,"{0} Calories"
+displayName,kilojoules
+unitPattern,"{0} kilojoule"
+unitPattern,"{0} kilojoules"
+displayName,joules
+unitPattern,"{0} joule"
+unitPattern,"{0} joules"
+displayName,kilowatt-hours
+unitPattern,"{0} kilowatt hour"
+unitPattern,"{0} kilowatt-hours"
+displayName,electronvolts
+unitPattern,"{0} electronvolt"
+unitPattern,"{0} electronvolts"
+displayName,"British thermal units"
+unitPattern,"{0} British thermal unit"
+unitPattern,"{0} British thermal units"
+displayName,"US therms"
+unitPattern,"{0} US therm"
+unitPattern,"{0} US therms"
+displayName,"pounds of force"
+unitPattern,"{0} pound of force"
+unitPattern,"{0} pounds of force"
+displayName,newtons
+unitPattern,"{0} newton"
+unitPattern,"{0} newtons"
+displayName,"kilowatt-hours per 100 kilometers"
+unitPattern,"{0} kilowatt-hour per 100 kilometers"
+unitPattern,"{0} kilowatt-hours per 100 kilometers"
+displayName,gigahertz
+unitPattern,"{0} gigahertz"
+unitPattern,"{0} gigahertz"
+displayName,megahertz
+unitPattern,"{0} megahertz"
+unitPattern,"{0} megahertz"
+displayName,kilohertz
+unitPattern,"{0} kilohertz"
+unitPattern,"{0} kilohertz"
+displayName,hertz
+unitPattern,"{0} hertz"
+unitPattern,"{0} hertz"
+displayName,"typographic ems"
+unitPattern,"{0} em"
+unitPattern,"{0} ems"
+displayName,pixels
+unitPattern,"{0} pixel"
+unitPattern,"{0} pixels"
+displayName,megapixels
+unitPattern,"{0} megapixel"
+unitPattern,"{0} megapixels"
+displayName,"pixels per centimeter"
+unitPattern,"{0} pixel per centimeter"
+unitPattern,"{0} pixels per centimeter"
+displayName,"pixels per inch"
+unitPattern,"{0} pixel per inch"
+unitPattern,"{0} pixels per inch"
+displayName,"dots per centimeter"
+unitPattern,"{0} dot per centimeter"
+unitPattern,"{0} dots per centimeter"
+displayName,"dots per inch"
+unitPattern,"{0} dot per inch"
+unitPattern,"{0} dots per inch"
+displayName,dots
+unitPattern,"{0} dot"
+unitPattern,"{0} dots"
+displayName,"earth radius"
+unitPattern,"{0} earth radius"
+unitPattern,"{0} earth radius"
+displayName,kilometers
+unitPattern,"{0} kilometer"
+unitPattern,"{0} kilometers"
+perUnitPattern,"{0} per kilometer"
+displayName,meters
+unitPattern,"{0} meter"
+unitPattern,"{0} meters"
+perUnitPattern,"{0} per meter"
+displayName,decimeters
+unitPattern,"{0} decimeter"
+unitPattern,"{0} decimeters"
+displayName,centimeters
+unitPattern,"{0} centimeter"
+unitPattern,"{0} centimeters"
+perUnitPattern,"{0} per centimeter"
+displayName,millimeters
+unitPattern,"{0} millimeter"
+unitPattern,"{0} millimeters"
+displayName,micrometers
+unitPattern,"{0} micrometer"
+unitPattern,"{0} micrometers"
+displayName,nanometers
+unitPattern,"{0} nanometer"
+unitPattern,"{0} nanometers"
+displayName,picometers
+unitPattern,"{0} picometer"
+unitPattern,"{0} picometers"
+displayName,miles
+unitPattern,"{0} mile"
+unitPattern,"{0} miles"
+displayName,yards
+unitPattern,"{0} yard"
+unitPattern,"{0} yards"
+displayName,feet
+unitPattern,"{0} foot"
+unitPattern,"{0} feet"
+perUnitPattern,"{0} per foot"
+displayName,inches
+unitPattern,"{0} inch"
+unitPattern,"{0} inches"
+perUnitPattern,"{0} per inch"
+displayName,parsecs
+unitPattern,"{0} parsec"
+unitPattern,"{0} parsecs"
+displayName,"light years"
+unitPattern,"{0} light year"
+unitPattern,"{0} light years"
+displayName,"astronomical units"
+unitPattern,"{0} astronomical unit"
+unitPattern,"{0} astronomical units"
+displayName,furlongs
+unitPattern,"{0} furlong"
+unitPattern,"{0} furlongs"
+displayName,fathoms
+unitPattern,"{0} fathom"
+unitPattern,"{0} fathoms"
+displayName,"nautical miles"
+unitPattern,"{0} nautical mile"
+unitPattern,"{0} nautical miles"
+displayName,miles-scandinavian
+unitPattern,"{0} mile-scandinavian"
+unitPattern,"{0} miles-scandinavian"
+displayName,points
+unitPattern,"{0} point"
+unitPattern,"{0} points"
+displayName,"solar radii"
+unitPattern,"{0} solar radius"
+unitPattern,"{0} solar radii"
+displayName,lux
+unitPattern,"{0} lux"
+unitPattern,"{0} lux"
+displayName,candela
+unitPattern,"{0} candela"
+unitPattern,"{0} candela"
+displayName,lumen
+unitPattern,"{0} lumen"
+unitPattern,"{0} lumen"
+displayName,"solar luminosities"
+unitPattern,"{0} solar luminosity"
+unitPattern,"{0} solar luminosities"
+displayName,"metric tons"
+unitPattern,"{0} metric ton"
+unitPattern,"{0} metric tons"
+displayName,kilograms
+unitPattern,"{0} kilogram"
+unitPattern,"{0} kilograms"
+perUnitPattern,"{0} per kilogram"
+displayName,grams
+unitPattern,"{0} gram"
+unitPattern,"{0} grams"
+perUnitPattern,"{0} per gram"
+displayName,milligrams
+unitPattern,"{0} milligram"
+unitPattern,"{0} milligrams"
+displayName,micrograms
+unitPattern,"{0} microgram"
+unitPattern,"{0} micrograms"
+displayName,tons
+unitPattern,"{0} ton"
+unitPattern,"{0} tons"
+displayName,stones
+unitPattern,"{0} stone"
+unitPattern,"{0} stones"
+displayName,pounds
+unitPattern,"{0} pound"
+unitPattern,"{0} pounds"
+perUnitPattern,"{0} per pound"
+displayName,ounces
+unitPattern,"{0} ounce"
+unitPattern,"{0} ounces"
+perUnitPattern,"{0} per ounce"
+displayName,"troy ounces"
+unitPattern,"{0} troy ounce"
+unitPattern,"{0} troy ounces"
+displayName,carats
+unitPattern,"{0} carat"
+unitPattern,"{0} carats"
+displayName,daltons
+unitPattern,"{0} dalton"
+unitPattern,"{0} daltons"
+displayName,"Earth masses"
+unitPattern,"{0} Earth mass"
+unitPattern,"{0} Earth masses"
+displayName,"solar masses"
+unitPattern,"{0} solar mass"
+unitPattern,"{0} solar masses"
+displayName,grains
+unitPattern,"{0} grain"
+unitPattern,"{0} grains"
+displayName,gigawatts
+unitPattern,"{0} gigawatt"
+unitPattern,"{0} gigawatts"
+displayName,megawatts
+unitPattern,"{0} megawatt"
+unitPattern,"{0} megawatts"
+displayName,kilowatts
+unitPattern,"{0} kilowatt"
+unitPattern,"{0} kilowatts"
+displayName,watts
+unitPattern,"{0} watt"
+unitPattern,"{0} watts"
+displayName,milliwatts
+unitPattern,"{0} milliwatt"
+unitPattern,"{0} milliwatts"
+displayName,horsepower
+unitPattern,"{0} horsepower"
+unitPattern,"{0} horsepower"
+displayName,"millimeters of mercury"
+unitPattern,"{0} millimeter of mercury"
+unitPattern,"{0} millimeters of mercury"
+displayName,"pounds-force per square inch"
+unitPattern,"{0} pound-force per square inch"
+unitPattern,"{0} pounds-force per square inch"
+displayName,"inches of mercury"
+unitPattern,"{0} inch of mercury"
+unitPattern,"{0} inches of mercury"
+displayName,bars
+unitPattern,"{0} bar"
+unitPattern,"{0} bars"
+displayName,millibars
+unitPattern,"{0} millibar"
+unitPattern,"{0} millibars"
+displayName,atmospheres
+unitPattern,"{0} atmosphere"
+unitPattern,"{0} atmospheres"
+displayName,pascals
+unitPattern,"{0} pascal"
+unitPattern,"{0} pascals"
+displayName,hectopascals
+unitPattern,"{0} hectopascal"
+unitPattern,"{0} hectopascals"
+displayName,kilopascals
+unitPattern,"{0} kilopascal"
+unitPattern,"{0} kilopascals"
+displayName,megapascals
+unitPattern,"{0} megapascal"
+unitPattern,"{0} megapascals"
+displayName,"kilometers per hour"
+unitPattern,"{0} kilometer per hour"
+unitPattern,"{0} kilometers per hour"
+displayName,"meters per second"
+unitPattern,"{0} meter per second"
+unitPattern,"{0} meters per second"
+displayName,"miles per hour"
+unitPattern,"{0} mile per hour"
+unitPattern,"{0} miles per hour"
+displayName,knots
+unitPattern,"{0} knot"
+unitPattern,"{0} knots"
+unitPattern,"{0} degree"
+unitPattern,"{0} degrees"
+displayName,"degrees Celsius"
+unitPattern,"{0} degree Celsius"
+unitPattern,"{0} degrees Celsius"
+displayName,"degrees Fahrenheit"
+unitPattern,"{0} degree Fahrenheit"
+unitPattern,"{0} degrees Fahrenheit"
+displayName,kelvins
+unitPattern,"{0} kelvin"
+unitPattern,"{0} kelvins"
+displayName,pound-force-feet
+unitPattern,"{0} pound-force-foot"
+unitPattern,"{0} pound-force-feet"
+displayName,newton-meters
+unitPattern,"{0} newton-meter"
+unitPattern,"{0} newton-meters"
+displayName,"cubic kilometers"
+unitPattern,"{0} cubic kilometer"
+unitPattern,"{0} cubic kilometers"
+displayName,"cubic meters"
+unitPattern,"{0} cubic meter"
+unitPattern,"{0} cubic meters"
+perUnitPattern,"{0} per cubic meter"
+displayName,"cubic centimeters"
+unitPattern,"{0} cubic centimeter"
+unitPattern,"{0} cubic centimeters"
+perUnitPattern,"{0} per cubic centimeter"
+displayName,"cubic miles"
+unitPattern,"{0} cubic mile"
+unitPattern,"{0} cubic miles"
+displayName,"cubic yards"
+unitPattern,"{0} cubic yard"
+unitPattern,"{0} cubic yards"
+displayName,"cubic feet"
+unitPattern,"{0} cubic foot"
+unitPattern,"{0} cubic feet"
+displayName,"cubic inches"
+unitPattern,"{0} cubic inch"
+unitPattern,"{0} cubic inches"
+displayName,megaliters
+unitPattern,"{0} megaliter"
+unitPattern,"{0} megaliters"
+displayName,hectoliters
+unitPattern,"{0} hectoliter"
+unitPattern,"{0} hectoliters"
+displayName,liters
+unitPattern,"{0} liter"
+unitPattern,"{0} liters"
+perUnitPattern,"{0} per liter"
+displayName,deciliters
+unitPattern,"{0} deciliter"
+unitPattern,"{0} deciliters"
+displayName,centiliters
+unitPattern,"{0} centiliter"
+unitPattern,"{0} centiliters"
+displayName,milliliters
+unitPattern,"{0} milliliter"
+unitPattern,"{0} milliliters"
+displayName,"metric pints"
+unitPattern,"{0} metric pint"
+unitPattern,"{0} metric pints"
+displayName,"metric cups"
+unitPattern,"{0} metric cup"
+unitPattern,"{0} metric cups"
+displayName,acre-feet
+unitPattern,"{0} acre-foot"
+unitPattern,"{0} acre-feet"
+displayName,bushels
+unitPattern,"{0} bushel"
+unitPattern,"{0} bushels"
+displayName,gallons
+unitPattern,"{0} gallon"
+unitPattern,"{0} gallons"
+perUnitPattern,"{0} per gallon"
+displayName,"Imp. gallons"
+unitPattern,"{0} Imp. gallon"
+unitPattern,"{0} Imp. gallons"
+perUnitPattern,"{0} per Imp. gallon"
+displayName,quarts
+unitPattern,"{0} quart"
+unitPattern,"{0} quarts"
+displayName,pints
+unitPattern,"{0} pint"
+unitPattern,"{0} pints"
+displayName,cups
+unitPattern,"{0} cup"
+unitPattern,"{0} cups"
+displayName,"fluid ounces"
+unitPattern,"{0} fluid ounce"
+unitPattern,"{0} fluid ounces"
+displayName,"Imp. fluid ounces"
+unitPattern,"{0} Imp. fluid ounce"
+unitPattern,"{0} Imp. fluid ounces"
+displayName,tablespoons
+unitPattern,"{0} tablespoon"
+unitPattern,"{0} tablespoons"
+displayName,teaspoons
+unitPattern,"{0} teaspoon"
+unitPattern,"{0} teaspoons"
+displayName,barrels
+unitPattern,"{0} barrel"
+unitPattern,"{0} barrels"
+displayName,"dessert spoons"
+unitPattern,"{0} dessert spoon"
+unitPattern,"{0} dessert spoons"
+displayName,"Imp. dessert spoons"
+unitPattern,"{0} Imp. dessert spoon"
+unitPattern,"{0} Imp. dessert spoons"
+displayName,drops
+unitPattern,"{0} drop"
+unitPattern,"{0} drops"
+displayName,drams
+unitPattern,"{0} dram"
+unitPattern,"{0} drams"
+displayName,jiggers
+unitPattern,"{0} jigger"
+unitPattern,"{0} jiggers"
+displayName,pinches
+unitPattern,"{0} pinch"
+unitPattern,"{0} pinches"
+displayName,"Imp. quarts"
+unitPattern,"{0} Imp. quart"
+unitPattern,"{0} Imp. quarts"
+displayName,"cardinal direction"
+coordinateUnitPattern,"{0} east"
+coordinateUnitPattern,"{0} north"
+coordinateUnitPattern,"{0} south"
+coordinateUnitPattern,"{0} west"
+compoundUnitPattern,{0}/{1}
+displayName,g-force
+unitPattern,"{0} G"
+unitPattern,"{0} G"
+displayName,meters/sec²
+unitPattern,"{0} m/s²"
+unitPattern,"{0} m/s²"
+displayName,rev
+unitPattern,"{0} rev"
+unitPattern,"{0} rev"
+displayName,radians
+unitPattern,"{0} rad"
+unitPattern,"{0} rad"
+displayName,degrees
+unitPattern,"{0} deg"
+unitPattern,"{0} deg"
+displayName,arcmins
+unitPattern,"{0} arcmin"
+unitPattern,"{0} arcmins"
+displayName,arcsecs
+unitPattern,"{0} arcsec"
+unitPattern,"{0} arcsecs"
+displayName,km²
+unitPattern,"{0} km²"
+unitPattern,"{0} km²"
+perUnitPattern,{0}/km²
+displayName,hectares
+unitPattern,"{0} ha"
+unitPattern,"{0} ha"
+displayName,meters²
+unitPattern,"{0} m²"
+unitPattern,"{0} m²"
+perUnitPattern,{0}/m²
+displayName,cm²
+unitPattern,"{0} cm²"
+unitPattern,"{0} cm²"
+perUnitPattern,{0}/cm²
+displayName,"sq miles"
+unitPattern,"{0} sq mi"
+unitPattern,"{0} sq mi"
+perUnitPattern,{0}/mi²
+displayName,acres
+unitPattern,"{0} ac"
+unitPattern,"{0} ac"
+displayName,yards²
+unitPattern,"{0} yd²"
+unitPattern,"{0} yd²"
+displayName,"sq feet"
+unitPattern,"{0} sq ft"
+unitPattern,"{0} sq ft"
+displayName,inches²
+unitPattern,"{0} in²"
+unitPattern,"{0} in²"
+perUnitPattern,{0}/in²
+displayName,dunams
+unitPattern,"{0} dunam"
+unitPattern,"{0} dunam"
+displayName,karats
+unitPattern,"{0} kt"
+unitPattern,"{0} kt"
+displayName,mg/dL
+unitPattern,"{0} mg/dL"
+unitPattern,"{0} mg/dL"
+displayName,millimol/liter
+unitPattern,"{0} mmol/L"
+unitPattern,"{0} mmol/L"
+displayName,item
+unitPattern,"{0} item"
+unitPattern,"{0} items"
+displayName,parts/million
+unitPattern,"{0} ppm"
+unitPattern,"{0} ppm"
+displayName,percent
+unitPattern,{0}%
+unitPattern,{0}%
+displayName,permille
+unitPattern,{0}‰
+unitPattern,{0}‰
+displayName,permyriad
+unitPattern,{0}‱
+unitPattern,{0}‱
+displayName,mole
+unitPattern,"{0} mol"
+unitPattern,"{0} mol"
+displayName,liters/km
+unitPattern,"{0} L/km"
+unitPattern,"{0} L/km"
+displayName,"L/100 km"
+unitPattern,"{0} L/100 km"
+unitPattern,"{0} L/100 km"
+displayName,miles/gal
+unitPattern,"{0} mpg"
+unitPattern,"{0} mpg"
+displayName,"miles/gal Imp."
+unitPattern,"{0} mpg Imp."
+unitPattern,"{0} mpg Imp."
+displayName,PByte
+unitPattern,"{0} PB"
+unitPattern,"{0} PB"
+displayName,TByte
+unitPattern,"{0} TB"
+unitPattern,"{0} TB"
+displayName,Tbit
+unitPattern,"{0} Tb"
+unitPattern,"{0} Tb"
+displayName,GByte
+unitPattern,"{0} GB"
+unitPattern,"{0} GB"
+displayName,Gbit
+unitPattern,"{0} Gb"
+unitPattern,"{0} Gb"
+displayName,MByte
+unitPattern,"{0} MB"
+unitPattern,"{0} MB"
+displayName,Mbit
+unitPattern,"{0} Mb"
+unitPattern,"{0} Mb"
+displayName,kByte
+unitPattern,"{0} kB"
+unitPattern,"{0} kB"
+displayName,kbit
+unitPattern,"{0} kb"
+unitPattern,"{0} kb"
+displayName,byte
+unitPattern,"{0} byte"
+unitPattern,"{0} byte"
+displayName,bit
+unitPattern,"{0} bit"
+unitPattern,"{0} bit"
+displayName,c
+unitPattern,"{0} c"
+unitPattern,"{0} c"
+displayName,dec
+unitPattern,"{0} dec"
+unitPattern,"{0} dec"
+displayName,years
+unitPattern,"{0} yr"
+unitPattern,"{0} yrs"
+perUnitPattern,{0}/y
+displayName,months
+unitPattern,"{0} mth"
+unitPattern,"{0} mths"
+perUnitPattern,{0}/m
+displayName,weeks
+unitPattern,"{0} wk"
+unitPattern,"{0} wks"
+perUnitPattern,{0}/w
+displayName,days
+unitPattern,"{0} day"
+unitPattern,"{0} days"
+perUnitPattern,{0}/d
+displayName,hours
+unitPattern,"{0} hr"
+unitPattern,"{0} hr"
+perUnitPattern,{0}/h
+displayName,mins
+unitPattern,"{0} min"
+unitPattern,"{0} min"
+perUnitPattern,{0}/min
+displayName,secs
+unitPattern,"{0} sec"
+unitPattern,"{0} sec"
+perUnitPattern,{0}/s
+displayName,millisecs
+unitPattern,"{0} ms"
+unitPattern,"{0} ms"
+displayName,μsecs
+unitPattern,"{0} μs"
+unitPattern,"{0} μs"
+displayName,nanosecs
+unitPattern,"{0} ns"
+unitPattern,"{0} ns"
+displayName,amps
+unitPattern,"{0} A"
+unitPattern,"{0} A"
+displayName,milliamps
+unitPattern,"{0} mA"
+unitPattern,"{0} mA"
+displayName,ohms
+unitPattern,"{0} Ω"
+unitPattern,"{0} Ω"
+displayName,volts
+unitPattern,"{0} V"
+unitPattern,"{0} V"
+displayName,kcal
+unitPattern,"{0} kcal"
+unitPattern,"{0} kcal"
+displayName,cal
+unitPattern,"{0} cal"
+unitPattern,"{0} cal"
+displayName,Cal
+unitPattern,"{0} Cal"
+unitPattern,"{0} Cal"
+displayName,kilojoule
+unitPattern,"{0} kJ"
+unitPattern,"{0} kJ"
+displayName,joules
+unitPattern,"{0} J"
+unitPattern,"{0} J"
+displayName,kW-hour
+unitPattern,"{0} kWh"
+unitPattern,"{0} kWh"
+displayName,electronvolt
+unitPattern,"{0} eV"
+unitPattern,"{0} eV"
+displayName,BTU
+unitPattern,"{0} Btu"
+unitPattern,"{0} Btu"
+displayName,"US therm"
+unitPattern,"{0} US therm"
+unitPattern,"{0} US therms"
+displayName,pound-force
+unitPattern,"{0} lbf"
+unitPattern,"{0} lbf"
+displayName,newton
+unitPattern,"{0} N"
+unitPattern,"{0} N"
+displayName,kWh/100km
+unitPattern,"{0} kWh/100km"
+unitPattern,"{0} kWh/100km"
+displayName,GHz
+unitPattern,"{0} GHz"
+unitPattern,"{0} GHz"
+displayName,MHz
+unitPattern,"{0} MHz"
+unitPattern,"{0} MHz"
+displayName,kHz
+unitPattern,"{0} kHz"
+unitPattern,"{0} kHz"
+displayName,Hz
+unitPattern,"{0} Hz"
+unitPattern,"{0} Hz"
+displayName,em
+unitPattern,"{0} em"
+unitPattern,"{0} em"
+displayName,pixels
+unitPattern,"{0} px"
+unitPattern,"{0} px"
+displayName,megapixels
+unitPattern,"{0} MP"
+unitPattern,"{0} MP"
+displayName,ppcm
+unitPattern,"{0} ppcm"
+unitPattern,"{0} ppcm"
+displayName,ppi
+unitPattern,"{0} ppi"
+unitPattern,"{0} ppi"
+displayName,dpcm
+unitPattern,"{0} dpcm"
+unitPattern,"{0} dpcm"
+displayName,dpi
+unitPattern,"{0} dpi"
+unitPattern,"{0} dpi"
+displayName,km
+unitPattern,"{0} km"
+unitPattern,"{0} km"
+perUnitPattern,{0}/km
+displayName,m
+unitPattern,"{0} m"
+unitPattern,"{0} m"
+perUnitPattern,{0}/m
+displayName,dm
+unitPattern,"{0} dm"
+unitPattern,"{0} dm"
+displayName,cm
+unitPattern,"{0} cm"
+unitPattern,"{0} cm"
+perUnitPattern,{0}/cm
+displayName,mm
+unitPattern,"{0} mm"
+unitPattern,"{0} mm"
+displayName,μmeters
+unitPattern,"{0} μm"
+unitPattern,"{0} μm"
+displayName,nm
+unitPattern,"{0} nm"
+unitPattern,"{0} nm"
+displayName,pm
+unitPattern,"{0} pm"
+unitPattern,"{0} pm"
+displayName,miles
+unitPattern,"{0} mi"
+unitPattern,"{0} mi"
+displayName,yards
+unitPattern,"{0} yd"
+unitPattern,"{0} yd"
+displayName,feet
+unitPattern,"{0} ft"
+unitPattern,"{0} ft"
+perUnitPattern,{0}/ft
+displayName,inches
+unitPattern,"{0} in"
+unitPattern,"{0} in"
+perUnitPattern,{0}/in
+displayName,parsecs
+unitPattern,"{0} pc"
+unitPattern,"{0} pc"
+displayName,"light yrs"
+unitPattern,"{0} ly"
+unitPattern,"{0} ly"
+displayName,au
+unitPattern,"{0} au"
+unitPattern,"{0} au"
+displayName,furlongs
+unitPattern,"{0} fur"
+unitPattern,"{0} fur"
+displayName,fathoms
+unitPattern,"{0} fth"
+unitPattern,"{0} fth"
+displayName,nmi
+unitPattern,"{0} nmi"
+unitPattern,"{0} nmi"
+displayName,smi
+unitPattern,"{0} smi"
+unitPattern,"{0} smi"
+displayName,points
+unitPattern,"{0} pt"
+unitPattern,"{0} pt"
+displayName,"solar radii"
+unitPattern,"{0} R☉"
+unitPattern,"{0} R☉"
+displayName,lux
+unitPattern,"{0} lx"
+unitPattern,"{0} lx"
+displayName,"solar luminosities"
+unitPattern,"{0} L☉"
+unitPattern,"{0} L☉"
+displayName,t
+unitPattern,"{0} t"
+unitPattern,"{0} t"
+displayName,kg
+unitPattern,"{0} kg"
+unitPattern,"{0} kg"
+perUnitPattern,{0}/kg
+displayName,grams
+unitPattern,"{0} g"
+unitPattern,"{0} g"
+perUnitPattern,{0}/g
+displayName,mg
+unitPattern,"{0} mg"
+unitPattern,"{0} mg"
+displayName,μg
+unitPattern,"{0} μg"
+unitPattern,"{0} μg"
+displayName,tons
+unitPattern,"{0} tn"
+unitPattern,"{0} tn"
+displayName,stones
+unitPattern,"{0} st"
+unitPattern,"{0} st"
+displayName,pounds
+unitPattern,"{0} lb"
+unitPattern,"{0} lb"
+perUnitPattern,{0}/lb
+displayName,oz
+unitPattern,"{0} oz"
+unitPattern,"{0} oz"
+perUnitPattern,{0}/oz
+displayName,"oz troy"
+unitPattern,"{0} oz t"
+unitPattern,"{0} oz t"
+displayName,carats
+unitPattern,"{0} CD"
+unitPattern,"{0} CD"
+displayName,daltons
+unitPattern,"{0} Da"
+unitPattern,"{0} Da"
+displayName,"Earth masses"
+unitPattern,"{0} M⊕"
+unitPattern,"{0} M⊕"
+displayName,"solar masses"
+unitPattern,"{0} M☉"
+unitPattern,"{0} M☉"
+displayName,GW
+unitPattern,"{0} GW"
+unitPattern,"{0} GW"
+displayName,MW
+unitPattern,"{0} MW"
+unitPattern,"{0} MW"
+displayName,kW
+unitPattern,"{0} kW"
+unitPattern,"{0} kW"
+displayName,watts
+unitPattern,"{0} W"
+unitPattern,"{0} W"
+displayName,mW
+unitPattern,"{0} mW"
+unitPattern,"{0} mW"
+displayName,hp
+unitPattern,"{0} hp"
+unitPattern,"{0} hp"
+displayName,mmHg
+unitPattern,"{0} mmHg"
+unitPattern,"{0} mmHg"
+displayName,psi
+unitPattern,"{0} psi"
+unitPattern,"{0} psi"
+displayName,inHg
+unitPattern,"{0} inHg"
+unitPattern,"{0} inHg"
+displayName,bar
+unitPattern,"{0} bar"
+unitPattern,"{0} bar"
+displayName,mbar
+unitPattern,"{0} mbar"
+unitPattern,"{0} mbar"
+displayName,atm
+unitPattern,"{0} atm"
+unitPattern,"{0} atm"
+displayName,Pa
+unitPattern,"{0} Pa"
+unitPattern,"{0} Pa"
+displayName,hPa
+unitPattern,"{0} hPa"
+unitPattern,"{0} hPa"
+displayName,kPa
+unitPattern,"{0} kPa"
+unitPattern,"{0} kPa"
+displayName,MPa
+unitPattern,"{0} MPa"
+unitPattern,"{0} MPa"
+displayName,km/hour
+unitPattern,"{0} km/h"
+unitPattern,"{0} km/h"
+displayName,meters/sec
+unitPattern,"{0} m/s"
+unitPattern,"{0} m/s"
+displayName,miles/hour
+unitPattern,"{0} mph"
+unitPattern,"{0} mph"
+displayName,kn
+unitPattern,"{0} kn"
+unitPattern,"{0} kn"
+displayName,"deg. C"
+unitPattern,{0}°C
+unitPattern,{0}°C
+displayName,"deg. F"
+unitPattern,{0}°F
+unitPattern,{0}°F
+displayName,K
+unitPattern,"{0} K"
+unitPattern,"{0} K"
+displayName,lbf⋅ft
+unitPattern,"{0} lbf⋅ft"
+unitPattern,"{0} lbf⋅ft"
+displayName,N⋅m
+unitPattern,"{0} N⋅m"
+unitPattern,"{0} N⋅m"
+displayName,km³
+unitPattern,"{0} km³"
+unitPattern,"{0} km³"
+displayName,m³
+unitPattern,"{0} m³"
+unitPattern,"{0} m³"
+displayName,cm³
+unitPattern,"{0} cm³"
+unitPattern,"{0} cm³"
+displayName,mi³
+unitPattern,"{0} mi³"
+unitPattern,"{0} mi³"
+displayName,yards³
+unitPattern,"{0} yd³"
+unitPattern,"{0} yd³"
+displayName,feet³
+unitPattern,"{0} ft³"
+unitPattern,"{0} ft³"
+displayName,inches³
+unitPattern,"{0} in³"
+unitPattern,"{0} in³"
+displayName,ML
+unitPattern,"{0} ML"
+unitPattern,"{0} ML"
+displayName,hL
+unitPattern,"{0} hL"
+unitPattern,"{0} hL"
+displayName,liters
+unitPattern,"{0} L"
+unitPattern,"{0} L"
+perUnitPattern,{0}/L
+displayName,dL
+unitPattern,"{0} dL"
+unitPattern,"{0} dL"
+displayName,cL
+unitPattern,"{0} cL"
+unitPattern,"{0} cL"
+displayName,mL
+unitPattern,"{0} mL"
+unitPattern,"{0} mL"
+displayName,mpt
+unitPattern,"{0} mpt"
+unitPattern,"{0} mpt"
+displayName,mcup
+unitPattern,"{0} mc"
+unitPattern,"{0} mc"
+displayName,"acre ft"
+unitPattern,"{0} ac ft"
+unitPattern,"{0} ac ft"
+displayName,bushels
+unitPattern,"{0} bu"
+unitPattern,"{0} bu"
+displayName,gal
+unitPattern,"{0} gal"
+unitPattern,"{0} gal"
+displayName,"Imp. gal"
+unitPattern,"{0} gal Imp."
+unitPattern,"{0} gal Imp."
+displayName,qts
+unitPattern,"{0} qt"
+unitPattern,"{0} qt"
+displayName,pints
+unitPattern,"{0} pt"
+unitPattern,"{0} pt"
+displayName,cups
+unitPattern,"{0} c"
+unitPattern,"{0} c"
+displayName,"fl oz"
+unitPattern,"{0} fl oz"
+unitPattern,"{0} fl oz"
+displayName,"Imp. fl oz"
+unitPattern,"{0} fl oz Imp."
+unitPattern,"{0} fl oz Imp."
+displayName,tbsp
+unitPattern,"{0} tbsp"
+unitPattern,"{0} tbsp"
+displayName,tsp
+unitPattern,"{0} tsp"
+unitPattern,"{0} tsp"
+displayName,barrel
+unitPattern,"{0} bbl"
+unitPattern,"{0} bbl"
+displayName,direction
+coordinateUnitPattern,"{0} E"
+coordinateUnitPattern,"{0} N"
+coordinateUnitPattern,"{0} S"
+coordinateUnitPattern,"{0} W"
+displayName,g-force
+unitPattern,{0}G
+unitPattern,{0}Gs
+displayName,m/s²
+unitPattern,{0}m/s²
+unitPattern,{0}m/s²
+displayName,rev
+unitPattern,{0}rev
+unitPattern,{0}rev
+displayName,rad
+unitPattern,{0}rad
+unitPattern,{0}rad
+displayName,deg
+unitPattern,{0}°
+unitPattern,{0}°
+displayName,arcmin
+unitPattern,{0}′
+unitPattern,{0}′
+displayName,arcsec
+unitPattern,{0}″
+unitPattern,{0}″
+displayName,km²
+unitPattern,{0}km²
+unitPattern,{0}km²
+perUnitPattern,{0}/km²
+displayName,hectare
+unitPattern,{0}ha
+unitPattern,{0}ha
+displayName,meters²
+unitPattern,{0}m²
+unitPattern,{0}m²
+perUnitPattern,{0}/m²
+displayName,cm²
+unitPattern,{0}cm²
+unitPattern,{0}cm²
+displayName,mi²
+unitPattern,{0}mi²
+unitPattern,{0}mi²
+perUnitPattern,{0}/mi²
+displayName,acre
+unitPattern,{0}ac
+unitPattern,{0}ac
+displayName,yd²
+unitPattern,{0}yd²
+unitPattern,{0}yd²
+displayName,ft²
+unitPattern,{0}ft²
+unitPattern,{0}ft²
+displayName,in²
+unitPattern,{0}in²
+unitPattern,{0}in²
+displayName,dunam
+unitPattern,{0}dunam
+unitPattern,{0}dunam
+displayName,karat
+unitPattern,{0}kt
+unitPattern,{0}kt
+displayName,mg/dL
+unitPattern,{0}mg/dL
+unitPattern,{0}mg/dL
+displayName,mmol/L
+unitPattern,{0}mmol/L
+unitPattern,{0}mmol/L
+displayName,item
+unitPattern,{0}item
+unitPattern,{0}items
+displayName,ppm
+unitPattern,{0}ppm
+unitPattern,{0}ppm
+displayName,%
+unitPattern,{0}%
+unitPattern,{0}%
+displayName,‰
+unitPattern,{0}‰
+unitPattern,{0}‰
+displayName,‱
+unitPattern,{0}‱
+unitPattern,{0}‱
+displayName,mol
+unitPattern,{0}mol
+unitPattern,{0}mol
+displayName,L/km
+unitPattern,{0}L/km
+unitPattern,{0}L/km
+displayName,L/100km
+unitPattern,{0}L/100km
+unitPattern,{0}L/100km
+displayName,mpg
+unitPattern,{0}mpg
+unitPattern,{0}mpg
+displayName,"mpg UK"
+unitPattern,{0}m/gUK
+unitPattern,{0}m/gUK
+displayName,PB
+unitPattern,{0}PB
+unitPattern,{0}PB
+displayName,TB
+unitPattern,{0}TB
+unitPattern,{0}TB
+displayName,Tb
+unitPattern,{0}Tb
+unitPattern,{0}Tb
+displayName,GB
+unitPattern,{0}GB
+unitPattern,{0}GB
+displayName,Gb
+unitPattern,{0}Gb
+unitPattern,{0}Gb
+displayName,MB
+unitPattern,{0}MB
+unitPattern,{0}MB
+displayName,Mb
+unitPattern,{0}Mb
+unitPattern,{0}Mb
+displayName,kB
+unitPattern,{0}kB
+unitPattern,{0}kB
+displayName,kb
+unitPattern,{0}kb
+unitPattern,{0}kb
+displayName,B
+unitPattern,{0}B
+unitPattern,{0}B
+displayName,bit
+unitPattern,{0}bit
+unitPattern,{0}bit
+displayName,c
+unitPattern,{0}c
+unitPattern,{0}c
+displayName,dec
+unitPattern,{0}dec
+unitPattern,{0}dec
+displayName,yr
+unitPattern,{0}y
+unitPattern,{0}y
+displayName,month
+unitPattern,{0}m
+unitPattern,{0}m
+displayName,wk
+unitPattern,{0}w
+unitPattern,{0}w
+displayName,day
+unitPattern,{0}d
+unitPattern,{0}d
+displayName,hour
+unitPattern,{0}h
+unitPattern,{0}h
+displayName,min
+unitPattern,{0}m
+unitPattern,{0}m
+displayName,sec
+unitPattern,{0}s
+unitPattern,{0}s
+displayName,msec
+unitPattern,{0}ms
+unitPattern,{0}ms
+displayName,μsec
+unitPattern,{0}μs
+unitPattern,{0}μs
+displayName,ns
+unitPattern,{0}ns
+unitPattern,{0}ns
+displayName,amp
+unitPattern,{0}A
+unitPattern,{0}A
+displayName,mA
+unitPattern,{0}mA
+unitPattern,{0}mA
+displayName,ohm
+unitPattern,{0}Ω
+unitPattern,{0}Ω
+displayName,volt
+unitPattern,{0}V
+unitPattern,{0}V
+displayName,kcal
+unitPattern,{0}kcal
+unitPattern,{0}kcal
+displayName,cal
+unitPattern,{0}cal
+unitPattern,{0}cal
+displayName,Cal
+unitPattern,{0}Cal
+unitPattern,{0}Cal
+displayName,kJ
+unitPattern,{0}kJ
+unitPattern,{0}kJ
+displayName,joule
+unitPattern,{0}J
+unitPattern,{0}J
+displayName,kWh
+unitPattern,{0}kWh
+unitPattern,{0}kWh
+displayName,eV
+unitPattern,{0}eV
+unitPattern,{0}eV
+displayName,BTU
+unitPattern,{0}Btu
+unitPattern,{0}Btu
+displayName,"US therm"
+unitPattern,"{0}US therm"
+unitPattern,"{0}US therms"
+displayName,lbf
+unitPattern,{0}lbf
+unitPattern,{0}lbf
+displayName,N
+unitPattern,{0}N
+unitPattern,{0}N
+displayName,kWh/100km
+unitPattern,{0}kWh/100km
+unitPattern,{0}kWh/100km
+displayName,GHz
+unitPattern,{0}GHz
+unitPattern,{0}GHz
+displayName,MHz
+unitPattern,{0}MHz
+unitPattern,{0}MHz
+displayName,kHz
+unitPattern,{0}kHz
+unitPattern,{0}kHz
+displayName,Hz
+unitPattern,{0}Hz
+unitPattern,{0}Hz
+displayName,em
+unitPattern,{0}em
+unitPattern,{0}em
+displayName,px
+unitPattern,{0}px
+unitPattern,{0}px
+displayName,MP
+unitPattern,{0}MP
+unitPattern,{0}MP
+displayName,ppcm
+unitPattern,{0}ppcm
+unitPattern,{0}ppcm
+displayName,ppi
+unitPattern,{0}ppi
+unitPattern,{0}ppi
+displayName,dpcm
+unitPattern,{0}dpcm
+unitPattern,{0}dpcm
+displayName,dpi
+unitPattern,{0}dpi
+unitPattern,{0}dpi
+displayName,dot
+unitPattern,{0}dot
+unitPattern,{0}dot
+displayName,R⊕
+unitPattern,{0}R⊕
+unitPattern,{0}R⊕
+displayName,km
+unitPattern,{0}km
+unitPattern,{0}km
+displayName,m
+unitPattern,{0}m
+unitPattern,{0}m
+displayName,dm
+unitPattern,{0}dm
+unitPattern,{0}dm
+displayName,cm
+unitPattern,{0}cm
+unitPattern,{0}cm
+displayName,mm
+unitPattern,{0}mm
+unitPattern,{0}mm
+displayName,μm
+unitPattern,{0}μm
+unitPattern,{0}μm
+displayName,nm
+unitPattern,{0}nm
+unitPattern,{0}nm
+displayName,pm
+unitPattern,{0}pm
+unitPattern,{0}pm
+displayName,mi
+unitPattern,{0}mi
+unitPattern,{0}mi
+displayName,yd
+unitPattern,{0}yd
+unitPattern,{0}yd
+displayName,ft
+unitPattern,{0}′
+unitPattern,{0}′
+displayName,in
+unitPattern,{0}″
+unitPattern,{0}″
+displayName,parsec
+unitPattern,{0}pc
+unitPattern,{0}pc
+displayName,ly
+unitPattern,{0}ly
+unitPattern,{0}ly
+displayName,au
+unitPattern,{0}au
+unitPattern,{0}au
+displayName,furlong
+unitPattern,{0}fur
+unitPattern,{0}fur
+displayName,fathom
+unitPattern,{0}fth
+unitPattern,{0}fth
+displayName,nmi
+unitPattern,{0}nmi
+unitPattern,{0}nmi
+displayName,smi
+unitPattern,{0}smi
+unitPattern,{0}smi
+displayName,pts
+unitPattern,{0}pt
+unitPattern,{0}pt
+displayName,R☉
+unitPattern,{0}R☉
+unitPattern,{0}R☉
+displayName,lux
+unitPattern,{0}lx
+unitPattern,{0}lx
+displayName,cd
+unitPattern,{0}cd
+unitPattern,{0}cd
+displayName,lm
+unitPattern,{0}lm
+unitPattern,{0}lm
+displayName,L☉
+unitPattern,{0}L☉
+unitPattern,{0}L☉
+displayName,t
+unitPattern,{0}t
+unitPattern,{0}t
+displayName,kg
+unitPattern,{0}kg
+unitPattern,{0}kg
+displayName,gram
+unitPattern,{0}g
+unitPattern,{0}g
+displayName,mg
+unitPattern,{0}mg
+unitPattern,{0}mg
+displayName,μg
+unitPattern,{0}μg
+unitPattern,{0}μg
+displayName,ton
+unitPattern,{0}tn
+unitPattern,{0}tn
+displayName,stone
+unitPattern,{0}st
+unitPattern,{0}st
+displayName,lb
+unitPattern,{0}#
+unitPattern,{0}#
+displayName,oz
+unitPattern,{0}oz
+unitPattern,{0}oz
+displayName,"oz t"
+unitPattern,"{0}oz t"
+unitPattern,"{0}oz t"
+displayName,carat
+unitPattern,{0}CD
+unitPattern,{0}CD
+displayName,Da
+unitPattern,{0}Da
+unitPattern,{0}Da
+displayName,M⊕
+unitPattern,{0}M⊕
+unitPattern,{0}M⊕
+displayName,M☉
+unitPattern,{0}M☉
+unitPattern,{0}M☉
+displayName,gr
+unitPattern,{0}gr
+unitPattern,{0}gr
+displayName,GW
+unitPattern,{0}GW
+unitPattern,{0}GW
+displayName,MW
+unitPattern,{0}MW
+unitPattern,{0}MW
+displayName,kW
+unitPattern,{0}kW
+unitPattern,{0}kW
+displayName,watt
+unitPattern,{0}W
+unitPattern,{0}W
+displayName,mW
+unitPattern,{0}mW
+unitPattern,{0}mW
+displayName,hp
+unitPattern,{0}hp
+unitPattern,{0}hp
+displayName,mmHg
+unitPattern,{0}mmHg
+unitPattern,{0}mmHg
+displayName,psi
+unitPattern,{0}psi
+unitPattern,{0}psi
+displayName,"″ Hg"
+unitPattern,"{0}″ Hg"
+unitPattern,"{0}″ Hg"
+displayName,bar
+unitPattern,{0}bar
+unitPattern,{0}bar
+displayName,mbar
+unitPattern,{0}mb
+unitPattern,{0}mb
+displayName,atm
+unitPattern,{0}atm
+unitPattern,{0}atm
+displayName,Pa
+unitPattern,{0}Pa
+unitPattern,{0}Pa
+displayName,hPa
+unitPattern,{0}hPa
+unitPattern,{0}hPa
+displayName,kPa
+unitPattern,{0}kPa
+unitPattern,{0}kPa
+displayName,MPa
+unitPattern,{0}MPa
+unitPattern,{0}MPa
+displayName,km/hr
+unitPattern,{0}km/h
+unitPattern,{0}km/h
+displayName,m/s
+unitPattern,{0}m/s
+unitPattern,{0}m/s
+displayName,mi/hr
+unitPattern,{0}mph
+unitPattern,{0}mph
+displayName,kn
+unitPattern,{0}kn
+unitPattern,{0}kn
+displayName,°C
+unitPattern,{0}°C
+unitPattern,{0}°C
+displayName,°F
+unitPattern,{0}°
+unitPattern,{0}°
+displayName,K
+unitPattern,{0}K
+unitPattern,{0}K
+displayName,lbf⋅ft
+unitPattern,{0}lbf⋅ft
+unitPattern,{0}lbf⋅ft
+displayName,N⋅m
+unitPattern,{0}N⋅m
+unitPattern,{0}N⋅m
+displayName,km³
+unitPattern,{0}km³
+unitPattern,{0}km³
+displayName,m³
+unitPattern,{0}m³
+unitPattern,{0}m³
+perUnitPattern,{0}/m³
+displayName,cm³
+unitPattern,{0}cm³
+unitPattern,{0}cm³
+perUnitPattern,{0}/cm³
+displayName,mi³
+unitPattern,{0}mi³
+unitPattern,{0}mi³
+displayName,yd³
+unitPattern,{0}yd³
+unitPattern,{0}yd³
+displayName,ft³
+unitPattern,{0}ft³
+unitPattern,{0}ft³
+displayName,in³
+unitPattern,{0}in³
+unitPattern,{0}in³
+displayName,ML
+unitPattern,{0}ML
+unitPattern,{0}ML
+displayName,hL
+unitPattern,{0}hL
+unitPattern,{0}hL
+displayName,liter
+unitPattern,{0}L
+unitPattern,{0}L
+perUnitPattern,{0}/L
+displayName,dL
+unitPattern,{0}dL
+unitPattern,{0}dL
+displayName,cL
+unitPattern,{0}cL
+unitPattern,{0}cL
+displayName,mL
+unitPattern,{0}mL
+unitPattern,{0}mL
+displayName,pt
+unitPattern,{0}mpt
+unitPattern,{0}mpt
+displayName,mcup
+unitPattern,{0}mc
+unitPattern,{0}mc
+displayName,"acre ft"
+unitPattern,"{0}ac ft"
+unitPattern,"{0}ac ft"
+displayName,bushel
+unitPattern,{0}bu
+unitPattern,{0}bu
+displayName,gal
+unitPattern,{0}gal
+unitPattern,{0}gal
+perUnitPattern,{0}/gal
+displayName,"Imp gal"
+unitPattern,{0}galIm
+unitPattern,{0}galIm
+perUnitPattern,{0}/galIm
+displayName,qt
+unitPattern,{0}qt
+unitPattern,{0}qt
+displayName,pt
+unitPattern,{0}pt
+unitPattern,{0}pt
+displayName,cup
+unitPattern,{0}c
+unitPattern,{0}c
+displayName,"fl oz"
+unitPattern,"{0}fl oz"
+unitPattern,"{0}fl oz"
+displayName,"Imp fl oz"
+unitPattern,"{0}fl oz Im"
+unitPattern,"{0}fl oz Im"
+displayName,tbsp
+unitPattern,{0}tbsp
+unitPattern,{0}tbsp
+displayName,tsp
+unitPattern,{0}tsp
+unitPattern,{0}tsp
+displayName,bbl
+unitPattern,{0}bbl
+unitPattern,{0}bbl
+displayName,dsp
+unitPattern,{0}dsp
+unitPattern,{0}dsp
+displayName,"dsp Imp"
+unitPattern,{0}dsp-Imp
+unitPattern,{0}dsp-Imp
+displayName,dr
+unitPattern,{0}dr
+unitPattern,{0}dr
+displayName,fl.dr.
+unitPattern,{0}fl.dr.
+unitPattern,{0}fl.dr.
+displayName,jigger
+unitPattern,{0}jigger
+unitPattern,{0}jigger
+displayName,pn
+unitPattern,{0}pn
+unitPattern,{0}pn
+displayName,"qt Imp"
+unitPattern,{0}qt-Imp.
+unitPattern,{0}qt-Imp.
+coordinateUnitPattern,{0}E
+coordinateUnitPattern,{0}N
+coordinateUnitPattern,{0}S
+coordinateUnitPattern,{0}W
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, and {1}"
+listPatternPart,"{0} and {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, or {1}"
+listPatternPart,"{0} or {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, & {1}"
+listPatternPart,"{0} & {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0} {1}"
+listPatternPart,"{0} {1}"
+listPatternPart,"{0} {1}"
+listPatternPart,"{0} {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+listPatternPart,"{0}, {1}"
+yesstr,yes:y
+nostr,no:n
+characterLabelPattern,"{0} — all"
+characterLabelPattern,"{0}: {1}"
+characterLabelPattern,"{0} — compatibility"
+characterLabelPattern,"{0} — enclosed"
+characterLabelPattern,"{0} — extended"
+characterLabelPattern,"{0} — historic"
+characterLabelPattern,"{0} — miscellaneous"
+characterLabelPattern,"{0} — other"
+characterLabelPattern,"scripts — {0}"
+characterLabelPattern,"{0} stroke"
+characterLabelPattern,"{0} strokes"
+characterLabel,activity
+characterLabel,"African script"
+characterLabel,"American script"
+characterLabel,animal
+characterLabel,"animal or nature"
+characterLabel,arrow
+characterLabel,body
+characterLabel,"box drawing"
+characterLabel,braille
+characterLabel,building
+characterLabel,"bullet or star"
+characterLabel,"consonantal jamo"
+characterLabel,"currency symbol"
+characterLabel,"dash or connector"
+characterLabel,digit
+characterLabel,dingbat
+characterLabel,"divination symbol"
+characterLabel,"downwards arrow"
+characterLabel,"downwards upwards arrow"
+characterLabel,"East Asian script"
+characterLabel,emoji
+characterLabel,"European script"
+characterLabel,female
+characterLabel,flag
+characterLabel,flags
+characterLabel,"food & drink"
+characterLabel,format
+characterLabel,"format & whitespace"
+characterLabel,"full-width variant"
+characterLabel,"geometric shape"
+characterLabel,"half-width variant"
+characterLabel,"Han character"
+characterLabel,"Han radical"
+characterLabel,hanja
+characterLabel,"Hanzi (simplified)"
+characterLabel,"Hanzi (traditional)"
+characterLabel,heart
+characterLabel,"historic script"
+characterLabel,"ideographic desc. character"
+characterLabel,"Japanese kana"
+characterLabel,kanbun
+characterLabel,kanji
+characterLabel,keycap
+characterLabel,"leftwards arrow"
+characterLabel,"leftwards rightwards arrow"
+characterLabel,"letterlike symbol"
+characterLabel,limited-use
+characterLabel,male
+characterLabel,"math symbol"
+characterLabel,"Middle Eastern script"
+characterLabel,miscellaneous
+characterLabel,"modern script"
+characterLabel,modifier
+characterLabel,"musical symbol"
+characterLabel,nature
+characterLabel,nonspacing
+characterLabel,numbers
+characterLabel,object
+characterLabel,other
+characterLabel,paired
+characterLabel,person
+characterLabel,"phonetic alphabet"
+characterLabel,pictograph
+characterLabel,place
+characterLabel,plant
+characterLabel,punctuation
+characterLabel,"rightwards arrow"
+characterLabel,"sign or symbol"
+characterLabel,"small variants"
+characterLabel,smiley
+characterLabel,"smiley or person"
+characterLabel,"South Asian script"
+characterLabel,"Southeast Asian script"
+characterLabel,spacing
+characterLabel,sport
+characterLabel,symbol
+characterLabel,"technical symbol"
+characterLabel,"tone mark"
+characterLabel,travel
+characterLabel,"travel or place"
+characterLabel,"upwards arrows"
+characterLabel,variant
+characterLabel,"vocalic jamo"
+characterLabel,weather
+characterLabel,"Western Asian script"
+characterLabel,whitespace
+axisName,italic
+axisName,"optical size"
+axisName,slant
+axisName,width
+axisName,weight
+styleName,cursive
+styleName,caption
+styleName,text
+styleName,titling
+styleName,display
+styleName,poster
+styleName,backslanted
+styleName,upright
+styleName,slanted
+styleName,extra-slanted
+styleName,ultracondensed
+styleName,ultracompressed
+styleName,ultranarrow
+styleName,extra-condensed
+styleName,extra-compressed
+styleName,extra-narrow
+styleName,condensed
+styleName,compressed
+styleName,compressed
+styleName,semicondensed
+styleName,semicompressed
+styleName,seminarrow
+styleName,normal
+styleName,semiexpanded
+styleName,semiextended
+styleName,semiwide
+styleName,expanded
+styleName,extended
+styleName,wide
+styleName,extra-expanded
+styleName,extra-extended
+styleName,extra-wide
+styleName,ultraexpanded
+styleName,ultraextended
+styleName,ultrawide
+styleName,thin
+styleName,extra-light
+styleName,ultralight
+styleName,light
+styleName,semilight
+styleName,book
+styleName,regular
+styleName,medium
+styleName,semibold
+styleName,demibold
+styleName,bold
+styleName,extra-bold
+styleName,black
+styleName,heavy
+styleName,extra-black
+styleName,ultrablack
+styleName,ultraheavy
+featureName,"vertical fractions"
+featureName,"capital spacing"
+featureName,"optional ligatures"
+featureName,"diagonal fractions"
+featureName,"lining numbers"
+featureName,"old-style figures"
+featureName,ordinals
+featureName,"proportional numbers"
+featureName,"small capitals"
+featureName,"tabular numbers"
+featureName,"slashed zero"

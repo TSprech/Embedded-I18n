@@ -1,25 +1,138 @@
-auto quotation_start = u8~'delimiters', 'quotationStart'~_sv8;
-auto quotation_end = u8~'delimiters', 'quotationEnd'~_sv8;
-auto alt_quotation_start = u8~'delimiters', 'alternateQuotationStart'~_sv8;
-auto alt_quotation_end = u8~'delimiters', 'alternateQuotationEnd'~_sv8;
-auto decimal = u8~'numbers', 'symbols', '@numberSystem=latn', 'decimal'~_sv8;
-auto group = u8~'numbers', 'symbols', '@numberSystem=latn', 'group'~_sv8;
-auto list = u8~'numbers', 'symbols', '@numberSystem=latn', 'list'~_sv8;
-auto percent_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'percentSign'~_sv8;
-auto plus_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'plusSign'~_sv8;
-auto minus_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'minusSign'~_sv8;
-auto exponential = u8~'numbers', 'symbols', '@numberSystem=latn', 'exponential'~_sv8;
-auto superscripting_exponent = u8~'numbers', 'symbols', '@numberSystem=latn', 'superscriptingExponent'~_sv8;
-auto infinity = u8~'numbers', 'symbols', '@numberSystem=latn', 'infinity'~_sv8;
-auto nan = u8~'numbers', 'symbols', '@numberSystem=latn', 'nan'~_sv8;
-std::array weekdays_shortened = {u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sun', '#text'~_sv8,
-                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=mon', '#text'~_sv8,
-                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=tue', '#text'~_sv8,
-                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=wed', '#text'~_sv8,
-                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=thu', '#text'~_sv8,
-                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=fri', '#text'~_sv8,
-                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sat', '#text'~_sv8};
-auto am = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=am', '#text'~_sv8;
-auto pm = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=pm', '#text'~_sv8;
-auto time_format_h_m_s = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=medium', 'timeFormat', 'pattern'~_sv8;
-auto time_format_h_m = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=short', 'timeFormat', 'pattern'~_sv8;
+using cldr_t = std::u8string_view;
+
+struct Symbols {
+  cldr_t decimal;
+  cldr_t group;
+  cldr_t list;
+  cldr_t percent_sign;
+  cldr_t plus_sign;
+  cldr_t minus_sign;
+  cldr_t exponential;
+  cldr_t superscripting_exponent;
+  cldr_t infinity;
+  cldr_t nan;
+};
+
+struct Delimiters {
+  cldr_t quotation_start;
+  cldr_t quotation_end;
+  cldr_t alternate_quotation_start;
+  cldr_t alternate_quotation_end;
+};
+
+struct Numbers {
+    Symbols symbols;
+};
+
+				<days>
+					<dayContext type="format">
+						<dayWidth type="abbreviated">
+							<day type="sun">Sun</day>
+							<day type="mon">Mon</day>
+							<day type="tue">Tue</day>
+							<day type="wed">Wed</day>
+							<day type="thu">Thu</day>
+							<day type="fri">Fri</day>
+							<day type="sat">Sat</day>
+						</dayWidth>
+
+DayContext 
+
+struct Days {
+    DayContext format;
+};
+
+struct MonthWidth {
+    std::array<cldr_t, 12> month;
+};
+
+struct MonthContext {
+    MonthWidth abbreviated;
+};
+
+struct Months {
+    MonthContext format;
+};
+
+struct CalendarType {
+    Months months;
+};
+
+struct Calendars {
+    CalendarType gregorian;
+};
+
+struct Dates {
+    Calendars calendars;
+};
+
+struct Locale {
+    Delimiters delimiters;
+    Numbers numbers;
+    Dates dates;
+};
+
+Locale en_US {
+    .delimiters = {
+      .quotation_start = u8~'delimiters', 'quotationStart'~sv,
+      .quotation_end = u8~'delimiters', 'quotationEnd'~sv,
+      .alt_quotation_start = u8~'delimiters', 'alternateQuotationStart'~sv,
+      .alt_quotation_end = u8~'delimiters', 'alternateQuotationEnd'~sv
+    },
+
+    .numbers = {
+      .symbols = {
+        .decimal = u8~'numbers', 'symbols', '@numberSystem=latn', 'decimal'~sv,
+        .group = u8~'numbers', 'symbols', '@numberSystem=latn', 'group'~sv,
+        .list = u8~'numbers', 'symbols', '@numberSystem=latn', 'list'~sv,
+        .percent_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'percentSign'~sv,
+        .plus_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'plusSign'~sv,
+        .minus_sign = u8~'numbers', 'symbols', '@numberSystem=latn', 'minusSign'~sv,
+        .exponential = u8~'numbers', 'symbols', '@numberSystem=latn', 'exponential'~sv,
+        .superscripting_exponent = u8~'numbers', 'symbols', '@numberSystem=latn', 'superscriptingExponent'~sv,
+        .per_mille = u8~'numbers', 'symbols', '@numberSystem=latn', 'perMille'~sv,
+        .infinity = u8~'numbers', 'symbols', '@numberSystem=latn', 'infinity'~sv,
+        .nan = u8~'numbers', 'symbols', '@numberSystem=latn', 'nan'~sv
+      }
+    },
+
+    .dates {
+      .calendars {
+        .gregorian {
+          .months {
+            .format {
+              .abbreviated {
+                .month = { ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=1', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=2', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=3', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=4', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=5', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=6', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=7', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=8', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=9', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=10', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=11', '#text'~,
+                           ~'dates', 'calendars', 'calendar', '@type=gregorian', 'months', 'monthContext', '@type=format', 'monthWidth', '@type=abbreviated', 'month', '@type=12', '#text'~
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+};
+
+
+
+weekdays_shortened = {u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sun', '#text'~sv,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=mon', '#text'~sv,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=tue', '#text'~sv,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=wed', '#text'~sv,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=thu', '#text'~sv,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=fri', '#text'~sv,
+                                 u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'days', 'dayContext', '@type=format', 'dayWidth', '@type=abbreviated', 'day', '@type=sat', '#text'~sv};
+auto am = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=am', '#text'~sv;
+auto pm = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'dayPeriods', 'dayPeriodContext', '@type=stand-alone', 'dayPeriodWidth', '@type=abbreviated', 'dayPeriod', '@type=pm', '#text'~sv;
+auto time_format_h_m_s = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=medium', 'timeFormat', 'pattern'~sv;
+auto time_format_h_m = u8~'dates', 'calendars', 'calendar', '@type=gregorian', 'timeFormats', 'timeFormatLength', '@type=short', 'timeFormat', 'pattern'~sv;
