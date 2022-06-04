@@ -61,39 +61,52 @@ locale_full = r'en_US'
 language = 'en_MINE'  # Get the language from the first couple letters before the underscore in the locale name
 
 
-def replace(data, indent):
+def replace(data, indent, running_list):
     if isinstance(data, dict):
         for key, value in data.items():
             if isinstance(value, dict) and isinstance(value[list(value.keys())[0]], str):
-                # print('UNIQUE:', end='')
-                print(' ' * indent + key + ': ' + value[list(value.keys())[0]])
-                temp = 2
+                running_list.append((key, value[list(value.keys())[0]]))
+                # running_list.append(key)
+                # running_list.append(value[list(value.keys())[0]])
+                # print(' ' * indent + key + ': ' + value[list(value.keys())[0]])
             elif isinstance(value, list):
-                # print(' ' * indent + key + ': ' +
-                # print(value)
-                for item in value:
-                    print(' ' * indent + key + ': ' + item[list(value[0].keys())[0]])
-                    replace(item, indent)
-                continue
+                if isinstance(value[0], dict):
+                    for item in value:
+                        # print(' ' * indent + key + ': ' + item[list(value[0].keys())[0]])
+                        running_list.append((key, item[list(value[0].keys())[0]]))
+                        # running_list.append(key)
+                        # running_list.append(item[list(value[0].keys())[0]])
+                        running_list.append([])
+                        replace(item, indent + 1, running_list[len(running_list) - 1])
+                    continue
             else:
                 if not key[0] == '@' and not key[0] == '#':
-                    print(' ' * indent + key)
-                temp = 2
-            replace(data[key], indent + temp)
+                    # print(' ' * indent + key)
+                    running_list.append(key)
+            # running_list[indent + 1] = []
+            running_list.append([])
+            replace(data[key], indent + 1, running_list[len(running_list) - 1])
     elif isinstance(data, list):
         for value in data:
-            # if isinstance(value, dict) and isinstance(value[list(value.keys())[0]], str):
-            #     print('UNIQUE 2', end='')
-                # print(value)
-            # elif isinstance(value, list) and isinstance(value[0], str):
-            #     print('UNIQUE 3')
-            replace(value, indent)
+            replace(value, indent, running_list)
+
+
+def print_nested_list(input_list, indent):
+    if type(input_list) is list:
+        for item in input_list:
+            print_nested_list(item, indent + 2)
+    else:
+        print(' ' * indent, end='')
+        print(input_list)
 
 
 with open(f'{path}/{language}.xml', 'rb') as general_locale:
     xml_data = xmltodict.parse(general_locale)
-    data_dict = dict()
-    replace(xml_data, 0)
+    data_list = list()
+    replace(xml_data, 0, data_list)
+    # print(data_list)
+
+    print_nested_list(data_list, 0)
 
 
     # for key, value in xml_data.items():
